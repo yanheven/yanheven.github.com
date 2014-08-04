@@ -4,7 +4,7 @@
    <title>Hyphen's Blog</title>
    <link href="http://hyphen.tk/atom.xml" rel="self" type="application/atom+xml"/>
    <link href="http://hyphen.tk" rel="alternate" type="text/html" />
-   <updated>2014-08-04T15:33:15+08:00</updated>
+   <updated>2014-08-04T16:32:17+08:00</updated>
    <id>http://hyphen.tk</id>
    <author>
      <name></name>
@@ -73,6 +73,574 @@ for i in site:
 &lt;h4&gt;I am a openstacker, pythoner, linuxer, macer adn learner.&lt;/h4&gt;
 
 &lt;h4&gt;I firmly believe the more I learn, the more I code, the more I can do to better our world &amp;amp; our life&lt;/h4&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>openstack horizon 开发入门</title>
+     <link href="http://hyphen.tk/openstack-horizon-develop"/>
+     <updated>2014-03-16T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/openstack-horizon-develop</id>
+     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。&lt;/h4&gt;
+
+&lt;h2&gt;1、前端&lt;/h2&gt;
+
+&lt;p&gt;首先是前端的技术，之前只知道简单的html语法，对CSS，JS，JQUERY等一窍不通。年后，小组开发人手不是很够，果断转行去开发，记得刚开始，搞个练手的界面，搞了两天才实现。而且前提是别人写好的结构，拿过来修改使用。熟读唐诗三百首，不会做诗也会吟的境界。但是一旦碰到没有样例的界面，那就头疼了，因为很多标签都是不认识的。但只能问人，搜索用法，记得有几天，写几个界面，搞得有点喘不过气来。但事实证明一句老话，当你感觉到难受的时候，是你学东西最多的时候。因为不懂，所以觉得很难，因为一直坚持，所以特别难受，中途多次想不做前端了，让其他人做，只写后端好了，但还是一直坚持。截止本稿时间，终于学到了一些基本前端，现在做OPensack的控制台界面开发勉强够用。&lt;/p&gt;
+
+&lt;h2&gt;2、后端&lt;/h2&gt;
+
+&lt;p&gt;开发后端直接使用各个服务的client，因为Horizon就是这么干的。&lt;/p&gt;
+
+&lt;p&gt;通过实例化一个通过授权认证的客户端对象，然后可以进行后续的操作&lt;/p&gt;
+
+&lt;h3&gt;2.1、nova&lt;/h3&gt;
+
+&lt;p&gt;nova操作&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import novaclient.v1_1.client as nvclient
+nova = nvclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],\
+                        username=auth_dict[&quot;--os-username&quot;],\
+                        api_key=auth_dict[&quot;--os-password&quot;],\
+                        project_id=auth_dict[&quot;--os-tenant-name&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2.2 keystone&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient                     
+keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
+                                    username = auth_dict[&quot;--os-username&quot;], \
+                                    password = auth_dict[&quot;--os-password&quot;], \
+                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2.3 neutron&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient
+keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
+                                    username = auth_dict[&quot;--os-username&quot;], \
+                                    password = auth_dict[&quot;--os-password&quot;], \
+                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者这样：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient  
+keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \  
+                                    username = auth_dict[&quot;--os-username&quot;], \  
+                                    password = auth_dict[&quot;--os-password&quot;], \  
+                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])  
+
+endpoint_url = keystone.service_catalog.url_for(service_type=&#39;network&#39;)  
+token = keystone.auth_token  
+neutron2 = neutronclient.Client(endpoint_url=endpoint_url, token=token) 
+neutron = neutronclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],
+username=auth_dict[&quot;--os-username&quot;],
+password=auth_dict[&quot;--os-password&quot;],
+tenant_name=auth_dict[&quot;--os-tenant-name&quot;])                                   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。&lt;/h4&gt;
+
+&lt;h2&gt;1、前端&lt;/h2&gt;
+
+&lt;p&gt;首先是前端的技术，之前只知道简单的html语法，对CSS，JS，JQUERY等一窍不通。年后，小组开发人手不是很够，果断转行去开发，记得刚开始，搞个练手的界面，搞了两天才实现。而且前提是别人写好的结构，拿过来修改使用。熟读唐诗三百首，不会做诗也会吟的境界。但是一旦碰到没有样例的界面，那就头疼了，因为很多标签都是不认识的。但只能问人，搜索用法，记得有几天，写几个界面，搞得有点喘不过气来。但事实证明一句老话，当你感觉到难受的时候，是你学东西最多的时候。因为不懂，所以觉得很难，因为一直坚持，所以特别难受，中途多次想不做前端了，让其他人做，只写后端好了，但还是一直坚持。截止本稿时间，终于学到了一些基本前端，现在做OPensack的控制台界面开发勉强够用。&lt;/p&gt;
+
+&lt;h2&gt;2、后端&lt;/h2&gt;
+
+&lt;p&gt;开发后端直接使用各个服务的client，因为Horizon就是这么干的。&lt;/p&gt;
+
+&lt;p&gt;通过实例化一个通过授权认证的客户端对象，然后可以进行后续的操作&lt;/p&gt;
+
+&lt;h3&gt;2.1、nova&lt;/h3&gt;
+
+&lt;p&gt;nova操作&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import novaclient.v1_1.client as nvclient
+nova = nvclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],\
+                        username=auth_dict[&quot;--os-username&quot;],\
+                        api_key=auth_dict[&quot;--os-password&quot;],\
+                        project_id=auth_dict[&quot;--os-tenant-name&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2.2 keystone&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient                     
+keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
+                                    username = auth_dict[&quot;--os-username&quot;], \
+                                    password = auth_dict[&quot;--os-password&quot;], \
+                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2.3 neutron&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient
+keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
+                                    username = auth_dict[&quot;--os-username&quot;], \
+                                    password = auth_dict[&quot;--os-password&quot;], \
+                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者这样：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient  
+keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \  
+                                    username = auth_dict[&quot;--os-username&quot;], \  
+                                    password = auth_dict[&quot;--os-password&quot;], \  
+                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])  
+
+endpoint_url = keystone.service_catalog.url_for(service_type=&#39;network&#39;)  
+token = keystone.auth_token  
+neutron2 = neutronclient.Client(endpoint_url=endpoint_url, token=token) 
+neutron = neutronclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],
+username=auth_dict[&quot;--os-username&quot;],
+password=auth_dict[&quot;--os-password&quot;],
+tenant_name=auth_dict[&quot;--os-tenant-name&quot;])                                   
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>openstack horizon 开发入门</title>
+     <link href="http://hyphen.tk/openstack-horizon-develop"/>
+     <updated>2014-03-15T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/openstack-horizon-develop</id>
+     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。&lt;/h4&gt;
+
+&lt;h2&gt;1、前端&lt;/h2&gt;
+
+&lt;p&gt;首先是前端的技术，之前只知道简单的html语法，对CSS，JS，JQUERY等一窍不通。年后，小组开发人手不是很够，果断转行去开发，记得刚开始，搞个练手的界面，搞了两天才实现。而且前提是别人写好的结构，拿过来修改使用。熟读唐诗三百首，不会做诗也会吟的境界。但是一旦碰到没有样例的界面，那就头疼了，因为很多标签都是不认识的。但只能问人，搜索用法，记得有几天，写几个界面，搞得有点喘不过气来。但事实证明一句老话，当你感觉到难受的时候，是你学东西最多的时候。因为不懂，所以觉得很难，因为一直坚持，所以特别难受，中途多次想不做前端了，让其他人做，只写后端好了，但还是一直坚持。截止本稿时间，终于学到了一些基本前端，现在做OPensack的控制台界面开发勉强够用。&lt;/p&gt;
+
+&lt;h2&gt;2、后端&lt;/h2&gt;
+
+&lt;p&gt;开发后端直接使用各个服务的client，因为Horizon就是这么干的。&lt;/p&gt;
+
+&lt;p&gt;通过实例化一个通过授权认证的客户端对象，然后可以进行后续的操作&lt;/p&gt;
+
+&lt;h3&gt;2.1、nova&lt;/h3&gt;
+
+&lt;p&gt;nova操作&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import novaclient.v1_1.client as nvclient
+nova = nvclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],\
+                        username=auth_dict[&quot;--os-username&quot;],\
+                        api_key=auth_dict[&quot;--os-password&quot;],\
+                        project_id=auth_dict[&quot;--os-tenant-name&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2.2 keystone&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient                     
+keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
+                                    username = auth_dict[&quot;--os-username&quot;], \
+                                    password = auth_dict[&quot;--os-password&quot;], \
+                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2.3 neutron&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient
+keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
+                                    username = auth_dict[&quot;--os-username&quot;], \
+                                    password = auth_dict[&quot;--os-password&quot;], \
+                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者这样：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient  
+keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \  
+                                    username = auth_dict[&quot;--os-username&quot;], \  
+                                    password = auth_dict[&quot;--os-password&quot;], \  
+                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])  
+
+endpoint_url = keystone.service_catalog.url_for(service_type=&#39;network&#39;)  
+token = keystone.auth_token  
+neutron2 = neutronclient.Client(endpoint_url=endpoint_url, token=token) 
+neutron = neutronclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],
+username=auth_dict[&quot;--os-username&quot;],
+password=auth_dict[&quot;--os-password&quot;],
+tenant_name=auth_dict[&quot;--os-tenant-name&quot;])                                   
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>VPS环境搭建详解 (Virtualenv+Gunicorn+Supervisor+Nginx)</title>
+     <link href="http://hyphen.tk/test"/>
+     <updated>2014-01-01T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/test</id>
+     <content type="html">&lt;p&gt;新用户注册购买&lt;a href=&quot;https://www.digitalocean.com/?refcode=f95f7297ed94&quot; title=&quot;DigitalOcean&quot;&gt;DigitalOcean&lt;/a&gt;的VPS，使用优惠码&lt;code&gt;2014SSD&lt;/code&gt;（或请尝试&lt;code&gt;10TOSHIP&lt;/code&gt;）有$10赠送，可用两个月。DO采取丧心病狂的低价竞争策略，每月$5即可享用全功能的SSD硬盘VPS，具体去看看&lt;a href=&quot;https://www.digitalocean.com/?refcode=f95f7297ed94&quot; title=&quot;DigitalOcean&quot;&gt;这里&lt;/a&gt;吧。&lt;/p&gt;
+
+&lt;p&gt;注册，选择套餐、机房、系统(我选默认Ubuntu 12)，付款成功，可以开始配置了。&lt;/p&gt;
+
+&lt;p&gt;我们目标实现一个支持多个独立域名网站的线上Python环境，这会用到&lt;a href=&quot;http://www.virtualenv.org/en/latest/&quot; title=&quot;Virtualenv&quot;&gt;Virtualenv&lt;/a&gt;， &lt;a href=&quot;http://flask.pocoo.org/docs/&quot; title=&quot;Flask&quot;&gt;Flask&lt;/a&gt;， &lt;a href=&quot;http://gunicorn.org/&quot; title=&quot;Gunicorn&quot;&gt;Gunicorn&lt;/a&gt;， &lt;a href=&quot;http://supervisord.org/&quot; title=&quot;Supervisor&quot;&gt;Supervisor&lt;/a&gt;， &lt;a href=&quot;http://nginx.com/&quot; title=&quot;Nginx&quot;&gt;Nginx&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2&gt;配置用户环境&lt;/h2&gt;
+
+&lt;p&gt;因为要跑多个站，所以最好将他们完全隔离，每个站对应一个用户，于是我们有了：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; User        Site
+
+ bob         dylan     ##bob用户有一个dylan的站
+michael     jackson    ##michael用户有一个jackson的站
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注册成功后，会收到DO发来的&lt;code&gt;root&lt;/code&gt;账户的密码邮件，&lt;code&gt;ssh root@你的IP地址&lt;/code&gt;登录上去开始添加用户。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##推荐安装zsh作为默认shell
+sudo apt-get update
+sudo apt-get install zsh
+
+##安装oh-my-zsh插件
+cd ~/.
+##自动安装脚本
+wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+
+##添加用户bob
+##参数-d：指定用户目录
+##参数-m：如果目录不存在则创建
+##参数-s：只用用户使用的 shell
+useradd bob -d /home/bob -m -s /bin/zsh
+
+#添加用户michael
+useradd michael -d /home/michael -m -s /bin/zsh
+
+##以上参数也可以修改passwd文件来调整
+sudo vim /etc/passwd
+
+##sudo和用户组管理在
+visudo
+sudo vim /etc/sudoers
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;新增用户之后，需要解锁：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##为新增用户设置一个初始密码即可解锁
+passwd bob
+passwd michael
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;用ssh-keygen建立信任关系可以方便登录管理：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##本地机器
+##会在~/.ssh目录下生成秘钥文件id_rsa、id_rsa.pub
+ssh-keygen -t [rsa|dsa]
+
+##复制公钥文件id_rsa.pub
+scp ~/.ssh/id_rsa.pub bob@digitalocean:~/.ssh
+
+##VPS上，添加本地机器的信任关系
+cd ~/.ssh
+cat id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authorized_keys
+
+##OK，从本地机器登录到VPS的bob用户就不需要密码了
+##同理，也可以添加到michael用户的.ssh目录下
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更多资料可以阅读：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.chinaunix.net/old_jh/4/438660.html&quot; target=&quot;_blank&quot; class=&quot;external&quot;&gt;Linux的用户和用户组管理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sofish.de/1685&quot; target=&quot;_blank&quot; class=&quot;external&quot;&gt;把 Mac 上的 bash 换成 zsh&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://leeiio.me/bash-to-zsh-for-mac/&quot; target=&quot;_blank&quot; class=&quot;external&quot;&gt;zsh – 给你的Mac不同体验的Terminal&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/kongqz/article/details/6338690&quot; target=&quot;_blank&quot; class=&quot;external&quot;&gt;ssh-keygen的使用方法&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2014/03/server_setup.html&quot; target=&quot;_blank&quot; class=&quot;external&quot;&gt;Linux服务器的初步配置流程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2014/03/server_setup.html&quot; target=&quot;_blank&quot; class=&quot;external&quot;&gt;Linux服务器的初步配置流程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;为每个APP创建Virtualenv&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.virtualenv.org/en/latest/&quot; title=&quot;Virtualenv&quot;&gt;Virtualenv&lt;/a&gt;可以为每个Python应用创建独立的开发环境，使他们互不影响，Virtualenv能够做到：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在没有权限的情况下安装新套件&lt;/li&gt;
+  &lt;li&gt;不同应用可以使用不同的套件版本&lt;/li&gt;
+  &lt;li&gt;套件升级不影响其他应用&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;安装Virtualenv&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##先安装Python的包管理pip
+sudo apt-get install pip
+
+##用pip安装virtualenv
+sudo pip install virtualenv
+
+##建议用bob用户登录操作
+##bob用户创建dylan的virtualenv
+cd /home/bob
+virtualenv dylan
+
+##激活virtualenv
+cd /home/bob/dylan
+source ./bin/activate
+
+##取消激活只需
+deactivate
+
+##michael用户如法炮制即可
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;安装Flask&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://flask.pocoo.org/docs/&quot; title=&quot;Flask&quot;&gt;Flask&lt;/a&gt;是Python流行的一个web框架，但是Flask比Django轻量了许多，使用更加直观，这里并不展开讲Flask的细节，当做一个Hello Wordld来用就好了。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##安装Flask
+##依然在virtualenv activate的环境下
+pip install Flask
+
+##根目录下
+vim runserver.py
+
+##写入Flask的Hello World
+from flask import Flask
+app = Flask(__name__)
+
+@app.route(&#39;/&#39;)
+def hello_world():
+    return &#39;Hello World!&#39;
+
+    if __name__ == &#39;__main__&#39;:
+        app.run()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;写入之后，如果在本地机器上可以运行&lt;code&gt;python runserver.py&lt;/code&gt;，然后打开&lt;code&gt;127.0.0.1:5000&lt;/code&gt;看到Hello World!了，但在VPS，这样不行，等待后面配置吧。&lt;/p&gt;
+
+&lt;h2&gt;安装Gunicorn&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://gunicorn.org/&quot; title=&quot;Gunicorn&quot;&gt;Gunicorn&lt;/a&gt;是用于部署WSGI应用的，任何支持WSGI的都可以，虽说直接&lt;code&gt;python runserver.py&lt;/code&gt;这样网站也能跑起来，但那是方便开发而已，在线上环境，还是需要更高效的组件来做。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##安装Gunicorn
+##依然在Virtualenv环境下
+pip install gunicorn
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Gunicorn的配置是必须的，因为我们要上两个独立的站，所以不能都用默认的配置：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##在bob的dylan项目下
+cd /home/bob/dylan
+vim gunicorn.conf
+
+##文件内写入以下内容
+##指定workers的数目，使用多少个进程来处理请求
+##绑定本地端口
+workers = 3
+bind = &#39;127.0.0.1:8000&#39;
+
+##在michael的jackson项目下
+cd /home/michael/jackson
+vim gunicorn.conf
+
+##写入文件内容
+##与dylan的端口要不一样
+workers = 3
+bind = &#39;127.0.0.1:8100&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最终的目录结构应该是这样的&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/home/
+└── bob  //用户目录
+│   ├── logs
+│   └── dylan  //项目目录
+│       ├── bin
+│       │   ├── activate
+│       │   ├── easy_install
+│       │   ├── gunicorn
+│       │   ├── pip
+│       │   └── python
+│       ├── include
+│       │   └── python2.7 -&amp;gt; /usr/include/python2.7
+│       ├── lib
+│       │   └── python2.7
+        ├── local
+│       │   ├── bin -&amp;gt; /home/shenye/shenyefuli/bin
+│       │   ├── include -&amp;gt; /home/shenye/shenyefuli/include
+│       │   └── lib -&amp;gt; /home/shenye/shenyefuli/lib
+│       │
+│       │ //以上目录是Virtualenv生成的
+│       ├── gunicorn_conf.py  //Gunicorn的配置文件
+│       └── runserver.py  //hello_world程序
+│
+│
+└── michael  //用户目录
+    ├── logs
+    └── jackson //项目目录
+        ├── bin
+        │   ├── activate
+        │   ├── easy_install
+        │   ├── gunicorn
+        │   ├── pip
+        │   └── python
+        ├── include
+        │   └── python2.7 -&amp;gt; /usr/include/python2.7
+        ├── lib
+        │   └── python2.7
+        ├── local  //以上这些文件都是Virtualenv需要的
+        │   ├── bin -&amp;gt; /home/shenye/shenyefuli/bin
+        │   ├── include -&amp;gt; /home/shenye/shenyefuli/include
+        │   └── lib -&amp;gt; /home/shenye/shenyefuli/lib
+        │
+        │ //以上目录是Virtualenv生成的
+        ├── gunicorn_conf.py  //Gunicorn的配置文件
+        └── runserver.py  //hello_world程序
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;安装Supervisor&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://supervisord.org/&quot; title=&quot;Supervisor&quot;&gt;Supervisor&lt;/a&gt;可以同时启动多个应用，最重要的是，当某个应用Crash的时候，他可以自动重启该应用，保证可用性。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##安装Supervisor
+##sudo安装
+sudo apt-get install supervisor
+
+##启动服务
+sudo service supervisor start
+##终止服务
+sudo service supervisor stop
+##也可以直接kill pid
+ps -A | grep supervisor
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;修改了程序代码，或者修改了配置，需要手动重启supervisor服务，尤其是摸不着头脑的错误的时候，重启最能解决问题！&lt;/p&gt;
+
+&lt;p&gt;安装好之后，开始配置各应用的supervisor服务：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##supervisor的配置文件位置在：
+/etc/supervisor/supervisor.conf
+
+##为了代码好看一些，我们分别放置各项目的配置文件
+##新建bob的dylan项目配置文件
+touch /etc/supervisor/conf.d/dylan.conf
+
+##文件内容
+[program:dylan]
+##注意项目目录和gunicorn的配置文件地址
+command=/home/bob/dylan/bin/gunicorn runserver:app -c /home/bob/dylan/gunicorn.conf
+directory=/home/bob/dylan
+user=bob
+autostart=true
+autorestart=true
+##log文件的位置
+stdout_logfile=/home/bob/logs/gunicorn_supervisor.log
+
+
+##新建michael的jackson项目配置文件
+touch /etc/supervisor/conf.d/jackson.conf
+
+##文件内容
+[program:jackson]
+command=/home/michael/jackson/bin/gunicorn runserver:app -c /home/michael/jackson/gunicorn.conf
+directory=/home/michael/jackson
+user=michael
+autostart=true
+autorestart=true
+stdout_logfile=/home/michael/logs/gunicorn_supervisor.log
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;写好配置之后：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##重新读取配置
+sudo supervisorctl reread
+
+##启动服务
+sudo supervisorctl start dylan
+sudo supervisorctl start jackson
+
+##停止服务
+sudo supervisorctl stop dylan
+sudo supervisorctl stop jackson
+
+##有问题就重启supervisor的总服务
+sudo service supervisor stop
+sudo service supervisor start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;安装Nginx&lt;/h2&gt;
+
+&lt;p&gt;有了&lt;a href=&quot;http://gunicorn.org/&quot; title=&quot;Gunicorn&quot;&gt;Gunicorn&lt;/a&gt;、&lt;a href=&quot;http://supervisord.org/&quot; title=&quot;Supervisor&quot;&gt;Supervisor&lt;/a&gt;，本地的环境的算是搭好了，但是我们需要让VPS上的网站从外网可以访问，这时候需要Nginx。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nginx.com/&quot; title=&quot;Nginx&quot;&gt;Nginx&lt;/a&gt;是轻量级、性能强、占用资源少，能很好的处理高并发的反向代理软件，是我们的不二选择：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##安装Nginxx
+sudo apt-get install nginx
+
+##启动服务
+sudo service nginx start
+
+##查看VPS的IP地址
+ifconfig eth0 | grep inet | awk &#39;{ print $2  }&#39;
+
+##重启和暂停服务
+sudo service nginx restart
+sudo service nginx stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nginx的配置文件和Supervisor类似，不同的程序可以分别配置，然后被总配置文件include：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;##Nginx的配置文件地址
+/etc/nginx/nginx.conf
+
+##新建bob的dylan项目配置文件
+##在sites-available目录下
+touch /etc/nginx/sites-available/dylan.com
+
+##文件内容
+server {
+        listen   80;             //端口
+        server_name dylan.com;   //访问域名
+
+        root /home/bob/dylan/;
+        access_log /home/bob/logs/access.log;
+        error_log /home/bob/logs/access.log;
+
+        location / {
+                proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_redirect off;
+                if (!-f $request_filename) {
+                        proxy_pass http://127.0.0.1:8000;  //这里是dylan的gunicorn端口
+                        break;
+                }
+        }
+}
+
+
+##michael的jackson项目
+touch /etc/nginx/sites-available/jackson.com
+
+##文件内容
+server {
+        listen   80;               //端口
+        server_name jackson.com;   //访问域名
+
+        root /home/michael/jackson/;
+        access_log /home/michael/logs/access.log;
+        error_log /home/michael/logs/access.log;
+
+        location / {
+                proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_redirect off;
+                if (!-f $request_filename) {
+                        proxy_pass http://127.0.0.1:8100;  //这里是jackson的gunicorn端口
+                        break;
+                }
+        }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;配置完成之后，&#39;sudo service nginx restart&#39;重启一下服务，再配置一下本地的Hosts，打开浏览器应该就能看到了。&lt;/p&gt;
+
+&lt;h2&gt;完成&lt;/h2&gt;
+
+&lt;p&gt;至此，一个完整的环境搭建就完成了，推荐试用&lt;a href=&quot;https://www.digitalocean.com/?refcode=f95f7297ed94&quot; title=&quot;DigitalOcean&quot;&gt;DigitalOcean&lt;/a&gt;的VPS看看，&lt;code&gt;2014SSD&lt;/code&gt;（或请尝试&lt;code&gt;10TOSHIP&lt;/code&gt;）的优惠码也可以试试看看有没有过期哦~&lt;/p&gt;
 </content>
    </entry>
    

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         Hyphen
+    -->
+    <meta charset="utf-8" />
+    <title>openstack horizon 开发入门 | Hyphen's Blog</title>
+    <meta property="wb:webmaster" content="da16ead91e9cebac" />
+    <meta name="author" content="Hyphen" />
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="Hyphen's Blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/atom.xml" />
+    <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="home-menu">
+        <div class="home-icon-con">
+            <a class="home-menu-icon" href="/">Hyphen</a>
+            <a class="home-follow" href="#" title="Contact Me">+</a>
+        </div>
+        <div class="home-contact">
+            <a href="http://weibo.com/344736086/" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="/js/prettify/prettify.css" />
+<style type="text/css">
+    body { background:#e8e8e8; }
+    @media screen and (max-width: 750px){
+        body { background:#fff; }
+    }
+    @media screen and (max-width: 1020px){
+        body { background:#fff; }
+    }
+</style>
+
+<div id="content">
+    <div class="entry">
+        <h1 class="entry-title"><a href="/openstack-horizon-develop" title="openstack horizon 开发入门">openstack horizon 开发入门</a></h1>
+        <p class="entry-date">2014-03-16</p>
+        <p>Author:<a href="http://weibo.com/344736086">Hyphen</a></p>
+
+<h4>这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。</h4>
+
+<h2>1、前端</h2>
+
+<p>首先是前端的技术，之前只知道简单的html语法，对CSS，JS，JQUERY等一窍不通。年后，小组开发人手不是很够，果断转行去开发，记得刚开始，搞个练手的界面，搞了两天才实现。而且前提是别人写好的结构，拿过来修改使用。熟读唐诗三百首，不会做诗也会吟的境界。但是一旦碰到没有样例的界面，那就头疼了，因为很多标签都是不认识的。但只能问人，搜索用法，记得有几天，写几个界面，搞得有点喘不过气来。但事实证明一句老话，当你感觉到难受的时候，是你学东西最多的时候。因为不懂，所以觉得很难，因为一直坚持，所以特别难受，中途多次想不做前端了，让其他人做，只写后端好了，但还是一直坚持。截止本稿时间，终于学到了一些基本前端，现在做OPensack的控制台界面开发勉强够用。</p>
+
+<h2>2、后端</h2>
+
+<p>开发后端直接使用各个服务的client，因为Horizon就是这么干的。</p>
+
+<p>通过实例化一个通过授权认证的客户端对象，然后可以进行后续的操作</p>
+
+<h3>2.1、nova</h3>
+
+<p>nova操作</p>
+
+<pre><code>import novaclient.v1_1.client as nvclient
+nova = nvclient.Client(auth_url=auth_dict["--os-auth-url"],\
+                        username=auth_dict["--os-username"],\
+                        api_key=auth_dict["--os-password"],\
+                        project_id=auth_dict["--os-tenant-name"])
+</code></pre>
+
+<h3>2.2 keystone</h3>
+
+<pre><code>import keystoneclient.v2_0.client as ksclient                     
+keystone = ksclient.Client(auth_url = auth_dict["--os-auth-url"], \
+                                    username = auth_dict["--os-username"], \
+                                    password = auth_dict["--os-password"], \
+                                    tenant_name = auth_dict["--os-tenant-name"])
+</code></pre>
+
+<h3>2.3 neutron</h3>
+
+<pre><code>import keystoneclient.v2_0.client as ksclient
+keystone = ksclient.Client(auth_url = auth_dict["--os-auth-url"], \
+                                    username = auth_dict["--os-username"], \
+                                    password = auth_dict["--os-password"], \
+                                    tenant_name = auth_dict["--os-tenant-name"])
+</code></pre>
+
+<p>或者这样：</p>
+
+<pre><code>import keystoneclient.v2_0.client as ksclient  
+keystone = ksclient.Client(auth_url = auth_dict["--os-auth-url"], \  
+                                    username = auth_dict["--os-username"], \  
+                                    password = auth_dict["--os-password"], \  
+                                    tenant_name = auth_dict["--os-tenant-name"])  
+
+endpoint_url = keystone.service_catalog.url_for(service_type='network')  
+token = keystone.auth_token  
+neutron2 = neutronclient.Client(endpoint_url=endpoint_url, token=token) 
+neutron = neutronclient.Client(auth_url=auth_dict["--os-auth-url"],
+username=auth_dict["--os-username"],
+password=auth_dict["--os-password"],
+tenant_name=auth_dict["--os-tenant-name"])                                   
+</code></pre>
+
+<h4>这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。</h4>
+
+<h2>1、前端</h2>
+
+<p>首先是前端的技术，之前只知道简单的html语法，对CSS，JS，JQUERY等一窍不通。年后，小组开发人手不是很够，果断转行去开发，记得刚开始，搞个练手的界面，搞了两天才实现。而且前提是别人写好的结构，拿过来修改使用。熟读唐诗三百首，不会做诗也会吟的境界。但是一旦碰到没有样例的界面，那就头疼了，因为很多标签都是不认识的。但只能问人，搜索用法，记得有几天，写几个界面，搞得有点喘不过气来。但事实证明一句老话，当你感觉到难受的时候，是你学东西最多的时候。因为不懂，所以觉得很难，因为一直坚持，所以特别难受，中途多次想不做前端了，让其他人做，只写后端好了，但还是一直坚持。截止本稿时间，终于学到了一些基本前端，现在做OPensack的控制台界面开发勉强够用。</p>
+
+<h2>2、后端</h2>
+
+<p>开发后端直接使用各个服务的client，因为Horizon就是这么干的。</p>
+
+<p>通过实例化一个通过授权认证的客户端对象，然后可以进行后续的操作</p>
+
+<h3>2.1、nova</h3>
+
+<p>nova操作</p>
+
+<pre><code>import novaclient.v1_1.client as nvclient
+nova = nvclient.Client(auth_url=auth_dict["--os-auth-url"],\
+                        username=auth_dict["--os-username"],\
+                        api_key=auth_dict["--os-password"],\
+                        project_id=auth_dict["--os-tenant-name"])
+</code></pre>
+
+<h3>2.2 keystone</h3>
+
+<pre><code>import keystoneclient.v2_0.client as ksclient                     
+keystone = ksclient.Client(auth_url = auth_dict["--os-auth-url"], \
+                                    username = auth_dict["--os-username"], \
+                                    password = auth_dict["--os-password"], \
+                                    tenant_name = auth_dict["--os-tenant-name"])
+</code></pre>
+
+<h3>2.3 neutron</h3>
+
+<pre><code>import keystoneclient.v2_0.client as ksclient
+keystone = ksclient.Client(auth_url = auth_dict["--os-auth-url"], \
+                                    username = auth_dict["--os-username"], \
+                                    password = auth_dict["--os-password"], \
+                                    tenant_name = auth_dict["--os-tenant-name"])
+</code></pre>
+
+<p>或者这样：</p>
+
+<pre><code>import keystoneclient.v2_0.client as ksclient  
+keystone = ksclient.Client(auth_url = auth_dict["--os-auth-url"], \  
+                                    username = auth_dict["--os-username"], \  
+                                    password = auth_dict["--os-password"], \  
+                                    tenant_name = auth_dict["--os-tenant-name"])  
+
+endpoint_url = keystone.service_catalog.url_for(service_type='network')  
+token = keystone.auth_token  
+neutron2 = neutronclient.Client(endpoint_url=endpoint_url, token=token) 
+neutron = neutronclient.Client(auth_url=auth_dict["--os-auth-url"],
+username=auth_dict["--os-username"],
+password=auth_dict["--os-password"],
+tenant_name=auth_dict["--os-tenant-name"])                                   
+</code></pre>
+
+
+        <div id="disqus_container">
+            <div style="margin-bottom:20px" class="right">
+                <script type="text/javascript" charset="utf-8">
+                (function(){
+                  var _w = 86 , _h = 16;
+                  var param = {
+                    url:location.href,
+                    type:'6',
+                    count:'', /**是否显示分享数，1显示(可选)*/
+                    appkey:'', /**您申请的应用appkey,显示分享来源(可选)*/
+                    title:'', /**分享的文字内容(可选，默认为所在页面的title)*/
+                    pic:'', /**分享图片的路径(可选)*/
+                    ralateUid:'2046653151', /**关联用户的UID，分享微博会@该用户(可选)*/
+                    language:'zh_cn', /**设置语言，zh_cn|zh_tw(可选)*/
+                    rnd:new Date().valueOf()
+                  }
+                  var temp = [];
+                  for( var p in param ){
+                    temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
+                  }
+                  document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
+                })()
+                </script>
+            </div>
+            <a href="#" class="comment" onclick="return false;">点击查看评论</a>
+            <div id="disqus_thread"></div>
+        </div>
+    </div>
+
+    <div class="sidenav">
+    <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=2046653151&verifier=cf840898&dpc=1"></iframe>
+    </div>
+
+    <div class="sidenav">
+        <h2>Cloud</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/hello-cloud">cloud computing</a></li>
+        
+            <li><a href="/openstack-horizon-develop">openstack horizon 开发入门</a></li>
+        
+            <li><a href="/openstack-horizon-develop">openstack horizon 开发入门</a></li>
+        
+            <li><a href="/test">VPS环境搭建详解 (Virtualenv+Gunicorn+Supervisor+Nginx)</a></li>
+        
+        </ul>
+
+        <h2>Coding</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/hello-mac">hello mac</a></li>
+        
+        </ul>
+
+        <h2>Thinking</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/about-me">about me</a></li>
+        
+        </ul>
+    </div>
+</div>
+
+<script src="/js/post.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+        $(function(){
+            $('.home-follow').click(function(e){
+                e.preventDefault();
+
+                if($('.home-contact').is(':visible')){
+                    $('.home-contact').slideUp(100);
+                }else{
+                    $('.home-contact').slideDown(100);
+                }
+            });
+        })
+    </script>
+</body>
+</html>

@@ -45,6 +45,21 @@
                 <div class="title-desc">cloud make our world more effeciency!</div>
             </li>
         
+            <li>
+                <h2><a href="/openstack-horizon-develop">openstack horizon 开发入门</a></h2>
+                <div class="title-desc">SDK开发入门简介</div>
+            </li>
+        
+            <li>
+                <h2><a href="/openstack-horizon-develop">openstack horizon 开发入门</a></h2>
+                <div class="title-desc">SDK开发入门简介</div>
+            </li>
+        
+            <li>
+                <h2><a href="/test">VPS环境搭建详解 (Virtualenv+Gunicorn+Supervisor+Nginx)</a></h2>
+                <div class="title-desc">VPS环境搭建就是去理解各种概念的过程，这篇博客记录了在VPS上搭建Python环境的过程，其中除了Python特性的东西，基本概念是相通的。关键字：Python, Virtualenv, Flask, Gunicorn, Supervisor, Nginx</div>
+            </li>
+        
         </ul>
     </div>
     <div class="aside">
