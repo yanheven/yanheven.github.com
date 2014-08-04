@@ -4,7 +4,7 @@
    <title>Hyphen's Blog</title>
    <link href="http://hyphen.tk/atom.xml" rel="self" type="application/atom+xml"/>
    <link href="http://hyphen.tk" rel="alternate" type="text/html" />
-   <updated>2014-08-04T01:55:43+08:00</updated>
+   <updated>2014-08-04T12:36:29+08:00</updated>
    <id>http://hyphen.tk</id>
    <author>
      <name></name>
@@ -13,427 +13,66 @@
 
    
    <entry>
-     <title>Tabby</title>
-     <link href="http://hyphen.tk/tabby"/>
-     <updated>2013-04-12T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/tabby</id>
-     <content type="html">&lt;p&gt;用&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot;&gt;Tabby&lt;/a&gt;有一阵子了，最近把细节完善，发布在了Chrome Store。&lt;/p&gt;
+     <title>hello mac</title>
+     <link href="http://hyphen.tk/hello-mac"/>
+     <updated>2014-08-04T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/hello-mac</id>
+     <content type="html">&lt;h1&gt;Hello Mac&lt;/h1&gt;
 
-&lt;p&gt;他的功能是，当你打开几十上百个Chrome标签，很占资源，不想加入书签，也不想存入Instapaper等Read It Later的东西，只看一次，但就是不想现在看，这时候只要在页面点击右键，选择“暂存到Tabby”即可。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-pro1.png&quot; alt=&quot;Tabby&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;coding with Mac is really effeciency&lt;/h4&gt;
 
-&lt;p&gt;你可以设置使用快捷键（默认关闭），要打开暂存的标签，只需点击Tabby的图标。因为使用了Chrome的书签，即使你卸载插件，还没来得及看的也不会丢失，也会默认同步到别的设备。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;print &quot;hello mac&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-pro2.png&quot; alt=&quot;Tabby&quot; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;better coding style&lt;/h4&gt;
 
-&lt;p&gt;推荐一本书&lt;a href=&quot;http://read.douban.com/ebook/709141/?referral_code=e6acsgl3&quot; title=&quot;我是个年轻人，我心情不太好&quot;&gt;我是个年轻人，我心情不太好&lt;/a&gt;，当时是他的简介让我动心了一下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for i in range(1,?)
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;&lt;p&gt;我25岁，读过一个硕士，但是退学了。我被时间、空间、意义这些事情烦扰着。我知道的东西多得难以置信。我知道名字，年份。数以百计。我知道谁第一个上的珠穆朗玛峰。我知道谁导演了那些美国最蹩脚的肥皂剧。我知道亚里士多德讲的话是啥意思。我知道时间在太阳上会走得慢一点……&lt;/p&gt;
+&lt;h4&gt;better life style&lt;/h4&gt;
 
-&lt;p&gt;但是，我知道这些有什么意义呢？&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;while True:
+    coding
+    if home:
+        sleep early
+    else:
+        coding
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;我的生活仍旧是一团糟。&lt;/p&gt;
+&lt;h4&gt;coding anywhere since mac is so portable&lt;/h4&gt;
 
-&lt;p&gt;不，连一团糟都不是，它是一片空白。&lt;/p&gt;
-
-&lt;p&gt;我没有女朋友，甚至没有很好很好的朋友。我有一个哥哥，还有一个比我小很多、还在上幼儿园的“伙伴”。可他们也不算是朋友。&lt;/p&gt;
-
-&lt;p&gt;要是我能有一种非常靠谱的感觉，觉得一切都会好起来，那该多好。&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;不指望这本书能喂你多大一碗鸡汤，就是让你知道这个年纪的共同态，而且或许有解决办法。&lt;/p&gt;
-
-&lt;p&gt;好吧，去下载插件吧：
-&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-440.png&quot; alt=&quot;Tabby&quot; width=&quot;300&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;site=[&quot;home&quot;,&quot;part&quot;,&quot;cafe&quot;,&quot;others&quot;]
+for i in site:
+    coding
+&lt;/code&gt;&lt;/pre&gt;
 </content>
    </entry>
    
    <entry>
-     <title>谈谈刚需和360影视</title>
-     <link href="http://hyphen.tk/needs-video"/>
-     <updated>2012-11-22T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/needs-video</id>
-     <content type="html">&lt;h2&gt;很久以前&lt;/h2&gt;
+     <title>cloud computing</title>
+     <link href="http://hyphen.tk/hello-cloud"/>
+     <updated>2014-08-04T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/hello-cloud</id>
+     <content type="html">&lt;h1&gt;&lt;a href=&quot;/hello-cloud&quot; title=&quot;cloud computing&quot;&gt;cloud computing&lt;/a&gt;&lt;/h1&gt;
 
-&lt;p&gt;很欠的说，一年半之前，我非常想做影视导航站，构思也近完整。当时试用了几个同类站，基本上能确定，这些产品经理不追美剧。&lt;a href=&quot;http://v.360.cn&quot;&gt;360影视&lt;/a&gt;在2011年4月下旬发布，跟我的想法同期，不过我发现他却是几个月之后了。&lt;/p&gt;
+&lt;p&gt;2014-08-04   By &lt;a href=&quot;http://hyphen.tk/&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2&gt;需求很简单&lt;/h2&gt;
-
-&lt;p&gt;对于追剧集的来说，需求其实很简单：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;找到需要的剧集&lt;/li&gt;
-&lt;li&gt;在线看地址或下载链接（在线最好）&lt;/li&gt;
-&lt;li&gt;记住我看到哪了&lt;/li&gt;
-&lt;li&gt;更新及时&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;这样简单的需求，那么多站做的我连吐槽的兴趣都没有。好吧，360影视满足了上面的需求，所以我用他，又因为我用，所以才吐槽：&lt;/p&gt;
-
-&lt;h2&gt;吐槽360影视&lt;/h2&gt;
-
-&lt;h3&gt;一个剧集&lt;/h3&gt;
-
-&lt;p&gt;各站对一个剧集有多季的处理，除了豆瓣电影可以方便完整的链接到其他季，其他各站几乎都独立了每一季，这是糟糕的体验，人为增大&lt;strong&gt; “找到需要的剧集” &lt;/strong&gt;的难度。看下图：
-&lt;img src=&quot;/images/360video/sp-search.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-我是不会明白这样做的好处，得到的只是难受、难受。&lt;/p&gt;
-
-&lt;h3&gt;new标识&lt;/h3&gt;
-
-&lt;p&gt;new标识绝对是互联网上最被滥用的图标之一。有些地方用的真让人莫名的恼火：
-&lt;img src=&quot;/images/360video/baidu-new.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-这是百度首页网址导航的new标识，难以理解，猜测他根据我的浏览记录来决定是否显示new，但是Big Bang我看过了却还显示，所以这个逻辑行不通，只好猜测他是根据绝对时间的new程度来显示，这就无法满足&lt;strong&gt; “记住我看到哪了” &lt;/strong&gt;需求，如果我有很久一段时间没看，提示失去了参考意义，而且点一下链接，new就会消失，我只能呵呵了。完全不可用。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/360video/2b-sohu.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-再看搜狐视频的new标识，3、4集都标上了new，你却根本不管我到底看了没，看过3了，3上面的new还在，也是混乱了正常秩序，没有安全感，不靠谱。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/360video/2b-360.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-360影视的这个new的定义也很奇怪，我看过了new还在，过了两个星期了new也还在，我只能推断他的逻辑就是，最新的一集就是需要标new的那一集，真把用户当白痴了，不过他稍好一点的是，这个毫无意义的标识不会捣乱。&lt;/p&gt;
-
-&lt;p&gt;那到底怎样做才好呢，既然每个剧集里面会标明看过与否，那么在我正在追的美剧的集合页，明确的告诉我，我赶上最新一集某剧还差多少就好了啊。
-&lt;img src=&quot;/images/360video/new-out.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-看到这，也就能体会独立每一季出来有多恶心了。&lt;/p&gt;
-
-&lt;h3&gt;注册用户&lt;/h3&gt;
-
-&lt;p&gt;我明白，像这样一个刚需产品，又通过360浏览器导航过来的，大多都是低端用户，首页做成那个样子无可厚非，可是当我顶着极大的不情愿注册了用户之后，能不能稍微体谅下注册用户的心呢？&lt;/p&gt;
-
-&lt;p&gt;我猜想根据产品的设计，用户注册就是为了标记自己想看的剧集，方便更快更准的追剧，可是每次打开还是那个国产垃圾横行的首页，你让小清新们怎么看的上呢？&lt;/p&gt;
-
-&lt;p&gt;好啦，我就忍一下，多点一下“我的影视”吧：
-&lt;img src=&quot;/images/360video/360-home.jpg&quot; alt=&quot;ssh key success&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;发现问题没，把我主动标记了的影视放在下面，要把那些自作聪明的推荐作品放在上面，并且一个都没有推荐，这不是耍流氓的干活还是什么滴干活？&lt;/p&gt;
-
-&lt;p&gt;再综合上面new标识最后一条，基本上，网站的使用效率被这些恶心的细节全面拉低，需要很多无谓的操作，才能到达我的真正目的。&lt;/p&gt;
-
-&lt;h3&gt;安全感&lt;/h3&gt;
-
-&lt;p&gt;我最近比较喜欢用安全感这个概念，大意就是我在乎的事情你都能很好的解决，并不需要我过多的操心。
-&lt;img src=&quot;/images/360video/homeland.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-看过与否倒是一目了然，可当我只是看了几眼，并不想接着看下去，或者手贱点了后面的某一集，我就得人肉去记住，我没看过第一集，只是手贱点了一下，下次想看的时候得从第一集看，一定要记得，一定。&lt;/p&gt;
-
-&lt;p&gt;呵呵，那我还要你记干嘛呢？&lt;/p&gt;
-
-&lt;h2&gt;顺道吐槽社交&lt;/h2&gt;
-
-&lt;p&gt;看到这个需求人很多，在移动端尤甚。有个叫“段落”的电视导航应用，主要功能是电视节目早知道，现在电视节目有精彩到需要看着预告时间等的程度吗？我表示怀疑。不过“段落”主打的是社交，可以跟同时看“非诚勿扰”的观众交流哦~&lt;/p&gt;
-
-&lt;p&gt;我只想说，&lt;strong&gt;社你妈X交&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2&gt;真有那么困难吗&lt;/h2&gt;
-
-&lt;p&gt;是的，这个命题很难以理解，来看看百度视频的例子，美剧在百度的搜索量肯定不小：
-&lt;img src=&quot;/images/360video/baidu-search.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-继续吐槽那个无法理解的new标识，总体看起来不错哦，提供了好几个视频服务商，点开过的链接，自然的变不同颜色，看起来很自然，但是满足 &lt;strong&gt;“记住我看到哪儿”&lt;/strong&gt; 的需求还是不可靠，就没有安全感。&lt;/p&gt;
-
-&lt;p&gt;再看看假如我要追一个剧集，那么在百度视频里面该怎么做呢？
-&lt;img src=&quot;/images/360video/baidu-video.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-点了，好久，终于发现了这个藏起来的“订阅”按钮，订阅，订阅，呵呵，订阅！&lt;/p&gt;
-
-&lt;p&gt;在回到百度视频的首页，我是无法找到我刚才的“订阅”操作，对首页有任何影响，参考上面的“注册用户”一节，百度首页上也没什么特别的变化，所以，至此，我不知道这个订阅按钮到底有什么作用。&lt;/p&gt;
-
-&lt;p&gt;百度视频首页，在众多傻逼一样的new标识之下，我还是被吸引到了一个叫“我的随心看”的频道，以为可以快速打开我订阅的剧集，原来是“豆瓣猜”啊，混乱至极。&lt;/p&gt;
-
-&lt;h2&gt;结语&lt;/h2&gt;
-
-&lt;p&gt;本来想心平气和的吐槽下，毕竟360影视做的正常的地方还是有的，可是说着说着还是不免激动了，哎。&lt;/p&gt;
+&lt;p&gt;今天是个好日子。&lt;/p&gt;
 </content>
    </entry>
    
    <entry>
-     <title>谈谈刚需和360影视</title>
-     <link href="http://hyphen.tk/needs-video"/>
-     <updated>2012-11-22T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/needs-video</id>
-     <content type="html">&lt;h2&gt;很久以前&lt;/h2&gt;
-
-&lt;p&gt;很欠的说，一年半之前，我非常想做影视导航站，构思也近完整。当时试用了几个同类站，基本上能确定，这些产品经理不追美剧。&lt;a href=&quot;http://v.360.cn&quot;&gt;360影视&lt;/a&gt;在2011年4月下旬发布，跟我的想法同期，不过我发现他却是几个月之后了。&lt;/p&gt;
-
-&lt;h2&gt;需求很简单&lt;/h2&gt;
-
-&lt;p&gt;对于追剧集的来说，需求其实很简单：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;找到需要的剧集&lt;/li&gt;
-&lt;li&gt;在线看地址或下载链接（在线最好）&lt;/li&gt;
-&lt;li&gt;记住我看到哪了&lt;/li&gt;
-&lt;li&gt;更新及时&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;这样简单的需求，那么多站做的我连吐槽的兴趣都没有。好吧，360影视满足了上面的需求，所以我用他，又因为我用，所以才吐槽：&lt;/p&gt;
-
-&lt;h2&gt;吐槽360影视&lt;/h2&gt;
-
-&lt;h3&gt;一个剧集&lt;/h3&gt;
-
-&lt;p&gt;各站对一个剧集有多季的处理，除了豆瓣电影可以方便完整的链接到其他季，其他各站几乎都独立了每一季，这是糟糕的体验，人为增大&lt;strong&gt; “找到需要的剧集” &lt;/strong&gt;的难度。看下图：
-&lt;img src=&quot;/images/360video/sp-search.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-我是不会明白这样做的好处，得到的只是难受、难受。&lt;/p&gt;
-
-&lt;h3&gt;new标识&lt;/h3&gt;
-
-&lt;p&gt;new标识绝对是互联网上最被滥用的图标之一。有些地方用的真让人莫名的恼火：
-&lt;img src=&quot;/images/360video/baidu-new.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-这是百度首页网址导航的new标识，难以理解，猜测他根据我的浏览记录来决定是否显示new，但是Big Bang我看过了却还显示，所以这个逻辑行不通，只好猜测他是根据绝对时间的new程度来显示，这就无法满足&lt;strong&gt; “记住我看到哪了” &lt;/strong&gt;需求，如果我有很久一段时间没看，提示失去了参考意义，而且点一下链接，new就会消失，我只能呵呵了。完全不可用。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/360video/2b-sohu.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-再看搜狐视频的new标识，3、4集都标上了new，你却根本不管我到底看了没，看过3了，3上面的new还在，也是混乱了正常秩序，没有安全感，不靠谱。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/360video/2b-360.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-360影视的这个new的定义也很奇怪，我看过了new还在，过了两个星期了new也还在，我只能推断他的逻辑就是，最新的一集就是需要标new的那一集，真把用户当白痴了，不过他稍好一点的是，这个毫无意义的标识不会捣乱。&lt;/p&gt;
-
-&lt;p&gt;那到底怎样做才好呢，既然每个剧集里面会标明看过与否，那么在我正在追的美剧的集合页，明确的告诉我，我赶上最新一集某剧还差多少就好了啊。
-&lt;img src=&quot;/images/360video/new-out.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-看到这，也就能体会独立每一季出来有多恶心了。&lt;/p&gt;
-
-&lt;h3&gt;注册用户&lt;/h3&gt;
-
-&lt;p&gt;我明白，像这样一个刚需产品，又通过360浏览器导航过来的，大多都是低端用户，首页做成那个样子无可厚非，可是当我顶着极大的不情愿注册了用户之后，能不能稍微体谅下注册用户的心呢？&lt;/p&gt;
-
-&lt;p&gt;我猜想根据产品的设计，用户注册就是为了标记自己想看的剧集，方便更快更准的追剧，可是每次打开还是那个国产垃圾横行的首页，你让小清新们怎么看的上呢？&lt;/p&gt;
-
-&lt;p&gt;好啦，我就忍一下，多点一下“我的影视”吧：
-&lt;img src=&quot;/images/360video/360-home.jpg&quot; alt=&quot;ssh key success&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;发现问题没，把我主动标记了的影视放在下面，要把那些自作聪明的推荐作品放在上面，并且一个都没有推荐，这不是耍流氓的干活还是什么滴干活？&lt;/p&gt;
-
-&lt;p&gt;再综合上面new标识最后一条，基本上，网站的使用效率被这些恶心的细节全面拉低，需要很多无谓的操作，才能到达我的真正目的。&lt;/p&gt;
-
-&lt;h3&gt;安全感&lt;/h3&gt;
-
-&lt;p&gt;我最近比较喜欢用安全感这个概念，大意就是我在乎的事情你都能很好的解决，并不需要我过多的操心。
-&lt;img src=&quot;/images/360video/homeland.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-看过与否倒是一目了然，可当我只是看了几眼，并不想接着看下去，或者手贱点了后面的某一集，我就得人肉去记住，我没看过第一集，只是手贱点了一下，下次想看的时候得从第一集看，一定要记得，一定。&lt;/p&gt;
-
-&lt;p&gt;呵呵，那我还要你记干嘛呢？&lt;/p&gt;
-
-&lt;h2&gt;顺道吐槽社交&lt;/h2&gt;
-
-&lt;p&gt;看到这个需求人很多，在移动端尤甚。有个叫“段落”的电视导航应用，主要功能是电视节目早知道，现在电视节目有精彩到需要看着预告时间等的程度吗？我表示怀疑。不过“段落”主打的是社交，可以跟同时看“非诚勿扰”的观众交流哦~&lt;/p&gt;
-
-&lt;p&gt;我只想说，&lt;strong&gt;社你妈X交&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2&gt;真有那么困难吗&lt;/h2&gt;
-
-&lt;p&gt;是的，这个命题很难以理解，来看看百度视频的例子，美剧在百度的搜索量肯定不小：
-&lt;img src=&quot;/images/360video/baidu-search.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-继续吐槽那个无法理解的new标识，总体看起来不错哦，提供了好几个视频服务商，点开过的链接，自然的变不同颜色，看起来很自然，但是满足 &lt;strong&gt;“记住我看到哪儿”&lt;/strong&gt; 的需求还是不可靠，就没有安全感。&lt;/p&gt;
-
-&lt;p&gt;再看看假如我要追一个剧集，那么在百度视频里面该怎么做呢？
-&lt;img src=&quot;/images/360video/baidu-video.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-点了，好久，终于发现了这个藏起来的“订阅”按钮，订阅，订阅，呵呵，订阅！&lt;/p&gt;
-
-&lt;p&gt;在回到百度视频的首页，我是无法找到我刚才的“订阅”操作，对首页有任何影响，参考上面的“注册用户”一节，百度首页上也没什么特别的变化，所以，至此，我不知道这个订阅按钮到底有什么作用。&lt;/p&gt;
-
-&lt;p&gt;百度视频首页，在众多傻逼一样的new标识之下，我还是被吸引到了一个叫“我的随心看”的频道，以为可以快速打开我订阅的剧集，原来是“豆瓣猜”啊，混乱至极。&lt;/p&gt;
-
-&lt;h2&gt;结语&lt;/h2&gt;
-
-&lt;p&gt;本来想心平气和的吐槽下，毕竟360影视做的正常的地方还是有的，可是说着说着还是不免激动了，哎。&lt;/p&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>谈谈刚需和360影视</title>
-     <link href="http://hyphen.tk/needs-video"/>
-     <updated>2012-11-22T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/needs-video</id>
-     <content type="html">&lt;h2&gt;很久以前&lt;/h2&gt;
-
-&lt;p&gt;很欠的说，一年半之前，我非常想做影视导航站，构思也近完整。当时试用了几个同类站，基本上能确定，这些产品经理不追美剧。&lt;a href=&quot;http://v.360.cn&quot;&gt;360影视&lt;/a&gt;在2011年4月下旬发布，跟我的想法同期，不过我发现他却是几个月之后了。&lt;/p&gt;
-
-&lt;h2&gt;需求很简单&lt;/h2&gt;
-
-&lt;p&gt;对于追剧集的来说，需求其实很简单：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;找到需要的剧集&lt;/li&gt;
-&lt;li&gt;在线看地址或下载链接（在线最好）&lt;/li&gt;
-&lt;li&gt;记住我看到哪了&lt;/li&gt;
-&lt;li&gt;更新及时&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;这样简单的需求，那么多站做的我连吐槽的兴趣都没有。好吧，360影视满足了上面的需求，所以我用他，又因为我用，所以才吐槽：&lt;/p&gt;
-
-&lt;h2&gt;吐槽360影视&lt;/h2&gt;
-
-&lt;h3&gt;一个剧集&lt;/h3&gt;
-
-&lt;p&gt;各站对一个剧集有多季的处理，除了豆瓣电影可以方便完整的链接到其他季，其他各站几乎都独立了每一季，这是糟糕的体验，人为增大&lt;strong&gt; “找到需要的剧集” &lt;/strong&gt;的难度。看下图：
-&lt;img src=&quot;/images/360video/sp-search.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-我是不会明白这样做的好处，得到的只是难受、难受。&lt;/p&gt;
-
-&lt;h3&gt;new标识&lt;/h3&gt;
-
-&lt;p&gt;new标识绝对是互联网上最被滥用的图标之一。有些地方用的真让人莫名的恼火：
-&lt;img src=&quot;/images/360video/baidu-new.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-这是百度首页网址导航的new标识，难以理解，猜测他根据我的浏览记录来决定是否显示new，但是Big Bang我看过了却还显示，所以这个逻辑行不通，只好猜测他是根据绝对时间的new程度来显示，这就无法满足&lt;strong&gt; “记住我看到哪了” &lt;/strong&gt;需求，如果我有很久一段时间没看，提示失去了参考意义，而且点一下链接，new就会消失，我只能呵呵了。完全不可用。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/360video/2b-sohu.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-再看搜狐视频的new标识，3、4集都标上了new，你却根本不管我到底看了没，看过3了，3上面的new还在，也是混乱了正常秩序，没有安全感，不靠谱。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/360video/2b-360.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-360影视的这个new的定义也很奇怪，我看过了new还在，过了两个星期了new也还在，我只能推断他的逻辑就是，最新的一集就是需要标new的那一集，真把用户当白痴了，不过他稍好一点的是，这个毫无意义的标识不会捣乱。&lt;/p&gt;
-
-&lt;p&gt;那到底怎样做才好呢，既然每个剧集里面会标明看过与否，那么在我正在追的美剧的集合页，明确的告诉我，我赶上最新一集某剧还差多少就好了啊。
-&lt;img src=&quot;/images/360video/new-out.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-看到这，也就能体会独立每一季出来有多恶心了。&lt;/p&gt;
-
-&lt;h3&gt;注册用户&lt;/h3&gt;
-
-&lt;p&gt;我明白，像这样一个刚需产品，又通过360浏览器导航过来的，大多都是低端用户，首页做成那个样子无可厚非，可是当我顶着极大的不情愿注册了用户之后，能不能稍微体谅下注册用户的心呢？&lt;/p&gt;
-
-&lt;p&gt;我猜想根据产品的设计，用户注册就是为了标记自己想看的剧集，方便更快更准的追剧，可是每次打开还是那个国产垃圾横行的首页，你让小清新们怎么看的上呢？&lt;/p&gt;
-
-&lt;p&gt;好啦，我就忍一下，多点一下“我的影视”吧：
-&lt;img src=&quot;/images/360video/360-home.jpg&quot; alt=&quot;ssh key success&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;发现问题没，把我主动标记了的影视放在下面，要把那些自作聪明的推荐作品放在上面，并且一个都没有推荐，这不是耍流氓的干活还是什么滴干活？&lt;/p&gt;
-
-&lt;p&gt;再综合上面new标识最后一条，基本上，网站的使用效率被这些恶心的细节全面拉低，需要很多无谓的操作，才能到达我的真正目的。&lt;/p&gt;
-
-&lt;h3&gt;安全感&lt;/h3&gt;
-
-&lt;p&gt;我最近比较喜欢用安全感这个概念，大意就是我在乎的事情你都能很好的解决，并不需要我过多的操心。
-&lt;img src=&quot;/images/360video/homeland.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-看过与否倒是一目了然，可当我只是看了几眼，并不想接着看下去，或者手贱点了后面的某一集，我就得人肉去记住，我没看过第一集，只是手贱点了一下，下次想看的时候得从第一集看，一定要记得，一定。&lt;/p&gt;
-
-&lt;p&gt;呵呵，那我还要你记干嘛呢？&lt;/p&gt;
-
-&lt;h2&gt;顺道吐槽社交&lt;/h2&gt;
-
-&lt;p&gt;看到这个需求人很多，在移动端尤甚。有个叫“段落”的电视导航应用，主要功能是电视节目早知道，现在电视节目有精彩到需要看着预告时间等的程度吗？我表示怀疑。不过“段落”主打的是社交，可以跟同时看“非诚勿扰”的观众交流哦~&lt;/p&gt;
-
-&lt;p&gt;我只想说，&lt;strong&gt;社你妈X交&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2&gt;真有那么困难吗&lt;/h2&gt;
-
-&lt;p&gt;是的，这个命题很难以理解，来看看百度视频的例子，美剧在百度的搜索量肯定不小：
-&lt;img src=&quot;/images/360video/baidu-search.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-继续吐槽那个无法理解的new标识，总体看起来不错哦，提供了好几个视频服务商，点开过的链接，自然的变不同颜色，看起来很自然，但是满足 &lt;strong&gt;“记住我看到哪儿”&lt;/strong&gt; 的需求还是不可靠，就没有安全感。&lt;/p&gt;
-
-&lt;p&gt;再看看假如我要追一个剧集，那么在百度视频里面该怎么做呢？
-&lt;img src=&quot;/images/360video/baidu-video.jpg&quot; alt=&quot;ssh key success&quot; /&gt;
-点了，好久，终于发现了这个藏起来的“订阅”按钮，订阅，订阅，呵呵，订阅！&lt;/p&gt;
-
-&lt;p&gt;在回到百度视频的首页，我是无法找到我刚才的“订阅”操作，对首页有任何影响，参考上面的“注册用户”一节，百度首页上也没什么特别的变化，所以，至此，我不知道这个订阅按钮到底有什么作用。&lt;/p&gt;
-
-&lt;p&gt;百度视频首页，在众多傻逼一样的new标识之下，我还是被吸引到了一个叫“我的随心看”的频道，以为可以快速打开我订阅的剧集，原来是“豆瓣猜”啊，混乱至极。&lt;/p&gt;
-
-&lt;h2&gt;结语&lt;/h2&gt;
-
-&lt;p&gt;本来想心平气和的吐槽下，毕竟360影视做的正常的地方还是有的，可是说着说着还是不免激动了，哎。&lt;/p&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>Notty Notes</title>
-     <link href="http://hyphen.tk/notty-notes"/>
-     <updated>2012-10-17T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/notty-notes</id>
-     <content type="html">&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/notty-notes/ggbmjahbkbhakkfgjiggdclpmmpmhajn?hl=zh-CN&quot; title=&quot;Notty Notes&quot;&gt;Notty Notes&lt;/a&gt;是为我自己写的便签插件，满足基本需求，并且看起来比较舒适，这是我的目标。可以在Chrome Store中下载安装，感谢&lt;a href=&quot;http://www.douban.com/people/JGuo/&quot;&gt;靖哥哥&lt;/a&gt;帮我做宣传图：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/notty-notes/ggbmjahbkbhakkfgjiggdclpmmpmhajn?hl=zh-CN&quot; title=&quot;Notty Notes&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/backbonechrome/notes-logo.jpg&quot; alt=&quot;Notty Notes&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;主要有如下几个优势：&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;简单、美观&lt;/li&gt;
-    &lt;li&gt;离线使用&lt;/li&gt;
-    &lt;li&gt;自动保存&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;在背景上双击，就会添加新的便签，点击便签的标题部分可以单独配置背景主题、字号大小等。可以加锁，可以收起。&lt;/p&gt;
-
-&lt;p&gt;现在还没有做同步功能，仍在考虑之中，这个插件的完成，花了不少功夫，细节方面我认为想到做到很多，可以自行体会，如果有不满意的地方，欢迎吐槽。 截图看看：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/backbonechrome/notes-draft.jpg&quot; alt=&quot;Notes Draft&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;日子穿行而过，带来很多，也逝去很多，不管你愿不愿意接受，就这么自然的发生了。&lt;/p&gt;
-
-&lt;p&gt;追求的太多，必定是折磨，只是，不一定所有人都知道，折磨越久，快乐才更高。&lt;/p&gt;
-
-&lt;p&gt;怎样写这个插件，可以看我的教程：&lt;a href=&quot;http://beiyuu.com/backbone-js-chrome-extension/&quot; title=&quot;Backbone.js的使用及Chrome插件开发&quot;&gt;Backbone.js的使用及Chrome插件开发&lt;/a&gt;。&lt;/p&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>OverAPI</title>
-     <link href="http://hyphen.tk/overapi-cheatsheet"/>
-     <updated>2012-09-22T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/overapi-cheatsheet</id>
-     <content type="html">&lt;p&gt;&lt;a href=&quot;http://overapi.com&quot; title=&quot;OverAPI - Collecting all the cheat sheets&quot;&gt;OverAPI&lt;/a&gt;是一个从我自己的需求出发，搭建起来的项目。项目结构很简单，将常用语言的API很扁平的展现出来，方便翻阅和查找。&lt;/p&gt;
-
-&lt;p&gt;Chrome插件下载：&lt;a href=&quot;https://chrome.google.com/webstore/detail/oedodeocfdeegliepeeoieemhdgoijod?hl=zh-CN&quot; title=&quot;All Cheat Sheets&quot;&gt;All Cheat Sheets&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://overapi.com&quot; title=&quot;OverAPI - Collecting all the cheat sheets&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/overapi/overapi.jpg&quot; alt=&quot;OverAPI&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;生活在继续，遇到的人和事越来越繁杂，于是，满目的秋意、愉悦的欢叫，都像微风一样，带来的是美妙的简单。&lt;/p&gt;
-
-&lt;p&gt;我们总想拥有一切，可一切到底有多少，就像诺兰的处女作&lt;a href=&quot;http://movie.douban.com/subject/1397546/&quot; title=&quot;Following&quot;&gt;Following&lt;/a&gt;中表现的一样，一些物品只有在失去时才知道他存在过。&lt;/p&gt;
-
-&lt;p&gt;人生有目标才能前进，无论这个目标能否实现，OverAPI的目标是拥有一切，如果你有兴趣一起实现，可以联系我。&lt;/p&gt;
-
-&lt;p&gt;现在已经有：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/python/&quot;&gt;Python Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/jquery/&quot;&gt;jQuery Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/nodejs/&quot;&gt;NodeJS Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/php/&quot;&gt;PHP Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/ruby/&quot;&gt;Ruby Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/javascript/&quot;&gt;Javascript Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/actionscript/&quot;&gt;ActionScript Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/css/&quot;&gt;CSS Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/git/&quot;&gt;Git Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/svn/&quot;&gt;SVN Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/mysql/&quot;&gt;MySQL Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/regex/&quot;&gt;Regex Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/linux/&quot;&gt;Linux Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/html/&quot;&gt;HTML Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/html-dom/&quot;&gt;HTML-DOM Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://overapi.com/mod_rewrite/&quot;&gt;mod_rewrite Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</content>
-   </entry>
-   
-   <entry>
-     <title>听雨</title>
-     <link href="http://hyphen.tk/raining-in-chrome"/>
-     <updated>2012-04-18T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/raining-in-chrome</id>
-     <content type="html">&lt;p&gt;&lt;strong&gt;之前直接下载.crx文件的童鞋，现在可以把原来的卸载，直接在Chrome Web Store中下载了，地址：&lt;a href=&quot;https://chrome.google.com/webstore/detail/fkakmejoechmicbecchienoapbakancc&quot;&gt;It&#39;s Raining&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;来京快两年了，撑伞的次数屈指可数，有时候也会在心里暗暗后怕，是帝都的蓝天硬生生战胜了抑郁。&lt;/p&gt;
-
-&lt;p&gt;京城令人发指的秋天，蓝的清透，顶着这样的天，要是心底再泛起所谓的忧郁，自己都会鄙视自己。时常也会怀念连绵的阴雨，天色阴暗、空气清新、雨声滴答，单纯而静谧，就算假装想想心事也很有情调。&lt;/p&gt;
-
-&lt;p&gt;不得不说，有时候只是听着雨声，也能换个心情，也能专注起来。&lt;/p&gt;
-
-&lt;p&gt;近来对Chrome插件有点兴趣，又看到&lt;a href=&quot;http://www.rainymood.com&quot; title=&quot;Rainy Mood&quot;&gt;RainyMood&lt;/a&gt;，就试试写一个这样调整气氛心情的插件。Chrome的插件开发体验很棒，待整理下再发博客。另外感谢&lt;a href=&quot;http://www.softicons.com/free-icons/web-icons/vector-stylish-weather-icons-by-bartosz-kaszubowski/cloud-dark-rain-icon&quot;&gt;softicons&lt;/a&gt;提供漂亮的图标。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://movie.douban.com/subject/7054120/&quot; title=&quot;黑镜&quot;&gt;Black Mirror&lt;/a&gt;最近很火，豆瓣评分也非常高。我看完的时候，心中的赞叹感让我觉得应该写篇影评骂一骂，影评还没写，却发现我经常会想起里面的情景，所以我不得不低头承认，他确实拍的有那么一点深刻了。&lt;/p&gt;
-
-&lt;p&gt;美剧有时候看起来很右派，要完美，即使不完美，那一定得是感动。英剧显然就是2B青年的套路。现实有多2B，他就有多现实。把Black Mirror的每一集总结一下就是：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;1、我就是单纯要搞你，你看着办吧。&lt;/li&gt;
-&lt;li&gt;2、这就是未来。&lt;/li&gt;
-&lt;li&gt;3、科技让欺骗无处遁形，很好。&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;未来是现世一步步发展过去的。记得之前有一个问题：如果用电流刺激你的大脑，让你得到与真实环境刺激一样的神经感受，那么这到底算什么呢。我相信，总有一天技术会达到，但是现在离那也不遥远，互联网就在做这样的事情，我的这个小插件也是做同样的事情，你说这是杯具呢还是悲剧呢？&lt;/p&gt;
-
-&lt;p&gt;想体验，就点&lt;a href=&quot;https://chrome.google.com/webstore/detail/fkakmejoechmicbecchienoapbakancc&quot;&gt;这里&lt;/a&gt;下载吧，只支持&lt;a href=&quot;https://www.google.com/chrome&quot;&gt;Chrome&lt;/a&gt;浏览器哦！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/rainingchrome/rain.jpg&quot; alt=&quot;Raining&quot; /&gt;&lt;/p&gt;
+     <title>about me</title>
+     <link href="http://hyphen.tk/about-me"/>
+     <updated>2014-08-04T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/about-me</id>
+     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;I am a openstacker, pythoner, linuxer, macer adn learner.&lt;/h4&gt;
+
+&lt;h4&gt;I firmly believe the more I learn, the more I code, the more I can do to better our world &amp;amp; our life&lt;/h4&gt;
 </content>
    </entry>
    
