@@ -8,7 +8,7 @@ description: brief introduction of "AOP"
 
 Author:[Hyphen](http://weibo.com/344736086)
 
-#### What is AOP?
+#### what is "AOP"
 
 今天又接触到一个新名词--“AOP”，当我在电话听到这个词时，一头雾水，因为在学校里面学过OOA,OOD,当然还有OOP,就是没听过AOP.
 

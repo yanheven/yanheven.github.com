@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <title>Hyphen's Blog</title>
     <meta property="wb:webmaster" content="da16ead91e9cebac" />
+    <meta name="baidu-site-verification" content="FOjh43GBkR" />
     <meta name="author" content="Hyphen" />
     <meta name="renderer" content="webkit">
     <meta name="description" content="Hyphen's Blog" />
@@ -39,6 +40,11 @@
         <div class="cate-bar"><span id="cateBar"></span></div>
 
         <ul class="artical-list">
+        
+            <li>
+                <h2><a href="/what-is-aop">what is "AOP"</a></h2>
+                <div class="title-desc">brief introduction of "AOP"</div>
+            </li>
         
             <li>
                 <h2><a href="/hello-cloud">cloud computing</a></h2>
@@ -124,5 +130,9 @@
             });
         })
     </script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d0b5d5d8162cf74382a0d726ad7f06f' type='text/javascript'%3E%3C/script%3E"));
+</script>
 </body>
 </html>
