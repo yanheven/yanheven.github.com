@@ -1,8 +1,8 @@
 ---
 layout: post
-title: hello mac
+title: 
 category: coding
-description: mac make your life better
+description: 
 
 ---
 
