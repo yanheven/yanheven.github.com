@@ -5,7 +5,7 @@
     * Author:         Hyphen
     -->
     <meta charset="utf-8" />
-    <title>hello mac | Hyphen's Blog</title>
+    <title>合并排序 | Hyphen's Blog</title>
     <meta property="wb:webmaster" content="da16ead91e9cebac" />
     <meta name="baidu-site-verification" content="FOjh43GBkR" />
     <meta name="author" content="Hyphen" />
@@ -42,37 +42,125 @@
 
 <div id="content">
     <div class="entry">
-        <h1 class="entry-title"><a href="/hello-mac" title="hello mac">hello mac</a></h1>
-        <p class="entry-date">2014-08-04</p>
-        <h1>Hello Mac</h1>
+        <h1 class="entry-title"><a href="/merge-sort" title="合并排序">合并排序</a></h1>
+        <p class="entry-date">2008-08-24</p>
+        <p>Author:<a href="http://weibo.com/344736086">Hyphen</a></p>
 
-<p><a href="http://weibo.com/344736086">Hyphen</a></p>
+<p>合併排序法</p>
 
-<h4>coding with Mac is really effeciency</h4>
+<p>{         持續將一堆沒有順序的資料分割成兩半，直到每一份都只有一筆資料</p>
 
-<pre><code>print "hello mac"
-</code></pre>
+<p>{         將分割完畢的資料兩兩合併</p>
 
-<h4>better coding style</h4>
+<p>e.g.</p>
 
-<pre><code>for i in range(1,?)
-</code></pre>
+<p>12    5     9     15     7</p>
 
-<h4>better life style</h4>
+<pre><code>             12    5    9                15      7
 
-<pre><code>while True:
-    coding
-    if home:
-        sleep early
-    else:
-        coding
-</code></pre>
 
-<h4>coding anywhere since mac is so portable</h4>
 
-<pre><code>site=["home","part","cafe","others"]
-for i in site:
-    coding
+           12    5         9            15         7
+
+
+
+          12      5
+
+
+
+
+
+
+
+#include&lt;stdio.h&gt;
+
+int a[]={12,5,9,15,7};
+
+int b[5];
+
+void merge(int lo, int m,int hi)
+
+{
+
+    int i, j, k;
+
+    // copy both halves of a to auxiliary array b
+
+    for (i=lo; i&lt;=hi; i++)
+
+      b[i]=a[i];
+
+      i=lo; j=m+1; k=lo;
+
+ // copy back next-greatest element at each time
+
+while (i&lt;=m &amp;&amp; j&lt;=hi)
+
+    if (b[i]&lt;=b[j])
+
+        a[k++]=b[i++];
+
+    else
+
+        a[k++]=b[j++];
+
+
+
+// copy back remaining elements of first half (if any)
+
+while (i&lt;=m)
+
+    a[k++]=b[i++];
+
+}
+
+
+
+void mergesort(int lo, int hi)
+
+{
+
+if (lo&lt;hi)
+
+{
+
+    int mid=(lo+hi)/2;
+
+    mergesort(lo, mid);
+
+    mergesort(mid+1, hi);
+
+    merge(lo, mid, hi);
+
+}
+
+}
+
+
+
+int main()
+
+{
+
+ int lo,hi,i;
+
+ lo=0;
+
+ hi=4;
+
+ mergesort(lo,hi);   
+
+ for(i=0;i&lt;5;i++)
+
+    printf("%d ",a[i]);
+
+ printf("\n");
+
+ getche();
+
+ return 1;
+
+}
 </code></pre>
 
 

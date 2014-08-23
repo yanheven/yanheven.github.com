@@ -5,7 +5,7 @@
     * Author:         Hyphen
     -->
     <meta charset="utf-8" />
-    <title>hello mac | Hyphen's Blog</title>
+    <title>openstack 删除某个组件 | Hyphen's Blog</title>
     <meta property="wb:webmaster" content="da16ead91e9cebac" />
     <meta name="baidu-site-verification" content="FOjh43GBkR" />
     <meta name="author" content="Hyphen" />
@@ -42,37 +42,44 @@
 
 <div id="content">
     <div class="entry">
-        <h1 class="entry-title"><a href="/hello-mac" title="hello mac">hello mac</a></h1>
-        <p class="entry-date">2014-08-04</p>
-        <h1>Hello Mac</h1>
+        <h1 class="entry-title"><a href="/uninstall-openstack-component" title="openstack 删除某个组件">openstack 删除某个组件</a></h1>
+        <p class="entry-date">2013-01-18</p>
+        <p>Author:<a href="http://weibo.com/344736086">Hyphen</a></p>
 
-<p><a href="http://weibo.com/344736086">Hyphen</a></p>
+<h4>删除glance</h4>
 
-<h4>coding with Mac is really effeciency</h4>
-
-<pre><code>print "hello mac"
+<pre><code>apt-get remove -y glance glance-api glance-client glance-common glance-registry python-glance
+dpkg -l |grep glance|awk '{print $2}'|xargs dpkg -P
+mysql -uroot -p$MYSQL_PASSWD -e "DROP DATABASE IF EXISTS glance;"
 </code></pre>
 
-<h4>better coding style</h4>
+<h4>删除nova</h4>
 
-<pre><code>for i in range(1,?)
+<pre><code>apt-get remove -y nova-api nova-cert nova-common nova-compute nova-compute-kvm nova-doc nova-network nova-objectstore nova-scheduler  nova-volume python-nova python-novaclient  nova-consoleauth python-novnc novnc
+dpkg -l |grep nova|awk '{print $2}'|xargs dpkg -P
+mysql -uroot -pmygreatsecret -e "DROP DATABASE IF EXISTS nova;"
 </code></pre>
 
-<h4>better life style</h4>
+<h4>删除dashboard</h4>
 
-<pre><code>while True:
-    coding
-    if home:
-        sleep early
-    else:
-        coding
+<pre><code>apt-get remove -y libapache2-mod-wsgi openstack-dashboard
+dpkg -l |grep libapache2-mod-wsgi|awk '{print $2}'|xargs dpkg -P
 </code></pre>
 
-<h4>coding anywhere since mac is so portable</h4>
+<h4>删除mysql数据库</h4>
 
-<pre><code>site=["home","part","cafe","others"]
-for i in site:
-    coding
+<pre><code>sudo apt-get autoremove --purge mysql-server
+sudo apt-get remove mysql-server
+sudo apt-get autoremove mysql-server
+sudo apt-get remove mysql-common //这个很重要
+dpkg -l |grep mysql|awk '{print $2}'|xargs dpkg -P
+</code></pre>
+
+<h4>删除keystone</h4>
+
+<pre><code>apt-get remove -y keystone python-keystone python-keystoneclient
+dpkg -l |grep keystone|awk '{print $2}'|xargs dpkg -P
+mysql -uroot -p$MYSQL_PASSWD -e "DROP DATABASE IF EXISTS keystone;"
 </code></pre>
 
 

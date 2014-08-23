@@ -5,7 +5,7 @@
     * Author:         Hyphen
     -->
     <meta charset="utf-8" />
-    <title>hello mac | Hyphen's Blog</title>
+    <title>openstack 常用命令 | Hyphen's Blog</title>
     <meta property="wb:webmaster" content="da16ead91e9cebac" />
     <meta name="baidu-site-verification" content="FOjh43GBkR" />
     <meta name="author" content="Hyphen" />
@@ -42,37 +42,160 @@
 
 <div id="content">
     <div class="entry">
-        <h1 class="entry-title"><a href="/hello-mac" title="hello mac">hello mac</a></h1>
-        <p class="entry-date">2014-08-04</p>
-        <h1>Hello Mac</h1>
+        <h1 class="entry-title"><a href="/openstack-command-line" title="openstack 常用命令">openstack 常用命令</a></h1>
+        <p class="entry-date">2013-12-11</p>
+        <p>Author:<a href="http://weibo.com/344736086">Hyphen</a></p>
 
-<p><a href="http://weibo.com/344736086">Hyphen</a></p>
+<h4>. Nova</h4>
 
-<h4>coding with Mac is really effeciency</h4>
+<p>I.1. Management</p>
 
-<pre><code>print "hello mac"
+<p>Services status:</p>
+
+<pre><code>$ sudo nova-manage service list
 </code></pre>
 
-<h4>better coding style</h4>
+<p>Enable/disable a service:</p>
 
-<pre><code>for i in range(1,?)
+<pre><code>$ sudo nova-manage service enable|disable --host=host --service=nova-compute
 </code></pre>
 
-<h4>better life style</h4>
+<p>Add a new network:</p>
 
-<pre><code>while True:
-    coding
-    if home:
-        sleep early
-    else:
-        coding
+<pre><code>$ sudo nova-manage network create --label vlan1 --fixed_range_v4 10.0.1.0/24 --num_networks 1 --network_size 256 --vlan 1
 </code></pre>
 
-<h4>coding anywhere since mac is so portable</h4>
+<p>Remove a network, first disassociate it to a project:</p>
 
-<pre><code>site=["home","part","cafe","others"]
-for i in site:
-    coding
+<pre><code>$ sudo nova-manage project scrub projectname
+</code></pre>
+
+<p>$ sudo nova-manage network delete [cidr]</p>
+
+<p>List networks:</p>
+
+<pre><code>$ sudo nova-manage network list
+</code></pre>
+
+<p>Add a floating IPs address range:</p>
+
+<pre><code>$ sudo nova-manage floating create --pool [my-pool] --ip_range 172.17.1.32/27
+</code></pre>
+
+<p>Add a floating to your tenant (you will get a floating IP address, but unused):</p>
+
+<pre><code>$ nova floating-ip-create [my-pool]
+</code></pre>
+
+<p>Associate IP to an instance (specific tenant, according to your credentials)</p>
+
+<pre><code>$ nova add-floating-ip [my-instance] [ip]
+</code></pre>
+
+<p>Check the status of the floating IPs (tenant related):</p>
+
+<pre><code>$ nova floating-ip-list
+</code></pre>
+
+<p>List all instances running on every compute node:</p>
+
+<pre><code>$ sudo nova-manage vm list | column -t
+</code></pre>
+
+<p>I.2. Common</p>
+
+<p>Add a new security group:</p>
+
+<pre><code>$ nova secgroup-create web-server "Web server running"
+</code></pre>
+
+<p>Add rule to this group:</p>
+
+<pre><code>$ nova secgroup-add-rule web-server tcp 80 80 0.0.0.0/0
+</code></pre>
+
+<p>Add a security rules, allow ping and ssh:</p>
+
+<pre><code>$ nova secgroup-add-rule web-server icmp -1 -1 0.0.0.0/0
+</code></pre>
+
+<p>$ nova secgroup-add-rule web-server tcp 22 22 0.0.0.0/0</p>
+
+<p>Create credential:</p>
+
+<pre><code>$ nova keypair-add my_key &gt; mey_key.pem
+</code></pre>
+
+<p>$ chmod 600 *.pem</p>
+
+<p>List instances from the tenant in your credential</p>
+
+<pre><code>$ nova list
+</code></pre>
+
+<p>Boot a new instance:</p>
+
+<pre><code>$ nova boot --flavor [flavor-id] --image [image-id] --key_name [key1] --security_groups [default] [instance-name]
+</code></pre>
+
+<p>Delete an instance:</p>
+
+<pre><code>$ nova delete [INSTANCE_ID]
+</code></pre>
+
+<p>Take a snapshot from an instance but first commit the buffer cache to disk:</p>
+
+<p>my-instance:~$ sync
+my-instance:~$ sudo echo 3 | sudo tee /proc/sys/vm/drop_caches
+$ nova image-create [instance-id] [snapshot-name]</p>
+
+<p>Get precise information about a specific instance:</p>
+
+<pre><code>$ nova show [instance-name]
+</code></pre>
+
+<p>Perform a block_migration:</p>
+
+<pre><code>$ nova live-migration --block_migrate [INSTANCE_ID] [TARGET_SERVER]
+</code></pre>
+
+<h4>II. Glance</h4>
+
+<p>Add an image to glance (public):</p>
+
+<pre><code>$ glance add name="my-image" is_public=True|False disk_format=qcow2 container_format=ovf architecture=x86_64 &lt; my-image.img
+</code></pre>
+
+<p>Check the glance backend:</p>
+
+<pre><code>$ glance index
+</code></pre>
+
+<p>Same with nova-common:</p>
+
+<pre><code>$ nova image-list
+</code></pre>
+
+<p>Set an image to public:</p>
+
+<pre><code>$ glance update [image-id] is_public=true
+</code></pre>
+
+<h4>III. Keystone</h4>
+
+<p>List all the tenants:</p>
+
+<pre><code>$ keystone tenant-list
+</code></pre>
+
+<p>List all users:</p>
+
+<pre><code>$ keystone user-list
+</code></pre>
+
+<p>Create a new user:</p>
+
+<pre><code>$ keystone user-create --name [username] --tenant_id [tenant-id] --pass [password] --email [email] --enabled true 
 </code></pre>
 
 

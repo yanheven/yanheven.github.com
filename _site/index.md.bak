@@ -42,6 +42,11 @@
         <ul class="artical-list">
         
             <li>
+                <h2><a href="/ceph"></a></h2>
+                <div class="title-desc"></div>
+            </li>
+        
+            <li>
                 <h2><a href="/stronger-will-be-stronger">强者越强</a></h2>
                 <div class="title-desc">强者越强，这个基本上放在很多领域都适用</div>
             </li>
@@ -64,6 +69,26 @@
             <li>
                 <h2><a href="/openstack-horizon-develop">openstack horizon 开发入门</a></h2>
                 <div class="title-desc">SDK开发入门简介</div>
+            </li>
+        
+            <li>
+                <h2><a href="/openstack-command-line">openstack 常用命令</a></h2>
+                <div class="title-desc">openstack常用命令</div>
+            </li>
+        
+            <li>
+                <h2><a href="/delete-zombie">openstack folsom删除僵尸实例</a></h2>
+                <div class="title-desc">openstack folsom删除僵尸实例</div>
+            </li>
+        
+            <li>
+                <h2><a href="/uninstall-openstack-component">openstack 删除某个组件</a></h2>
+                <div class="title-desc">openstack 删除某个组件</div>
+            </li>
+        
+            <li>
+                <h2><a href="/openstack-nova-cmd">openstack nova 命令行指令大全</a></h2>
+                <div class="title-desc">openstack nova 命令行指令大全</div>
             </li>
         
         </ul>

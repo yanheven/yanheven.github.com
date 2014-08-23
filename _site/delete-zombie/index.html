@@ -5,7 +5,7 @@
     * Author:         Hyphen
     -->
     <meta charset="utf-8" />
-    <title>hello mac | Hyphen's Blog</title>
+    <title>openstack folsom删除僵尸实例 | Hyphen's Blog</title>
     <meta property="wb:webmaster" content="da16ead91e9cebac" />
     <meta name="baidu-site-verification" content="FOjh43GBkR" />
     <meta name="author" content="Hyphen" />
@@ -42,38 +42,32 @@
 
 <div id="content">
     <div class="entry">
-        <h1 class="entry-title"><a href="/hello-mac" title="hello mac">hello mac</a></h1>
-        <p class="entry-date">2014-08-04</p>
-        <h1>Hello Mac</h1>
+        <h1 class="entry-title"><a href="/delete-zombie" title="openstack folsom删除僵尸实例">openstack folsom删除僵尸实例</a></h1>
+        <p class="entry-date">2013-02-03</p>
+        <p>Author:<a href="http://weibo.com/344736086">Hyphen</a></p>
 
-<p><a href="http://weibo.com/344736086">Hyphen</a></p>
-
-<h4>coding with Mac is really effeciency</h4>
-
-<pre><code>print "hello mac"
+<pre><code>#!/bin/bash
+for i in "$@"
+do
+mysql -uroot -pmygreatsecret &lt;&lt; EOF
+use nova;
+DELETE FROM nova.virtual_interfaces where   instance_uuid='$i';
+DELETE FROM nova.fixed_ips where instance_uuid='$i';
+DELETE FROM nova.block_device_mapping where instance_uuid='$i';
+DELETE FROM nova.instance_system_metadata where instance_uuid='$i';
+DELETE FROM nova.security_group_instance_association where instance_id='$i';
+DELETE FROM nova.instance_info_caches WHERE instance_uuid='$i';
+DELETE FROM nova.instances WHERE uuid='$i';
+EOF
+done
+#echo "ok!,$# vm was deleted successfully!!"
+#exit 0
 </code></pre>
 
-<h4>better coding style</h4>
+<p>运行脚本时后面加参数 ，参数为你要删除的实例的id，例如：
+22f8d28d-d6cd-461e-911f-627e6cb8d4fe</p>
 
-<pre><code>for i in range(1,?)
-</code></pre>
-
-<h4>better life style</h4>
-
-<pre><code>while True:
-    coding
-    if home:
-        sleep early
-    else:
-        coding
-</code></pre>
-
-<h4>coding anywhere since mac is so portable</h4>
-
-<pre><code>site=["home","part","cafe","others"]
-for i in site:
-    coding
-</code></pre>
+<p>在实例所在的计算结点上删除/var/lib/nova/instance/instance00000[这个是要删除的实例的号]</p>
 
 
         <div id="disqus_container">
