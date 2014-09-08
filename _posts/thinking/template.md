@@ -1,8 +1,8 @@
 ---
-layout: post
-title: 
-category: thinking
-description: 
+layout: post	
+title: 	
+category: thinking	
+description: 	
 
 ---
 
