@@ -4,13 +4,61 @@
    <title>Hyphen's Blog</title>
    <link href="http://hyphen.tk/atom.xml" rel="self" type="application/atom+xml"/>
    <link href="http://hyphen.tk" rel="alternate" type="text/html" />
-   <updated>2014-08-23T10:03:07+08:00</updated>
+   <updated>2014-09-20T15:16:59+08:00</updated>
    <id>http://hyphen.tk</id>
    <author>
      <name></name>
      <email></email>
    </author>
 
+   
+   <entry>
+     <title>ceph study</title>
+     <link href="http://hyphen.tk/ceph-study"/>
+     <updated>2014-09-20T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/ceph-study</id>
+     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;参考章宇兄的开源项目学习ABC的方法来对ceph进行简单的学习与分析,下面是分析过程中画的mindstorm图片.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/githubpages/ceph_learn.jpg&quot; alt=&quot;ceph&quot; /&gt;&lt;/p&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>我必须加快学习的脚步</title>
+     <link href="http://hyphen.tk/I-need-to-run-as-fast-as-I-can"/>
+     <updated>2014-09-08T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/I-need-to-run-as-fast-as-I-can</id>
+     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;参观东莞机房建设&lt;/h3&gt;
+
+&lt;p&gt;今天中秋佳节,跟老爸一起吃饭,茶余饭后,跟老爸聊聊工作.没想到,现在老爸也是做IT的人了.他们在东莞石碣建机房,花几个亿打造几千个机柜的超豪华数据中心.作为IT人的我,感觉自愧不如呀.饭后跟老爸到现场看了下.戴上安全帽后,在老爸的带领下进了机房现场.老爸用他多年的介绍水准,详细为我介绍了机房建设情况,那情形就跟当时胡锦涛主席到百度视察,李长厂为主席介绍狼长的技术.&lt;/p&gt;
+
+&lt;h3&gt;业务转型&lt;/h3&gt;
+
+&lt;p&gt;老爸的公司之前主要是做房地产业务.之前并不涉足机房业务,是最近两年才开始做的.听他说最近业绩不错,之前有一个在公司大厦里面,全部使用了,现在不断拓展业务.在产业链来看,这几年互联网经济的发展确实带动了相关产业的发展.他们公司能抓住这个契机,感觉就跟20年前在深圳做房地产开发商一样,灰常地有钱途.&lt;/p&gt;
+
+&lt;h3&gt;奶牛,快跑&lt;/h3&gt;
+
+&lt;p&gt;华农母校论坛有个管理员的签名有很有趣:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;奶牛跑得快,必定有古怪.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;但在现在互联网时代,当一个技术下快步发展时,你不跑得快,才是有古怪.我在一年多前在学校实验室跟老师做活时就开始接触云计算,这两年来,目睹了这个行业在国内的快速发展,现在的感觉是总觉得时间不够用,要是我每天有48个小时多好,8个小时休息,40个小时学习,折腾,补充自己的短板.这种感觉就跟你在赛跑一样,多么希望自己能跑得快一点.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;在云计算快速发展时代,你想成为行业专家,不跑得快,必定有古怪.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;还有一个是特别是在现在处处可学习,时时可学习的时代,我们没有理由为自己找借口,零碎时间学习,社区化学习,分享式学习.这么多学习途径,也许这也是我选择没有翻墙到外面继续读研究生的原因之一吧.因为我坚信,我已经选好了方向,学习途径也不是问题,坚持就是胜利.&lt;/p&gt;
+
+&lt;h3&gt;最后,我只想说:各位,快跑.&lt;/h3&gt;
+
+&lt;h4&gt;以此共勉!&lt;/h4&gt;
+</content>
+   </entry>
    
    <entry>
      <title>jobs speech at stanford</title>
@@ -323,198 +371,6 @@ username=auth_dict[&quot;--os-username&quot;],
 password=auth_dict[&quot;--os-password&quot;],
 tenant_name=auth_dict[&quot;--os-tenant-name&quot;])                                   
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4&gt;这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。&lt;/h4&gt;
-
-&lt;h2&gt;1、前端&lt;/h2&gt;
-
-&lt;p&gt;首先是前端的技术，之前只知道简单的html语法，对CSS，JS，JQUERY等一窍不通。年后，小组开发人手不是很够，果断转行去开发，记得刚开始，搞个练手的界面，搞了两天才实现。而且前提是别人写好的结构，拿过来修改使用。熟读唐诗三百首，不会做诗也会吟的境界。但是一旦碰到没有样例的界面，那就头疼了，因为很多标签都是不认识的。但只能问人，搜索用法，记得有几天，写几个界面，搞得有点喘不过气来。但事实证明一句老话，当你感觉到难受的时候，是你学东西最多的时候。因为不懂，所以觉得很难，因为一直坚持，所以特别难受，中途多次想不做前端了，让其他人做，只写后端好了，但还是一直坚持。截止本稿时间，终于学到了一些基本前端，现在做OPensack的控制台界面开发勉强够用。&lt;/p&gt;
-
-&lt;h2&gt;2、后端&lt;/h2&gt;
-
-&lt;p&gt;开发后端直接使用各个服务的client，因为Horizon就是这么干的。&lt;/p&gt;
-
-&lt;p&gt;通过实例化一个通过授权认证的客户端对象，然后可以进行后续的操作&lt;/p&gt;
-
-&lt;h3&gt;2.1、nova&lt;/h3&gt;
-
-&lt;p&gt;nova操作&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import novaclient.v1_1.client as nvclient
-nova = nvclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],\
-                        username=auth_dict[&quot;--os-username&quot;],\
-                        api_key=auth_dict[&quot;--os-password&quot;],\
-                        project_id=auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;2.2 keystone&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient                     
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
-                                    username = auth_dict[&quot;--os-username&quot;], \
-                                    password = auth_dict[&quot;--os-password&quot;], \
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;2.3 neutron&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
-                                    username = auth_dict[&quot;--os-username&quot;], \
-                                    password = auth_dict[&quot;--os-password&quot;], \
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;或者这样：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient  
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \  
-                                    username = auth_dict[&quot;--os-username&quot;], \  
-                                    password = auth_dict[&quot;--os-password&quot;], \  
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])  
-
-endpoint_url = keystone.service_catalog.url_for(service_type=&#39;network&#39;)  
-token = keystone.auth_token  
-neutron2 = neutronclient.Client(endpoint_url=endpoint_url, token=token) 
-neutron = neutronclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],
-username=auth_dict[&quot;--os-username&quot;],
-password=auth_dict[&quot;--os-password&quot;],
-tenant_name=auth_dict[&quot;--os-tenant-name&quot;])                                   
-&lt;/code&gt;&lt;/pre&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>openstack horizon 开发入门</title>
-     <link href="http://hyphen.tk/openstack-horizon-develop"/>
-     <updated>2014-03-16T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/openstack-horizon-develop</id>
-     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4&gt;这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。&lt;/h4&gt;
-
-&lt;h2&gt;1、前端&lt;/h2&gt;
-
-&lt;p&gt;首先是前端的技术，之前只知道简单的html语法，对CSS，JS，JQUERY等一窍不通。年后，小组开发人手不是很够，果断转行去开发，记得刚开始，搞个练手的界面，搞了两天才实现。而且前提是别人写好的结构，拿过来修改使用。熟读唐诗三百首，不会做诗也会吟的境界。但是一旦碰到没有样例的界面，那就头疼了，因为很多标签都是不认识的。但只能问人，搜索用法，记得有几天，写几个界面，搞得有点喘不过气来。但事实证明一句老话，当你感觉到难受的时候，是你学东西最多的时候。因为不懂，所以觉得很难，因为一直坚持，所以特别难受，中途多次想不做前端了，让其他人做，只写后端好了，但还是一直坚持。截止本稿时间，终于学到了一些基本前端，现在做OPensack的控制台界面开发勉强够用。&lt;/p&gt;
-
-&lt;h2&gt;2、后端&lt;/h2&gt;
-
-&lt;p&gt;开发后端直接使用各个服务的client，因为Horizon就是这么干的。&lt;/p&gt;
-
-&lt;p&gt;通过实例化一个通过授权认证的客户端对象，然后可以进行后续的操作&lt;/p&gt;
-
-&lt;h3&gt;2.1、nova&lt;/h3&gt;
-
-&lt;p&gt;nova操作&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import novaclient.v1_1.client as nvclient
-nova = nvclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],\
-                        username=auth_dict[&quot;--os-username&quot;],\
-                        api_key=auth_dict[&quot;--os-password&quot;],\
-                        project_id=auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;2.2 keystone&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient                     
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
-                                    username = auth_dict[&quot;--os-username&quot;], \
-                                    password = auth_dict[&quot;--os-password&quot;], \
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;2.3 neutron&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
-                                    username = auth_dict[&quot;--os-username&quot;], \
-                                    password = auth_dict[&quot;--os-password&quot;], \
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;或者这样：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient  
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \  
-                                    username = auth_dict[&quot;--os-username&quot;], \  
-                                    password = auth_dict[&quot;--os-password&quot;], \  
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])  
-
-endpoint_url = keystone.service_catalog.url_for(service_type=&#39;network&#39;)  
-token = keystone.auth_token  
-neutron2 = neutronclient.Client(endpoint_url=endpoint_url, token=token) 
-neutron = neutronclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],
-username=auth_dict[&quot;--os-username&quot;],
-password=auth_dict[&quot;--os-password&quot;],
-tenant_name=auth_dict[&quot;--os-tenant-name&quot;])                                   
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4&gt;这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。&lt;/h4&gt;
-
-&lt;h2&gt;1、前端&lt;/h2&gt;
-
-&lt;p&gt;首先是前端的技术，之前只知道简单的html语法，对CSS，JS，JQUERY等一窍不通。年后，小组开发人手不是很够，果断转行去开发，记得刚开始，搞个练手的界面，搞了两天才实现。而且前提是别人写好的结构，拿过来修改使用。熟读唐诗三百首，不会做诗也会吟的境界。但是一旦碰到没有样例的界面，那就头疼了，因为很多标签都是不认识的。但只能问人，搜索用法，记得有几天，写几个界面，搞得有点喘不过气来。但事实证明一句老话，当你感觉到难受的时候，是你学东西最多的时候。因为不懂，所以觉得很难，因为一直坚持，所以特别难受，中途多次想不做前端了，让其他人做，只写后端好了，但还是一直坚持。截止本稿时间，终于学到了一些基本前端，现在做OPensack的控制台界面开发勉强够用。&lt;/p&gt;
-
-&lt;h2&gt;2、后端&lt;/h2&gt;
-
-&lt;p&gt;开发后端直接使用各个服务的client，因为Horizon就是这么干的。&lt;/p&gt;
-
-&lt;p&gt;通过实例化一个通过授权认证的客户端对象，然后可以进行后续的操作&lt;/p&gt;
-
-&lt;h3&gt;2.1、nova&lt;/h3&gt;
-
-&lt;p&gt;nova操作&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import novaclient.v1_1.client as nvclient
-nova = nvclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],\
-                        username=auth_dict[&quot;--os-username&quot;],\
-                        api_key=auth_dict[&quot;--os-password&quot;],\
-                        project_id=auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;2.2 keystone&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient                     
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
-                                    username = auth_dict[&quot;--os-username&quot;], \
-                                    password = auth_dict[&quot;--os-password&quot;], \
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;2.3 neutron&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
-                                    username = auth_dict[&quot;--os-username&quot;], \
-                                    password = auth_dict[&quot;--os-password&quot;], \
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;或者这样：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient  
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \  
-                                    username = auth_dict[&quot;--os-username&quot;], \  
-                                    password = auth_dict[&quot;--os-password&quot;], \  
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])  
-
-endpoint_url = keystone.service_catalog.url_for(service_type=&#39;network&#39;)  
-token = keystone.auth_token  
-neutron2 = neutronclient.Client(endpoint_url=endpoint_url, token=token) 
-neutron = neutronclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],
-username=auth_dict[&quot;--os-username&quot;],
-password=auth_dict[&quot;--os-password&quot;],
-tenant_name=auth_dict[&quot;--os-tenant-name&quot;])                                   
-&lt;/code&gt;&lt;/pre&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>openstack horizon 开发入门</title>
-     <link href="http://hyphen.tk/openstack-horizon-develop"/>
-     <updated>2014-03-15T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/openstack-horizon-develop</id>
-     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4&gt;这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。&lt;/h4&gt;
 
