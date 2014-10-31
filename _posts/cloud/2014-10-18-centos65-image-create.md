@@ -78,8 +78,7 @@ wgethttp://mirrors.163.com/centos/6.5/isos/x86_64/CentOS-6.5-x86_64-minimal.iso
    修改配置文件/etc/cloud/cloud.cfg ，在cloud_init_modules 下面增加:        
    	
    	- resolv-conf
-##### （9）卸载epel源,关机：
-	rpm -e epel-release	
+##### （9）卸载epel源,关机：	
 	poweroff
 ##### 6、善后操作
 ###### （1）清除网络相关硬件生成信息
