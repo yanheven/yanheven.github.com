@@ -13,6 +13,7 @@ Author:[Hyphen](http://weibo.com/344736086)
 
 ###解决方案
 我就是在我本地一个实例上，为每个软件库建立一个目录，然后PULL GITHUB上的代码，切换远程URL为CSDN CODE我的软件库，PUSH代码。这些都写了个循环的脚本来做，初定每天更新一次，定时。
+CSDN CODE我的软件库 [https://code.csdn.net/yanheven1/](https://code.csdn.net/yanheven1/)
 
 ####sync_git.sh
 
