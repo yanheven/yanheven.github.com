@@ -92,7 +92,7 @@ CSDN CODE我的软件库 [https://code.csdn.net/yanheven1/](https://code.csdn.ne
 
 然后定时执行：
 
-    0 * * * * sh /home/git.sh
+    0 * * * * sh /home/sync_git.sh
 
 最后修改下DEVSTACK下面的stackrc文件中的软件库URL即可使用：
 
