@@ -15,7 +15,7 @@ Author:[Hyphen](http://weibo.com/344736086)http://weibo.com/344736086
 而是它把openstack所有项目中的计量工作接收了--“multi-publisher”.其中还有heat作自动拓展，也需要ceilometer的alarm功能来配合，
 
 
-####计量
+####计量Metering
 在实现顺序上：
 计量：最原始的资源使用数据
 计费：使用计量信息来算价格了
@@ -31,16 +31,58 @@ Author:[Hyphen](http://weibo.com/344736086)http://weibo.com/344736086
 
 共五个核心服务，可以根据自己的负载水平拓展布署
 
+
 ![数据收集流程](http://docs.openstack.org/developer/ceilometer/_images/1-agents.png)
 
 ceilometer收集数据的三种方式：
 消息总线：使用OSLO库的项目，ceilometer-notification agent使用这种方法
 推送代理：在某个项目内加多个推送数据的功能，不推荐，会使项目变大变复杂
 轮询代理：通过定时去调用各个服务的API去轮询相应数据，最不推荐，
-
 后两种方法被ceilometer-polling agent使用
 
+
 ![获取收集到的数据](http://docs.openstack.org/developer/ceilometer/_images/2-accessmodel.png)
+用户在调用ceilometer相应api来获取数据时，可以不被openstack里面的tenant,user等概念限制
+用户还可以收集数据来为上层应用，比如PAAS，SAAS等使用
+用户可以通过RESTFUL API发送数据到ceilometer数据库保存
+
+
+![多种发布功能](http://docs.openstack.org/developer/ceilometer/_images/3-Pipeline.png)
+发布计量数据给不同的使用场景，主要有两个关注点：频率和发布方式
+“multi-publishe”现在可以为不同的使用场景，通过不同的频率和不同的方式去发布数据
+现在实现的3种发布方式：
+notifier
+RPC
+UDP
+
+
+![cpu例子](http://docs.openstack.org/developer/ceilometer/_images/4-Transformer.png)
+聚集多个CPU sample为一个CPU 比例sample
+
+
+![sample send](http://docs.openstack.org/developer/ceilometer/_images/5-multi-publish.png)
+sample 通过多种方式发送到不同的目的地
+
+
+####警报Alarming
+可以设置单个警报，也可以结合多个警报组合来做一个警报，普通用户只能对自己的资源进行设置警报
+警报可以触发多种形式的动作，但现在只实现了两种：
+HTTP callback
+log
+
+
+####数据库选择
+![database choose](http://docs.openstack.org/developer/ceilometer/_images/6-storagemodel.png)
+ceilometer 数据存储模型
+
+在Juno & Kilo版本中，ceilometer的数据分为alarm,event,meter,可以将这三种数据分别存储在不同类型的数据中，比如alarm 数据存储在SQL backend数据库中,event和meter存储在NOSQL backend数据库中
+
+###细节描述
+####插件Plugins
+ceilometer 现在使用 Stevedore,用户可以自己增加需要的插件，通过设置来启用还是禁用插件。
+
+
+
 
 
 
