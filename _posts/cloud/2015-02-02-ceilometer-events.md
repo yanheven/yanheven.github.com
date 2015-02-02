@@ -58,8 +58,8 @@ plugin:又是一个dict
   payload.image_meta.’org.openstack__1__architecture’
   
 ###YAML定义文件样例：
-  """---
-  - event_type: compute.instance.*
+---
+- event_type: compute.instance.*
   traits: &instance_traits
     user_id:
       fields: payload.user_id
@@ -97,7 +97,8 @@ plugin:又是一个dict
     audit_period_ending:
       type: datetime
       fields: payload.audit_period_ending
-  """
+
+
 还可以通过trait plugins来处理这个转换过程，如分串，格式化等。
 原文：[http://docs.openstack.org/developer/ceilometer/events.html](http://docs.openstack.org/developer/ceilometer/events.html)
 
