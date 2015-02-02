@@ -57,46 +57,7 @@ plugin:又是一个dict
 格式上支持“.”和“[]”,如果某个路径字符串包含“.”，则要加上引用符进行区分，如org.openstack__1__architecture是一个整体：
   payload.image_meta.’org.openstack__1__architecture’
   
-###YAML定义文件样例：
----
-- event_type: compute.instance.*
-  traits: &instance_traits
-    user_id:
-      fields: payload.user_id
-    instance_id:
-      fields: payload.instance_id
-    host:
-      fields: publisher_id
-      plugin:
-        name: split
-        parameters:
-          segment: 1
-          max_split: 1
-    service_name:
-      fields: publisher_id
-      plugin: split
-    instance_type_id:
-      type: int
-      fields: payload.instance_type_id
-    os_architecture:
-      fields: payload.image_meta.'org.openstack__1__architecture'
-    launched_at:
-      type: datetime
-      fields: payload.launched_at
-    deleted_at:
-      type: datetime
-      fields: payload.deleted_at
-- event_type:
-    - compute.instance.exists
-    - compute.instance.update
-  traits:
-    <<: *instance_traits
-    audit_period_beginning:
-      type: datetime
-      fields: payload.audit_period_beginning
-    audit_period_ending:
-      type: datetime
-      fields: payload.audit_period_ending
+###[YAML定义文件样例](http://docs.openstack.org/developer/ceilometer/events.html#example-definitions-file)
 
 
 还可以通过trait plugins来处理这个转换过程，如分串，格式化等。
