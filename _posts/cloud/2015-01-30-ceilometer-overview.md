@@ -2,7 +2,7 @@
 layout: post
 title: openstack ceilometer overview  
 category: cloud
-description: openstack ceilometer overview  
+description: 2015-01-30
 
 ---
 
@@ -16,10 +16,10 @@ Author:[Hyphen](http://weibo.com/344736086)http://weibo.com/344736086
 
 
 ####计量Metering
-在实现顺序上：
-计量：最原始的资源使用数据
-计费：使用计量信息来算价格了
-帐单：最终与用户算钱的步骤了
+在实现顺序上：  
+计量：最原始的资源使用数据  
+计费：使用计量信息来算价格了  
+帐单：最终与用户算钱的步骤了  
 
 而ceilometer的设计尽可能停留在第一步，计量上，因为后面两步不同使用者，差异会很大，会导致项目过于庞大。
 关于db,不建议直接访问它存放计量数据的DB，尽可能通过API，还有一点是计量数据在DB的保存时间一般是几个月，如果用来做计费数据，
@@ -34,26 +34,26 @@ Author:[Hyphen](http://weibo.com/344736086)http://weibo.com/344736086
 
 ![数据收集流程](http://docs.openstack.org/developer/ceilometer/_images/1-agents.png)
 
-ceilometer收集数据的三种方式：
-消息总线：使用OSLO库的项目，ceilometer-notification agent使用这种方法
-推送代理：在某个项目内加多个推送数据的功能，不推荐，会使项目变大变复杂
-轮询代理：通过定时去调用各个服务的API去轮询相应数据，最不推荐，
+ceilometer收集数据的三种方式：  
+消息总线：使用OSLO库的项目，ceilometer-notification agent使用这种方法 
+推送代理：在某个项目内加多个推送数据的功能，不推荐，会使项目变大变复杂  
+轮询代理：通过定时去调用各个服务的API去轮询相应 数据，最不推荐，
 后两种方法被ceilometer-polling agent使用
 
 
 ![获取收集到的数据](http://docs.openstack.org/developer/ceilometer/_images/2-accessmodel.png)
-用户在调用ceilometer相应api来获取数据时，可以不被openstack里面的tenant,user等概念限制
-用户还可以收集数据来为上层应用，比如PAAS，SAAS等使用
+用户在调用ceilometer相应api来获取数据时，可以不被openstack里面的tenant,user等概念限制 
+用户还可以收集数据来为上层应用，比如PAAS，SAAS等使用  
 用户可以通过RESTFUL API发送数据到ceilometer数据库保存
 
 
 ![多种发布功能](http://docs.openstack.org/developer/ceilometer/_images/3-Pipeline.png)
-发布计量数据给不同的使用场景，主要有两个关注点：频率和发布方式
+发布计量数据给不同的使用场景，主要有两个关注点：频率和发布方式  
 “multi-publishe”现在可以为不同的使用场景，通过不同的频率和不同的方式去发布数据
-现在实现的3种发布方式：
-notifier
-RPC
-UDP
+现在实现的3种发布方式： 
+notifier  
+RPC 
+UDP 
 
 
 ![cpu例子](http://docs.openstack.org/developer/ceilometer/_images/4-Transformer.png)
@@ -66,9 +66,9 @@ sample 通过多种方式发送到不同的目的地
 
 ####警报Alarming
 可以设置单个警报，也可以结合多个警报组合来做一个警报，普通用户只能对自己的资源进行设置警报
-警报可以触发多种形式的动作，但现在只实现了两种：
-HTTP callback
-log
+警报可以触发多种形式的动作，但现在只实现了两种：  
+HTTP callback 
+log 
 
 
 ####数据库选择
