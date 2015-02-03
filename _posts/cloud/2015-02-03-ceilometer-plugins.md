@@ -2,7 +2,7 @@
 layout: post
 title: openstack ceilometer plugins
 category: cloud
-description: openstack ceilometer plugins
+description: 2015-02-03
 
 ---
 
