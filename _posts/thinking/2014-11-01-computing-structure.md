@@ -2,7 +2,7 @@
 layout: post	
 title: 	云计算平台下的计算机架构漫想  
 category: thinking  
-description: 云计算平台下的计算机架构漫想	
+description: 2014-11-01
 
 ---
 

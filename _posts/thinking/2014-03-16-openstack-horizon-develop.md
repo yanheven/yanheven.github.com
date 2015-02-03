@@ -2,7 +2,7 @@
 layout: post
 title: openstack horizon 开发入门
 category: thinking
-description: SDK开发入门简介
+description: 2014-03-16
 
 ---
 

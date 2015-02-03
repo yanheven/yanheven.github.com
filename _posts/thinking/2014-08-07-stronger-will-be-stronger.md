@@ -2,7 +2,7 @@
 layout: post  
 title: 强者越强  
 category: thinking  
-description: 强者越强，这个基本上放在很多领域都适用
+description: 2014-08-07
 
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: openstack nova 命令行指令大全  
 category: cloud
-description: openstack nova 命令行指令大全  
+description: 2013-01-05
 
 ---
 

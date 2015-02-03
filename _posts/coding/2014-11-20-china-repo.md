@@ -2,7 +2,7 @@
 layout: post
 title: use CSDN CODE to pull openstack codes
 category: coding
-description: use CSDN repo to pull openstack codes
+description: 2014-11-20
 
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: openstack 常用命令
 category: cloud
-description: openstack常用命令
+description: 2013-12-11
 
 ---
 

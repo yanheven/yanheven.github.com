@@ -2,7 +2,7 @@
 layout: post
 title: openstack folsom删除僵尸实例
 category: cloud
-description: openstack folsom删除僵尸实例
+description: 2013-02-03
 
 ---
 

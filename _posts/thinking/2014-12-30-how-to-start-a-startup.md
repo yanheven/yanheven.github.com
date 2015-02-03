@@ -2,7 +2,7 @@
 layout: post	
 title: 	how to start a startup
 category: thinking	
-description: how to start a startup
+description: 2014-12-30
 
 ---
 

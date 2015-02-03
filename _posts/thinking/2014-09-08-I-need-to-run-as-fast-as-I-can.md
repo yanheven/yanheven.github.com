@@ -2,7 +2,7 @@
 layout: post		
 title: 我必须加快学习的脚步	
 category: thinking		
-description: I need to run as fast as I can
+description: 2014-09-08
 
 ---
 

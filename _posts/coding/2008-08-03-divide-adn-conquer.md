@@ -2,7 +2,7 @@
 layout: post
 title: 分治算法
 category: coding
-description: 分治算法
+description: 2008-08-03
 
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: jobs speech at stanford
 category: thinking
-description: jobs speech at stanford
+description: 2014-08-23
 
 ---
 

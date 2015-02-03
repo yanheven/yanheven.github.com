@@ -2,7 +2,7 @@
 layout: post
 title: cloud computing
 category: cloud
-description: cloud make our world more effeciency!
+description: template.m
 ---
 # [{{ page.title }}][1]
 2012-01-16 By {{ site.author_info }}

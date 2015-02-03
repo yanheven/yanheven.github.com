@@ -2,7 +2,7 @@
 layout: post
 title: openstack 删除某个组件
 category: cloud
-description: openstack 删除某个组件
+description: 2013-01-18
 
 ---
 
