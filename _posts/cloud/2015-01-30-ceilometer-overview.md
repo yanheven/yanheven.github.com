@@ -29,7 +29,17 @@ Author:[Hyphen](http://weibo.com/344736086)http://weibo.com/344736086
 直接上图好了：
 ![架构图](http://docs.openstack.org/developer/ceilometer/_images/ceilo-arch.png)
 
-共五个核心服务，可以根据自己的负载水平拓展布署
+共五个核心服务，可以根据自己的负载水平拓展布署  
+
+#####在组件模块来看，有如下几个模块：  
+ceilometer-api  供外部调用使用ceilometer  
+ceilometer-agent-central  通过RESTful APIs来查询openstack其他服务的资源情况，如cinder,glance,neutron,swift. 
+ceilometer-agent-compute  运行在计算节点上，查询实例的性能信息，相关消息。通过AMQP消息队列发送这些数据给collector.  
+ceilometer-agent-notification 通过AMQP消息队列获取其他openstack服务的事件通知（nitification）.  
+ceilometer-agent-ipmi 通过IPMI接口，查询计算节点的物理信息。  
+ceilometer-collector  获取各种通过AMQP消息队列发送过来的消息，然后存储到DB中。    
+ceilometer-alarm-evaluator  警报触发评估，通过在一段时间内结合统计数据的趋势和之前设置的阀值来决定是否报警。    
+ceilometer-alarm-notifier   报警后的响应动作设置。    
 
 
 ![数据收集流程](http://docs.openstack.org/developer/ceilometer/_images/1-agents.png)
