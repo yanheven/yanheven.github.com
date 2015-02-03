@@ -67,7 +67,23 @@ ceilometer收集数据的三种方式：
 ![获取收集到的数据](http://docs.openstack.org/developer/ceilometer/_images/2-accessmodel.png)
 用户在调用ceilometer相应api来获取数据时，可以不被openstack里面的tenant,user等概念限制 
 用户还可以收集数据来为上层应用，比如PAAS，SAAS等使用  
-用户可以通过RESTFUL API发送数据到ceilometer数据库保存
+用户可以通过RESTFUL API发送数据到ceilometer数据库保存     
+
+    ID of the corresponding resource. (--resource-id)   
+    Name of meter. (--meter-name)
+  Type of meter. (--meter-type)
+
+    Predefined meter types:
+
+        Gauge
+
+        Delta
+
+        Cumulative
+
+    Unit of meter. (--meter-unit)
+
+    Volume of sample. (--sample-volume)
 
 
 ![多种发布功能](http://docs.openstack.org/developer/ceilometer/_images/3-Pipeline.png)
