@@ -2,7 +2,7 @@
 layout: post
 title: ceph study
 category: cloud
-description: a mindstorm grapic of ceph learning
+description:2014-09-20
 
 ---
 
