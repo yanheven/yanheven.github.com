@@ -49,7 +49,7 @@ Author:[Hyphen](http://weibo.com/344736086)http://weibo.com/344736086
 ######ceilometer-alarm-evaluator  警报触发评估，通过在一段时间内结合统计数据的趋势和之前设置的阀值来决定是否报警。    
 ######ceilometer-alarm-notifier   报警后的响应动作设置。    
 
- #####Telemetry middleware  
+######Telemetry middleware  
  ceilometer甚至还可以用来记录每个服务的API接受请求和响应次数，相应服务只需要暴露http.request和http.response   
  类型的事件notification.    
 
