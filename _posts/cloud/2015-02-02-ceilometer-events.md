@@ -2,7 +2,7 @@
 layout: post
 title: openstack ceilometer events
 category: cloud
-description: openstack ceilometer events
+description: 2015-02-02
 
 ---
 
