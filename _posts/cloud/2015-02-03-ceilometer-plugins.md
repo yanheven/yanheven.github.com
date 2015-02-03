@@ -63,7 +63,6 @@ collector.
 ####Test:测试
 任何新的plugin,agent，都要经过unit tests.agent plugins在这里tests/compute ,插件在这里：test/agent.提交之前尽可能保证不会影响到其他项目。
 
-#####原文在这里
-[http://docs.openstack.org/developer/ceilometer/contributing/plugins.html]（http://docs.openstack.org/developer/ceilometer/contributing/plugins.html）
+#####[原文在这里](http://docs.openstack.org/developer/ceilometer/contributing/plugins.html)
 
 
