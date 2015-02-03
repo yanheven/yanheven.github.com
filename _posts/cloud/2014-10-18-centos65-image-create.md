@@ -2,7 +2,7 @@
 layout: post
 title: 制作openstack用的centos6.5镜像
 category: cloud
-description: 制作openstack用的centos6.5镜像
+description: 2014-10-18
 
 ---
 
