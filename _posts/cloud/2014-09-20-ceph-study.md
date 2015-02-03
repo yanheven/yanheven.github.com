@@ -2,7 +2,7 @@
 layout: post
 title: ceph study
 category: cloud
-description:2014-09-20
+description: 2014-09-20
 ---
 
 Author:[Hyphen](http://weibo.com/344736086)
