@@ -88,9 +88,9 @@ ceilometer收集数据的三种方式：
 发布计量数据给不同的使用场景，主要有两个关注点：频率和发布方式  
 “multi-publishe”现在可以为不同的使用场景，通过不同的频率和不同的方式去发布数据
 现在实现的3种发布方式： 
-notifier  
-RPC 
-UDP 
+notifier    
+RPC   
+UDP   
 
 
 ![cpu例子](http://docs.openstack.org/developer/ceilometer/_images/4-Transformer.png)
