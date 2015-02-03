@@ -2,7 +2,7 @@
 layout: post
 title: what is "AOP"
 category: cloud
-description: brief introduction of "AOP"
+description: 2014-08-06
 
 ---
 
