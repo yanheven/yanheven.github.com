@@ -69,20 +69,18 @@ ceilometer收集数据的三种方式：
 用户还可以收集数据来为上层应用，比如PAAS，SAAS等使用  
 用户可以通过RESTFUL API发送数据到ceilometer数据库保存     
 
+    ceilometer sample-create -r 37128ad6-daaa-4d22-9509-b7e1c6b08697 \
+    -m memory.usage --meter-type gauge --meter-unit MB --sample-volume 48
+    
+
     ID of the corresponding resource. (--resource-id)   
     Name of meter. (--meter-name)
-  Type of meter. (--meter-type)
-
+    Type of meter. (--meter-type)
     Predefined meter types:
-
-        Gauge
-
-        Delta
-
-        Cumulative
-
+    Gauge
+    Delta
+    Cumulative
     Unit of meter. (--meter-unit)
-
     Volume of sample. (--sample-volume)
 
 
