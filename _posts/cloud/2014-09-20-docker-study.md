@@ -2,7 +2,7 @@
 layout: post
 title: docker study
 category: cloud
-description: a mindstorm grapic of docker learning
+description: 2014-09-20
 
 ---
 
