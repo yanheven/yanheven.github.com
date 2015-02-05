@@ -6,7 +6,7 @@ description: 2014-08-07
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 #### 起源
 最近接触了另外一个开源云计算项目--Cloudstack,虽然一直在做云计算，但却基本是局限在Openstack这个项目里面。记得之前就有好几个云计算的开源项目，最后还是不了了之了。

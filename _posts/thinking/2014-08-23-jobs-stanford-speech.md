@@ -6,7 +6,7 @@ description: 2014-08-23
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 ##### 在MAC的这个路径下:"/Applications/Pages.app/Contents/Resources/Apple.txt"
 ##### 有一篇乔布斯在斯坦福的演讲

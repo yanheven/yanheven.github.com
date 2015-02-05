@@ -6,7 +6,7 @@ description: 2015-02-02
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)http://weibo.com/344736086
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)http://weibo.com/344736086
 
 本文是阅读官方介绍文档的个人笔记：
 ###Events(事件) vx. Samples（样本）

@@ -6,7 +6,7 @@ description: 2014-11-20
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 ###问题
 直接从GITHUB上获取代码，经常是没保障，特别是用DEVSTACK的时候，经常超时，所以我想到了每天把GITHUB上的代码更新到本地的想法。但本地还要搞一套GIT服务环境，而且也只是自己用，为何不使用公开的软件库呢，之前记得OSCHINA和CSDN 都搞GIT，相比之下，使用了CSDN CODE,使用起来就跟GITHUB一样，但有个问题是容量现在默认只给我一个G，昨天把OPENSTACK,OPENSTACK-DEV,STACKFORGE这三个目录下，DEVSTACK安装时要用到的库都同步了下，大半个G。
