@@ -29,31 +29,68 @@ Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)http://wei
 直接上图好了：
 ![架构图](http://docs.openstack.org/developer/ceilometer/_images/ceilo-arch.png)
 
-共五个核心服务，可以根据自己的负载水平拓展布署
+共五个核心服务，可以根据自己的负载水平拓展布署  
 
+#####在组件模块来看，有如下几个模块：   
+
+######ceilometer-api  供外部调用使用ceilometer  
+######ceilometer-agent-central  
+  通过RESTful APIs来查询：    
+    OpenStack Networking    
+    OpenStack Object Storage    
+    OpenStack Block Storage   
+    Hardware resources via SNMP   
+    Energy consumption metrics via Kwapi framework    
+    
+######ceilometer-agent-compute  运行在计算节点上，查询实例的性能信息，相关消息。通过AMQP消息队列发送这些数据给collector.  
+######ceilometer-agent-notification 通过AMQP消息队列获取其他openstack服务的事件通知（nitification）.  
+######ceilometer-agent-ipmi 通过IPMI接口，查询计算节点的物理信息。  
+######ceilometer-collector  获取各种通过AMQP消息队列发送过来的消息，然后存储到DB中。    
+######ceilometer-alarm-evaluator  警报触发评估，通过在一段时间内结合统计数据的趋势和之前设置的阀值来决定是否报警。    
+######ceilometer-alarm-notifier   报警后的响应动作设置。    
+
+######Telemetry middleware  
+ ceilometer甚至还可以用来记录每个服务的API接受请求和响应次数，相应服务只需要暴露http.request和http.response   
+ 类型的事件notification.    
 
 ![数据收集流程](http://docs.openstack.org/developer/ceilometer/_images/1-agents.png)
 
 ceilometer收集数据的三种方式：  
-消息总线：使用OSLO库的项目，ceilometer-notification agent使用这种方法 
-推送代理：在某个项目内加多个推送数据的功能，不推荐，会使项目变大变复杂  
-轮询代理：通过定时去调用各个服务的API去轮询相应 数据，最不推荐，
+消息队列notification：使用OSLO库的项目，ceilometer-notification agent使用这种方法 
+推送代理agent-compute：在某个项目内加多个推送数据的功能，不推荐，会使项目变大变复杂  
+轮询代理Restful API：通过定时去调用各个服务的API去轮询相应 数据，最不推荐，
 后两种方法被ceilometer-polling agent使用
+
+
 
 
 ![获取收集到的数据](http://docs.openstack.org/developer/ceilometer/_images/2-accessmodel.png)
 用户在调用ceilometer相应api来获取数据时，可以不被openstack里面的tenant,user等概念限制 
 用户还可以收集数据来为上层应用，比如PAAS，SAAS等使用  
-用户可以通过RESTFUL API发送数据到ceilometer数据库保存
+用户可以通过RESTFUL API发送数据到ceilometer数据库保存     
+
+    ceilometer sample-create -r 37128ad6-daaa-4d22-9509-b7e1c6b08697 \
+    -m memory.usage --meter-type gauge --meter-unit MB --sample-volume 48
+    
+
+    ID of the corresponding resource. (--resource-id)   
+    Name of meter. (--meter-name)
+    Type of meter. (--meter-type)
+    Predefined meter types:
+    Gauge
+    Delta
+    Cumulative
+    Unit of meter. (--meter-unit)
+    Volume of sample. (--sample-volume)
 
 
 ![多种发布功能](http://docs.openstack.org/developer/ceilometer/_images/3-Pipeline.png)
 发布计量数据给不同的使用场景，主要有两个关注点：频率和发布方式  
 “multi-publishe”现在可以为不同的使用场景，通过不同的频率和不同的方式去发布数据
 现在实现的3种发布方式： 
-notifier  
-RPC 
-UDP 
+notifier    
+RPC   
+UDP   
 
 
 ![cpu例子](http://docs.openstack.org/developer/ceilometer/_images/4-Transformer.png)
