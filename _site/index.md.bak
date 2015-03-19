@@ -26,6 +26,9 @@
         </div>
         <div class="home-contact">
             <a href="http://weibo.com/344736086/" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
+            <a href="http://www.linkedin.com/in/yanheven" target="_blank"
+            style="margin-left:-5px;"><img
+            src="http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" alt="" width="25"/></a>
         </div>
     </div>
 
@@ -42,6 +45,16 @@
         <ul class="artical-list">
         
             <li>
+                <h2><a href="/centos65-image-create">制作openstack用的centos6.5镜像</a></h2>
+                <div class="title-desc">制作openstack用的centos6.5镜像</div>
+            </li>
+        
+            <li>
+                <h2><a href="/docker-study">docker study</a></h2>
+                <div class="title-desc">a mindstorm grapic of docker learning</div>
+            </li>
+        
+            <li>
                 <h2><a href="/ceph-study">ceph study</a></h2>
                 <div class="title-desc">a mindstorm grapic of ceph learning</div>
             </li>
@@ -49,11 +62,6 @@
             <li>
                 <h2><a href="/ceph"></a></h2>
                 <div class="title-desc"></div>
-            </li>
-        
-            <li>
-                <h2><a href="/stronger-will-be-stronger">强者越强</a></h2>
-                <div class="title-desc">强者越强，这个基本上放在很多领域都适用</div>
             </li>
         
             <li>

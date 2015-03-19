@@ -5,7 +5,7 @@
     * Author:         Hyphen
     -->
     <meta charset="utf-8" />
-    <title>cloud computing | Hyphen's Blog</title>
+    <title>制作openstack用的centos6.5镜像 | Hyphen's Blog</title>
     <meta property="wb:webmaster" content="da16ead91e9cebac" />
     <meta name="baidu-site-verification" content="FOjh43GBkR" />
     <meta name="author" content="Hyphen" />
@@ -45,13 +45,136 @@
 
 <div id="content">
     <div class="entry">
-        <h1 class="entry-title"><a href="/hello-cloud" title="cloud computing">cloud computing</a></h1>
-        <p class="entry-date">2014-08-04</p>
-        <h1><a href="/hello-cloud" title="cloud computing">cloud computing</a></h1>
+        <h1 class="entry-title"><a href="/centos65-image-create" title="制作openstack用的centos6.5镜像">制作openstack用的centos6.5镜像</a></h1>
+        <p class="entry-date">2014-10-18</p>
+        <p>Author:<a href="http://weibo.com/344736086">Hyphen</a></p>
 
-<p>2014-08-04   By <a href="http://hyphen.tk/">Hyphen</a></p>
+<h3>目的：</h3>
 
-<p>今天是个好日子。</p>
+<p>在centos6.5操作系统环境下制作一个centos6.5的kvm镜像,安装cloud-init,能自动扩展根分区</p>
+
+<h3>一、制作环境：</h3>
+
+<p>操作环境是在openstack平台开一个实例，装的是centos6.5，镜像来自：http://cloud.centos.org/centos/6.5/images/CentOS-6-x86_64-GenericCloud-20140929_01.qcow2</p>
+
+<p>centos社区制作的镜像，不支持自动扩展根分区，导致创建实例时不论你指定硬盘大小是多大，它都是7G多点。</p>
+
+<h3>二、安装软件：</h3>
+
+<p>yum groupinstall Virtualization "Virtualization Client"
+yum install libvirt libguestfs-tools</p>
+
+<h3>三、制作过程：</h3>
+
+<h4>1、下载一个最小的centos6.5的iso文件：</h4>
+
+<p>wgethttp://mirrors.163.com/centos/6.5/isos/x86_64/CentOS-6.5-x86_64-minimal.iso</p>
+
+<h4>2、创建一个空的镜像文件：</h4>
+
+<pre><code>qemu-img create -f qcow2 centos-6.5.qcow2 5G
+</code></pre>
+
+<h4>3、创建命令：</h4>
+
+<pre><code>virt-install  --name centos-6.5 --ram 1024 --cdrom=CentOS-6.5-x86_64-minimal.iso --disk centos-6.5.qcow2,format=qcow2 --grap    hics vnc,listen=0.0.0.0 —noautoconsole --os-type=linux --os-variant=rhel6
+</code></pre>
+
+<h4>4、系统安装过程：</h4>
+
+<p>分区只分一个,挂载到“/”，格式为ext4；
+不要swap,boot等分区</p>
+
+<h4>5、初始化镜像：</h4>
+
+<h5>(1)安装完系统后，点击重启，其实在virsh 命令下看这个虚拟机，已经是关机状态了，要用命令启动它</h5>
+
+<pre><code>virsh start centos-6.5
+</code></pre>
+
+<p>注意：启动过程非常慢，只能等待，不要在启动时重启它，不然出问题。</p>
+
+<h5>(2)通过vnc-viewer连接过去，如果你有跑多个虚拟机，可以用下面的命令来查看这个虚拟机的vnc端口</h5>
+
+<pre><code>virsh vncdisplay centos-6.5
+</code></pre>
+
+<h5>(3)要使nova console-log 能将实例启动过程输出到实例启动日志中，要在文件/boot/grub/menu.lst 中kernel参数中增加下面的内容:</h5>
+
+<pre><code>kernel ...（省略n个参数）... console=tty0 console=ttyS0,115200n8
+</code></pre>
+
+<h5>(4)修改网络信息 /etc/sysconfig/network-scripts/ifcfg-eth0 （删掉mac信息)如下:</h5>
+
+<pre><code>TYPE=Ethernet
+DEVICE=eth0
+ONBOOT=yes
+BOOTPROTO=dhcp
+NM_CONTROLLED=no
+增加一行到/etc/sysconfig/network ：
+NOZERCONF=yes
+</code></pre>
+
+<p>为了使实例支持两张网卡,复制多一个ifcif-eth1文件:</p>
+
+<pre><code>cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth1
+sed -i "s/eth0/eth1/" /etc/sysconfig/network-scripts/ifcfg-eth1
+</code></pre>
+
+<h5>（5）增加epel源、更新系统，安装git：</h5>
+
+<pre><code>yum install -y http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+yum -y distro-sync
+yum -y install git
+</code></pre>
+
+<h5>（6）安装ACPI服务，能让宿主机对虚拟机进行开关机等电源管理操作</h5>
+
+<pre><code>yum install acpid
+chkconfig acpid on
+</code></pre>
+
+<h5>（7）安装linux rootfs resize，使得实例启动时可以自动扩展根分区</h5>
+
+<pre><code>cd /tmp
+git clone https://github.com/flegmatik/linux-rootfs-resize.git
+cd linux-rootfs-resize
+./install
+</code></pre>
+
+<h5>（8）安装cloud-init</h5>
+
+<pre><code>yum install -y cloud-utils cloud-init parted
+</code></pre>
+
+<p>   修改配置文件/etc/cloud/cloud.cfg ，在cloud_init_modules 下面增加:</p>
+
+<pre><code>- resolv-conf
+</code></pre>
+
+<h5>（9）卸载epel源,关机：</h5>
+
+<pre><code>poweroff
+</code></pre>
+
+<h5>6、善后操作</h5>
+
+<h6>（1）清除网络相关硬件生成信息</h6>
+
+<pre><code>virt-sysprep -d centos-6.5
+</code></pre>
+
+<h6>（2）压缩镜像</h6>
+
+<pre><code>virt-sparsify --compress /tmp/centos-6.5.qcow2 centos-6.5-cloud.qcow2
+</code></pre>
+
+<p>镜像制作到此结束</p>
+
+<h5>参考文档：</h5>
+
+<p><a href="http://docs.openstack.org/image-guide/content/centos-image.html#d6e899">http://docs.openstack.org/image-guide/content/centos-image.html#d6e899</a>
+<a href="http://docs.openstack.org/image-guide/content/centos-image.html#d6e899">https://openstack.redhat.com/Creating_CentOS_and_Fedora_images_ready_for_Openstack</a></p>
 
 
         <div id="disqus_container">

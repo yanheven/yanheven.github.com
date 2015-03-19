@@ -4,7 +4,7 @@
    <title>Hyphen's Blog</title>
    <link href="http://hyphen.tk/atom.xml" rel="self" type="application/atom+xml"/>
    <link href="http://hyphen.tk" rel="alternate" type="text/html" />
-   <updated>2014-09-20T15:16:59+08:00</updated>
+   <updated>2014-12-30T22:53:24+08:00</updated>
    <id>http://hyphen.tk</id>
    <author>
      <name></name>
@@ -13,13 +13,417 @@
 
    
    <entry>
+     <title>how to start a startup</title>
+     <link href="http://hyphen.tk/how-to-start-a-startup"/>
+     <updated>2014-12-30T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/how-to-start-a-startup</id>
+     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://startupclass.club/topics/39&quot;&gt;原文出处&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;标题：创业点子、产品、团队和执行（第一部分）&amp;amp; 我们为什么要创业
+作者：Sam Aleman
+译者：张路遥，吴云泥，黄沁，Teresa
+正文：&lt;/p&gt;
+
+&lt;p&gt;欢迎
+欢迎来到CS183B。我是Sam Altman，我是Y Combinator的总裁。九年前，我还是斯坦福的一名学生，接着我辍学去创办了一家公司，后来我成为了一名投资人。所以在YC，我们已经指导人创业九年了。尽管其中大部分都是针对特定项目的，但仍然有30%是通用的。虽然这只是创业路上的30%，但仍然希望它能给你们带来帮助。&lt;/p&gt;
+
+&lt;p&gt;这堂课的内容我们在YC已经教过很多次，但从来没有被录下来过。这是第一次我们教的很多东西将被录下来。我们邀请了一些我们的演讲嘉宾来做和他们在YC做的相同的分享。YC已经投资了725家公司，所以我们确信这里大部分建议是相当好的。我们没法投资所有创业公司，当我们有希望让所有人都能接触到这些建议。&lt;/p&gt;
+
+&lt;p&gt;我只教三课。算上YC自己，每一个演讲嘉宾都曾经参与创办过一家十亿美金以上的公司。所以这些建议不会那么理论化，都是已经被实践过的。&lt;/p&gt;
+
+&lt;p&gt;这门课所给出的建议，是面向那些正在创建一门生意的人，他们的目标是高速成长并最终发展成一家大公司。这里许多建议并不能应用到其他场景中，所以我要提前警告大家，如果你打算把这些东西用到大公司或者非创业公司中去，它不会管用的。这是很有意思的，我确实认为创业就是未来，值得我们花工夫去理解它们，但创业公司和普通的公司又有很大的不一样。所以今天和周四的课上，我将要对创业关键的四个方面给出一个概述，来帮助你最大限度地取得创业成功。然后在整个课程中，演讲嘉宾们将会对这些方面进行更详细深入的阐述。&lt;/p&gt;
+
+&lt;p&gt;这四个方面就是：你需要一个伟大的创业点子，一个很棒的产品，一个杰出的团队，和完美的执行。尽管这些有部分是重叠的，但我不得不分开讲来把它们说清楚。&lt;/p&gt;
+
+&lt;p&gt;你可能仍然会失败。创业最终结果有点像：点子 x 产品 x 执行 x 团队 x 运气，其中运气是一个零到一万的随机数。真的是这样。但如果你在这四个方面做得非常好，你有一个不错的机会至少获得一定程度的成功。&lt;/p&gt;
+
+&lt;p&gt;有一个令人兴奋的事情就是，创业就像玩一样。当你年轻又缺乏经验时，你能做这事儿。当你年老又经验丰富时，你也能做这事儿。创业中我特别喜欢的一点就是，有些事情在其他工作场景下很糟糕，例如又穷又无知，但在创业的时候却是一笔巨大的财富。&lt;/p&gt;
+
+&lt;p&gt;在我们讨论怎么创业之前，我想先谈谈为什么要创业。对于开这门课我本来是有点犹豫的，因为我不希望你们为了创业而创业。有很多更简单的方式可以让你变得富有，每一个创业者都总说，他们完全没有想到创业是那么艰难那么苦逼。只有在你被一个问题困住，并且觉得创办一家公司是解决它的最好办法的时候，你才应该去创业。&lt;/p&gt;
+
+&lt;p&gt;必须现有明确的激情，然后才有创业。事实上，我们在YC的所有课都以此为前提。所以今天课程的后一半，我会交给Dustin Moskovitz，他会谈谈为什么要创业。这门课受到这么多的关注让我们都震惊了，所以我们要确保花了足够多的时间讨论为什么要创业。&lt;/p&gt;
+
+&lt;p&gt;四个方面中的第一个：一个伟大的创业点子。最近几年很流行说，点子不重要。实际上，花大把时间思考创业点子一点都不酷。你应该立刻开始，丢掉所有包袱，看是什么拖累了你，你甚至不用花时间想做这些有没有价值。&lt;/p&gt;
+
+&lt;p&gt;pivots挺好的，如果多来几次那更好了。所以这也不是完全错误的，事情会以我们完全预想不到的方式演化。所以当你还没有把产品送到用户手上前，你的了解是非常有限的。所以好的执行至少比好的点子重要十倍、难上一百倍。&lt;/p&gt;
+
+&lt;p&gt;但是这个事情已经有点脱离正轨了。糟糕的点子依旧是糟糕的，并且在这个现如今乐于创业的世界中，我们还依然感觉良好。基于糟糕的点子，即使有非常好的执行，你也无法拥有好的结果。当然，有很多例外，但是大多数伟大的公司是从一个伟大的点子开始的。&lt;/p&gt;
+
+&lt;p&gt;如果你看那些成功的案例, 它们通常都是从创始人自身的需求衍生的，而不是一个随机产生的想法。Airbnb的源起，是因为创始人Brian Chesky付不起他的房租，而且他还有空余房间。如果你回过头看看这些成功案例的过去的发展，通常来讲他们没可能变为大公司。 我个人呢，过去会认为点子其实不重要，但是我现在非常确信这是错误的。&lt;/p&gt;
+
+&lt;p&gt;点子的定义，像我们讨论的，是非常广泛的。它包括市场的规模和发展空间，公司的发展策略、保护策略等。当我们评估一个点子的时候，需要考虑所有这些方面，而不仅仅是产品本身。实现一个想法，你需要计划将未来十年的时间花费在这上面，这样你才有足够多的时间全面思考产品和公司的价值。即使计划本身是没有意义的，计划的执行却会非常有价值。这一点在当今的大多数创业公司中都缺失了。&lt;/p&gt;
+
+&lt;p&gt;长期思考虽然在其他领域非常少见，但是在创业公司中却存在着。进行长期思考具有非常多的好处。请记住，随着你的思考，你的点子也会变的更加宽泛且向各个领域延伸。你当然不用将你未来执行过程中的每一步都搞清楚，但你确实需要从一个核心点开始。并且，你需要以一些有意思的方式展开。&lt;/p&gt;
+
+&lt;p&gt;当我们查看各种点子的时候，有一点经常被创始人们忽略，那就是你需要建立一个别人难以复制的产品或业务。而这对于一个好点子来说非常重要。&lt;/p&gt;
+
+&lt;p&gt;我想要重申这个观点，因为这非常重要：先有点子，再有创业。当你拥有一个感觉必须要去探索的点子之后，再创业吧。这也可以用于选择好的点子。如果你有几个点子，选择那个你不在工作时在你脑海中出现最多的点子吧。我们从创业者听到的最多见的就是，他们希望他们当初并不那么着急创业，而是去等待他们最深爱的那个点子出现。&lt;/p&gt;
+
+&lt;p&gt;另外一种思考就是，大多数伟大的公司都有使命感。除非大公司有使命感，否则很难把握大公司业务需要的关注点的数量。而且，没有一个根本的伟大的点子也通常会很难。有使命感的好处就是你自己会全身心的投入。建立一个伟大的创业公司需要花费很多年，通常十年以上。如果你不热爱或者不相信你所建立的事业，你很可能在这过程中放弃。我觉得如果没有那种“目标必须实现”的信仰，你不可能度过创业过程中的痛苦与艰辛。很多创业者，尤其是学生，他们认为创业只需要花费2到3年，然后他们就可以继续做他们真正热爱的事情。这样是无法成功的。好的创业，通常要花费十年。&lt;/p&gt;
+
+&lt;p&gt;使命感的第三个好处是公司外部的人员会更愿意帮助你。相比复制其他项目而言，开始一个重要的且充满挑战的项目，你会得到更多的帮助。所以对于创业而言，开启一个充满挑战的创业项目，比开始一个简单的创业项目，反而会更容易。这属于与正常认知相反的情况，是需要很长时间理解的。很难讲拥有使命感到底有多重要，所以我想要最后一次强调：基本没有全新观点与视野的公司，就是那些复制其他已有点子的公司，不会使人们兴奋，也就不会使团队成员足够努力工作，从而难以获得成功。&lt;/p&gt;
+
+&lt;p&gt;Paul Graham下周会来讲讲如何获取创业点子。这是很多创业者纠结的地方，但我相信你会在实践中更好的掌握这点，而且这真的非常值得尝试。&lt;/p&gt;
+
+&lt;p&gt;获取伟大的点子中最难的部分，就是最好的点子在最开始会显得非常糟糕。第十三代搜索引擎，且没有任何网站门户功能？大多数人会觉得这个没有意义。搜索已经被做得差不多了，而且没有那么重要吧，门户才是价值所在。第十个社交网络，而且只提供给那帮没有消费能力的大学生？也是个糟糕的点子。MySpace已经成功了，谁想要大学生变成用户？反正怎么想都很糟糕。&lt;/p&gt;
+
+&lt;p&gt;这些点子听上去很糟糕，但是最后却很成功。如果它们起初听起来很酷，有可能就会有很多人都开始尝试做。正如Peter Thiel 将要在第五节课上讨论的那样，你会希望你的点子获得垄断地位。但是你不可能直接获取垄断。你必须找到一个小的市场来获得垄断然后迅速扩张。这就是为什么伟大的创业点子一开始看起来会很糟糕。如果你能这样说那就很好了：“今天，只有一小部分人会使用我的产品，但是我会获取这部分全部的用户。未来，几乎所有人都会使用我的产品。”&lt;/p&gt;
+
+&lt;p&gt;今后会经常提到的一个主题就是：你需要信仰、信念，并且愿意忽略其他所有人的反对意见。困难的部分在于，这会是一条非常狭窄的坚持之路。一边是正确，另一边是疯狂。但是你需要记住的是，如果你有一个伟大的点子，大部分人会觉得这是糟糕的。你应该为此感到高兴，这说明他们不会来和你竞争。&lt;/p&gt;
+
+&lt;p&gt;这就是为什么，告诉其他人你的想法并不危险。真正好的想法听上去并不会那么值得抄袭。你需要的是一个你能这样描述的点子：“我知道这听上去像一个坏点子，但它实际上它是一个伟大的点子，具体原因如下……” 你得听上去很疯狂，但是实际上又得是正确的。你得要一个其他很多人都不会去做的点子。而且，即使这个点子最初听起来不是个大生意，也没关系。&lt;/p&gt;
+
+&lt;p&gt;创业者中的一个普遍错误，尤其在初创者中，就是他们认为产品的第一个版本，也就是他们点子的第一个版本，需要听上去可以覆盖很大的市场。但其实不是。它只需要覆盖一小部分市场，并且从那里开始扩展。这是大多数伟大公司开始的方式。不流行但是正确，是你努力的方向。你需要一个听上去很糟糕的，但实际上又非常好的点子。&lt;/p&gt;
+
+&lt;p&gt;你也需要花时间去思考，市场如何进化。你需要一个十年内会发展很大的市场。现在大部分投资者会很在意市场规模，但他们并不思考市场以后会如何进化。&lt;/p&gt;
+
+&lt;p&gt;事实上，我认为这是投资者犯的最大的系统级错误之一。他们会思考创业公司本身的发展，却不思考市场的发展。我更在意市场的发展速度，而不是当前的规模。而且我还会在意这个市场会不会因为某种可能达到最大。你应该思考一下这点。我更喜欢投资的的公司，他们所专注的，是当前规模小但发展速度非常快的市场，而不是一个现在很大，发展却很缓慢的市场。&lt;/p&gt;
+
+&lt;p&gt;这些规模较小但发展快速的市场有一个极大的优势，那就是目标用户们通常极度渴望一个解决方案，因此，他们会选择一个不那么完美，但是快速成长的产品。作为学生的一个巨大的优势在于，你比年龄更大的那些人对哪些市场将要开始快速发展有更好的直觉，这也是学生的两个最大的优势之一。另一件事，通常情况下学生自己并不理解，或者需要花上一段时间才能理解的，那就是你不可能创造一个完全不存在的市场。在一家创业公司，你基本上可以改变任何事，但是唯独市场是无法改变的，所以你最好先仔细想想来确定你要进入的市场是真实存在且是会发展增长的，至少你要尽可能地确定这件事。&lt;/p&gt;
+
+&lt;p&gt;在形容一个对的市场的时候有很多种方式，比如，赶上其他人的浪潮，步入了一部上升的电梯，或者说成为一次变革中的一员，但这些都只是你想进入一个即将非常快速发展的市场的不同说法。这个市场今天看起来很小，也许现在它的确只是个小市场，但是你知道——而其他人都不知道——这个市场即将极为快速地发展起来。&lt;/p&gt;
+
+&lt;p&gt;所以，请仔细思考下，这件事正发生在世界上的哪个地方。你需要借着这股顺风的力来帮你把一个创业公司做成。&lt;/p&gt;
+
+&lt;p&gt;令人兴奋的事情是，当下这种顺风力可能要比以往任何时候都多。就像Mac Andreessen说的那样，软件正在吞噬世界。各个领域都充斥着太多伟大的点子了。你只需要从中挑一个，并且找到那个你真正特别关心的。&lt;/p&gt;
+
+&lt;p&gt;这个问题的另一个版本考虑的是相同的观点，也就是红杉资本的著名问题：为什么是现在？为什么现在是实现这个特别的点子的完美时间点，为什么要在现在来建立这样一个特别的公司，为什么两年前不做，而且为什么未来两年又会太迟？所有我们接触到的最为成功的创业公司，都有着非常毓秀（伟大）的点子，并且对这个问题有个完美的答案。如果你不是这样的，那你至少应该多多少少对这个问题心存下疑虑。&lt;/p&gt;
+
+&lt;p&gt;大多数情况下，创造些你自己需要的东西那是最好不过的了。这样你对产品的理解，要比你通过和一个目标用户聊天的方式来建立最初的版本强很多。如果你在开发的东西是自己不需要而是别人需要的，那你需要明白，你自己正处于一个巨大的弱势中，务必保证自己和你的用户要走的非常非常近。如果可以的话，尝试着在他们的办公室里工作，如果不行，那也要保证一天之中会和他们多次交谈。&lt;/p&gt;
+
+&lt;p&gt;另一件有过一个好点子的多少违反直觉的事情是，这些好点子基本上都是非常容易解释清楚并且非常容易去理解的。如果一句话不能解释清楚你在做的事情，那么这通常情况下是一个信号，你的点子太过复杂了。你的点子应该能够通过少数几个词来非常清楚明晰有条理的表达出来。一般情况下最好的点子会与现有公司大不相同，这种不同或者体现在某项非常重要的业务流程上，比如，Google作为搜索引擎要完爆其他的那些门户网站，又或者就是你的点子是全新的，比如SpaceX。任何一家公司，如果去克隆一些已经存在的东西，不管是做出一些小的业务变化或者在外观上做一些差异化——比如做出更漂亮的设计，或者专门服务一些喜欢红酒的人，他们通常情况下都会以失败告终。&lt;/p&gt;
+
+&lt;p&gt;所以如我所说，做一个学生最好的事之一就是你对新技术总是有着极好的观点。学会找到一个好点子需要花费一段时间，所以，你最好现在就立刻开始在这方面努力。我们总是能听到人谈起的就是，他们总希望他们还是学生的时候能多做一些事。&lt;/p&gt;
+
+&lt;p&gt;另一件极为不错的事情就是你可以发现一些潜在的联合创始人。你们已经意识不到你们现在处于的环境是有多么的好，你随处可以见一些你能和他一起开启一家公司的人。而有一件我们会经常和学校学生们说的事就是认识一些潜在的联合创始人远比任何一家独特的创业公司要重要。&lt;/p&gt;
+
+&lt;p&gt;所以我今天想用一段来自50 Cent（注：美国说唱歌手）的话来结束我这部分的演讲。这段话来源于他被问及Vitamin Water广告的时候。我不会读它，它就在那，但重要的是你要想清楚消费者要的是什么，并且想清楚市场的需求是什么。大多数人不做这个，尤其是大多数学生。如果你能把这一件事做了，如果你能紧紧学着实现考虑市场，你会领先其他开始创业的人一大步。不实现思考市场，不提前去思考人们想要的是什么，这大概也就是我们大多数情况下不看好一些YC应用的原因。&lt;/p&gt;
+
+&lt;p&gt;在下一节中，我将会讨论如何建立一个好的产品。在这里我要再一次用下一个较为宽泛的产品的定义。一个产品包括用户支持，你写下的产品解释，以及你的用户群与你为他们开发的东西之间产生的一切交互。&lt;/p&gt;
+
+&lt;p&gt;要建立一家伟大的公司，首先你必须将一个好点子变成一个好产品。这很难，但却至关重要，好在这个过程充满乐趣。虽然很棒的产品对世界而言都是推陈出新的，要给你在做什么东西方面给个建议也很难，但是新产品之间有着大量的共性，我们可以就如何创造新产品给你诸多建议。&lt;/p&gt;
+
+&lt;p&gt;作为一位创始人，最首要的任务之一就是确保公司能推出一个伟大的产品。直到你推出一项很棒的产品前，别的什么都不重要。每位真正意义上成功的创始人在讲述他们创业早年时光时，几乎都是坐在电脑前研究自己的产品或者和客户们进行交流。几乎所有的时间都在干这些。他们很少做别的事情，如果你的时间安排与此大不相同的话，那你应该仔细考虑下自己的时间安排了。当你有了一个好的产品之后，创始人们努力去解决的其它诸多问题，诸如融资、宣传、招聘、业务拓展等等都会变得容易很多 。所以，推出一样很好的产品才是你需要最先关注的。第一步就是创造一样用户们热爱的东西。在YC，我们让创业者们做的事情就是研究自己的产品、和用户交流、运动、吃饭和睡觉，别无其它。所有其它我刚刚提到的事情----诸如公关、会议、招聘顾问、寻求合作伙伴等，你都应该忽略掉。你所需要做的就是做成一样产品并通过和你的用户沟通，让你的产品尽可能变得更好。&lt;/p&gt;
+
+&lt;p&gt;你的工作就是创造一些用户热爱的东西。几乎没有一家公司可以在没有首先把产品做好的情况下还获得卓越成功的。很多只善于纸上谈兵的创始人的失败原因就在于他们仅仅做出了人们喜欢的产品。做出人们想要的东西，但仅仅只能到达让人喜欢的程度，这很大可能会导致失败，而这些创始人甚至都不明白自己为什么失败。所以说，喜欢和热爱是完全不同的两回事 。&lt;/p&gt;
+
+&lt;p&gt;我们在YC中经常说到一个观点，就是最好推出的是一小部分人热爱，大多数人之后会喜欢的产品。当然，如果能做出这种让大量用户热爱的产品是最好的了，但是实际上对于v1来说这种机遇是很少的，而且这些机会通常创业公司难以把握。所以现实中，你最终会折中处理这个问题。你们会推出一些大多数用户有点喜欢的东西，或者少数用户极度热爱的东西。这点建议很重要。推出一些少数人酷爱的东西。将一个少数人酷爱的产品推广到很多人喜欢，然后从大众喜欢再到很多人酷爱，会容易很多。如果你做对了，那么在其它很多事情上发生错误（也没有大问题）。如果你这点没有做对，那么即使你把其他所有的事情都做对了，你仍有可能失败。所以当你开始创业的时候，这就是你唯一需要做的事情，你必须坚持到底，直至见到成效。&lt;/p&gt;
+
+&lt;p&gt;【观众】：你能再放一遍那个幻灯片么？&lt;/p&gt;
+
+&lt;p&gt;所以在创业时你是有选择机会的。所有领域里最棒的事情就是推出一样很多人真正热爱的产品。而事实上，你一般实现不了这一点。因为一旦有这样的机会，Google或者Facebook就会去做。所以，就好像这条曲线下方的区域面积，也就是我们可以创造的东西，是有限的。所以，你可以选择创造大量用户还算喜欢的产品或者少数用户极度酷爱的产品。所以就想爱的总量是一定的，就看你怎么分配了。【观众笑声】这就是这次交谈的原则，通过你的创业中的首个产品，你能给这个世界带来多少欢乐。&lt;/p&gt;
+
+&lt;p&gt;所以创业者经常纠结于应该选择哪个目标。这两种目标实现的结果看起来是一样的，对吧？因为他们在这条曲线下方实现的面积是一样的。但是我们再来看一遍这个，他们其实是不一样的。如果你创造了某些人喜爱的东西，那么要推广这些东西则非常容易。你可以将这些东西推广成为其他很多人都喜爱的东西。但是如果你刚开始就抱着矛盾模糊的态度，或者投入的热情不够，还试图将产品推广。那么你的产品永远都不会得到很多人的喜爱。所以，我们的建议是：定位一小群使用者，并让他们爱上你的产品。&lt;/p&gt;
+
+&lt;p&gt;能让你意识到这种做法起作用的事，就是你的产品就会通过人与人的口耳相传而为人所知。如果大家喜爱你的产品，他们就会告诉自己的朋友。这对消费类产品和企业产品同样有效。当大家真的喜爱某样东西的时候，他们就会跟自己的朋友介绍这样东西，那时候你就会看到产品的有机增长了。&lt;/p&gt;
+
+&lt;p&gt;如果你发现自己认定会有强大的合作伙伴救你于水火或者有类似的解决麻烦的后路，故而认为产品销量没有增长也无妨的话-,这大抵是有真正麻烦的迹象 。销售和市场固然重要，我们稍后会有两堂课程来说。然而一样很棒的产品是却是保证长期增长的秘诀所在。你首先必须掌握这项秘诀。将推出一样很棒的产品这一工作推迟的做法并不会让一切变得更加容易。如果你试图在拥有一样能让一些人真正喜爱的产品前创建一个实现销售增长的机制。毫无疑问，你是在浪费时间。实现真正突破的公司几乎都有一个非常出色的产品，然后产品的知名度会通过口耳相传而增长。长时间后，很好的产品就会胜出。别去管你的竞争对手筹集了多少资金或者接下来要做什么。很可能他们根本就不是很好。很少有创业者是在竞争中被打败的。很多创业者失败是因为他们没有创造出用户喜爱的产品，他们把时间浪费在了其它事情上。所以，你应该担心的是这些。&lt;/p&gt;
+
+&lt;p&gt;要创造用户喜爱的产品的另一条建议是：从一些简单的东西入手。如果你能创造出简单的东西，那么要推出一样伟大的产品便会非常非常容易。即使你最终计划的产品超级复杂（我们也希望是这样）。你几乎都是从解决你认为最不起眼问题的小设备开始的。要创造一样出色的产品很困难，因此你应该从尽可能小的表面区域开始。想想那些真正成功的公司，他们刚起步的时候在干什么，然后想想那些你真心喜爱的产品。这些产品整体使用起来都极为简易，尤其是刚开始使用的时候。第一版本的Facebook简单得三岁小孩都会用。Google的第一版本也仅仅是一个只有一个文本框和两个按钮的页面；但是谷歌总能给你最好的搜索结果，这就是为什么使用者喜欢它的原因。Iphone用起来也要比其它比它更早推出的智能手机更为简单，所以它也成为了用户真正喜欢的第一部智能机。&lt;/p&gt;
+
+&lt;p&gt;商品简单可以带来好处的另一个原因是因为这可以迫使你把一件事做的极度好。你必须得这样做才能做出人们喜爱的产品。&lt;/p&gt;
+
+&lt;p&gt;在你们听成功创始人在讲述他们对自己产品的想法时，你们能经常听到“狂热”这个词。创始人们会谈及他们对于关注产品小细节的质量方面的嫉妒狂热。他们狂热的方面有：对说明自己产品如何定位正确的狂热，以及表达自己对客户支持态度的狂热。事实上，一个与YC公司成功相关的因素之一是这些公司的创始人将页面任务连接到他们票务系统中，这样一来，即使用户在半夜创始人睡着的时候发邮件，他们仍然可以在一个小时内收到回复。公司实际上在开始阶段会这样做。在产品不好的时候，公司的创始人会感觉浑身不自在，经常会半夜修复产品。他们不会推出垃圾产品，但如果推出了垃圾产品，他们也会很快将它修好。因此，要造出出色的产品，创始人对产品的痴迷也是有相当水平要求的。&lt;/p&gt;
+
+&lt;p&gt;你需要一些用户来帮助你完成反馈循环。但是你只能人工来找到这些用户---你应该亲自征募这些使用者。早期招募首批用户时，不要通过诸如购买Google广告之类这样的方式。你不需要很多使用者，你只需要一些能每天给你反馈信息并最终会喜爱你的产品的使用者。因此，不要通过Google广告词来寻找这些人。全世界范围内，你只需要那么几个能胜任的使用者。所以，亲自去寻找这些用户。&lt;/p&gt;
+
+&lt;p&gt;当所有人都认为Pinterest只是个笑话的时候，Ben Silbermann通过在咖啡店聊天的方式招募了他的第一批用户。他的确是这么做的。他当时就在Palo Alto转悠，然后跟别人说“请问你要不要试试我的产品？”他也跑遍了Palo Aloto的苹果店，并试图在店员发现他并把他赶出去之前尽快将所有的浏览器主页变成Pinterest。（笑声），这样一来，当人们进来的时候，他们就会问“哎呀，这是什么呀？”这是一个关于细节决定成败的典型例子。如果你还没有看过Paul Graham写的一篇关于该话题的论文，你绝对有必要看一下。&lt;/p&gt;
+
+&lt;p&gt;所以，亲自找一些用户，记住，你的目标是要让这一小群人喜欢你。要对这一小群人了解透彻，要和他们保持很密切的关系。听取他们的意见，你会发现几乎大多数情况下他们都愿意给你提供反馈意见。就算你是在为你自己创造商品，也去听听外部用户的意见，他们会告诉你怎样让你的商品变得让人们乐意去花钱买。尽一切努力让他们喜欢你，让他们知道你在干什么。因为他们也可能会帮助你推广你的产品，帮你找到下一批用户。&lt;/p&gt;
+
+&lt;p&gt;如果你想在公司内部设立一种机制来将用户的反馈转化为产品决策 。那么就按照用户的方式回复反馈信息。问问他们喜欢哪些地方，不喜欢哪些地方，并看看他们如何使用你的产品。问问他们觉得哪些地方花钱会比较值当。问问他们如果你的公司离开了，他们会不会真的觉得失望。问问他们哪些地方值得他们把产品介绍给他们的朋友。以及他们是否已经向朋友推荐了该款产品。&lt;/p&gt;
+
+&lt;p&gt;你应该尽可能保证这一反馈环节的紧密性。如果你的产品每周优化10%，这样的增加是很快的。软件创业的一个优势就是你可以将反馈环路制定得很短。可以以小时计算，最好的公司往往拥有最紧凑的反馈环路。你应该尽量让这一反馈环路在你公司的整个生命周期中都存在。然而，这在早期阶段尤为重要。&lt;/p&gt;
+
+&lt;p&gt;好在以上这些都是可行的。虽然这很难，也需要很多努力，但是这并不是什么不可思议的事情。至少计划的目的很明确，最终你将会创造出一件很出色的产品。&lt;/p&gt;
+
+&lt;p&gt;出色的创始人是不会让其他人介入他和用户之间的。这些公司的创始人在早期阶段连销售和客服工作都是亲力亲为的。将这一环节植入到企业文化中十分关键。事实上，我们经常看到的斯坦福创业中存在具体问题是，基于某些原因，学生试图直接雇佣人员来完成销售和客服工作，你必须要自己来干这些事情，这是唯一正确的做法。&lt;/p&gt;
+
+&lt;p&gt;你真的需要通过定量来让自己保持坦诚。公司也的确会按照CEO决定的任何标准来进行考核。如果你建立了一项网络服务，就不要在乎总注册量之类这样的东西-不要谈论它，也不要让公司里的任何人谈论-你需要做的是关注增长和活跃用户、活跃水平、留存率，收益和净推介值。这些指数才能说明问题。如果这些指数都没有按照理想的趋势发展，那么你要绝对坦诚。创业靠的是增长，只有增长才能说明一样商品是否出色。&lt;/p&gt;
+
+&lt;p&gt;所以，这就是的如何创造伟大产品的的所有内容。我想再强调一遍，如果你没有做到这些，我们所讲的其它东西都没什么意义。在这点起作用之前，你可以忽略课堂上讲的所有其它内容。积极点来讲，这可是创业过程中最有趣的部分。&lt;/p&gt;
+
+&lt;p&gt;所以在这里我将暂停一下。我们将在周二讲述剩下的部分。现在Dustin将讲一下为什么创业。欢迎Dustin。&lt;/p&gt;
+
+&lt;p&gt;为什么创业
+耶……Sam让我讲讲为什么创业。我经常听到的人们关于创业的普遍理由数不胜数。知道你自己创业的原因很重要，因为别人的原因在某些环境下是合理的，有些实际上则会将你引上歧途。你可能已经被好莱坞或者媒体上的被浪漫化创业意图所误导，所以我将试着对以下可能的谬论进行说明，这样你们就会更清醒地做决定。首先我想说的是我最喜欢真正创业的理由，这个理由与Sam刚刚讲的很多内容相关。但是呢，我认为这并不是一个最普遍的理由。通常人们创业的理由都是这些其它理由中的一个，或者，你知道，他们只是为了开公司而开公司。&lt;/p&gt;
+
+&lt;p&gt;所以列举起来，有四个理由是比较吸引人的。那就是：你们将会成为老板；你们在各方面，尤其是在时间安排上将会更灵活；你们将有机会发挥更大的影响力，赚更多的钱之后你们可能会加入一家后期公司。&lt;/p&gt;
+
+&lt;p&gt;你们可能对这一概念会比较熟悉，当我写Medium Post的时候，你们当中很多人一年前就读过，我感觉在新闻界发生的这一故事多多少少有点失真。创业变得有些太过浪漫主义化。电影《社群网站》上映后，对于如何成为一名企业家这一观念产生了很多不好的影响。但是，电影主要刻画的场面像是，有很多场聚会，你周转其中，对所有的事物都具有敏锐的洞察力，让人觉得这样做真的很酷。&lt;/p&gt;
+
+&lt;p&gt;但我的认为是，现实很残酷。作为一名企业家，首先有丑陋的一面，然而更为重要的是，你们实际上会花大把的时间来做很多辛苦的工作。Sam刚刚也提到了这一点，你所做的基本上就是坐在桌前，集中注意力、埋头回复客服邮件、搞销售并解决困难的工程问题。因此，你睁大眼睛投入工作至关重要，当然这也会让你很有压力。最近在新闻界的热门话题是：经济学人上一周刊登了一篇名为“匿名企业家”的故事。这个故事讲述了一位创始人喜欢躲在自己的桌子底下，诉说创业者的压抑。所以，这是很真实的。大家都实际些，如果你要开一家公司，那将是非常非常艰苦的。&lt;/p&gt;
+
+&lt;p&gt;为什么会如此有压力呢？有两个原因。首先是你将担负很多责任。从事任何的职业都害怕失败，但这只是一种普遍的心理状态。但是当你成为一名企业家时，你对失败的恐惧不仅代表了你自己的恐惧，还代表了所有决定跟随你的人的恐惧。所以，这让你很有压力。有时候人们将自己的生计寄希望于你，即使不是这样，他们也决定将自己最好的年华贡献出来跟随你。所以，你要对他们的时间的时机成本负责。大家可能随时需要你，如果出现状况-----可能不会经常出现在凌晨三点，对于某些创业者来说的确是这样----但是如果发生什么重要的事情，你都要去解决。这大概就是这个故事的结局。不管你是在度假，还是在过周末，你要时刻留心，思想上要时刻准备着去处理一些诸如此类的事情。这种压力的特例就是融资。&lt;/p&gt;
+
+&lt;p&gt;《社交网络》中有这样一个场景：大家都在聚会，同时也在工作。有的人把香槟喷的到处都是-《社交网络》关于这样的场景很多。Mark没有出现在场景中，电影花了大量时间在想方设法将mark描绘成一个十足的混蛋&lt;/p&gt;
+
+&lt;p&gt;这是一个发生在Palo Alto的真实场景，他更多的时间是在这张桌子旁边，低着头，注意力集中。Mark有时候仍是一个坏蛋，但是他的这种坏更让人觉得有趣、萌萌哒，并不是一种反社会的、一个被鄙视的情人的那种坏。所以，这就是他意在集中精神，专注工作，不参与社交的写照。&lt;/p&gt;
+
+&lt;p&gt;然后，还有一幕展现了这一顿悟的时刻，有点像《美丽心灵》中，他们完全引用了那个场景。因此他们想描绘这一场景，并从这些时刻跳到另外一些时刻，中间都是在参加聚会。但事实上，我们一直都是坐在桌旁。所以，如果你比较这张图片，Mark的姿势从未变过，图片唯一的区别是，他每天都穿了不同的衣服。这就是我本人的实际感受。我就是这样的，这就是刚刚我谈论的经济学人刊载的那篇文章。&lt;/p&gt;
+
+&lt;p&gt;因此对创业者来说不受欢迎的媒体关注对他们来说是另一种压力。一般来说，只有得到媒体关注正面曝光时，才能让他们出名。很荣幸，我今年成为了《时代》的封面人物。但如果上《人物》封面的是你的婚纱照，那么也许就不太不适了。其实这取决于你是谁,我真的很讨厌这样,但是当Valleywag八卦你的讲座和让你泪奔时，你不想要这样,你绝对不希望这样。没人想要。&lt;/p&gt;
+
+&lt;p&gt;我几乎从未听人谈论他们自己是多么的负责。所以如果你在初创公司不开心,压力大，事情进展不顺，你可以离开。作为创始人来讲,你也可以离开,但这是极不冷静的做法,在你以后的事业发展中也会使你前程黑暗。如果顺利，你一定要挺住10年，如果不顺利也要尽量挺住5年。三年,是你判断公司运营不好的时间点，如果之后你为公司找到了好归宿，那么剩下的两年就要收购这家公司。在强调一遍，如果在这之前离开，你伤害的不止是公司的财政,而是你公司的所有员工。如果你幸运的话,你有一个糟糕的创业点子,你会迅速失败,大多数情况剧情并非如此发展。&lt;/p&gt;
+
+&lt;p&gt;因此，在我的生命力曾承受过很多类似的压力，特别是在Facebook刚刚创建时，那是我身体很糟糕，最没精力的时候。在过去的的日子里，实际上，几乎每六个月，我都会处于很焦虑的状态，二十一二岁是，最为严重。所以如果你确定要创建公司了，就一定要意识到你会面临这些，你一定要解决好身体的问题，这是你的责任心的核心。 Ben Horowitz习惯说CEO的首要任务是照顾好身体，这话说得非常对，一定要这样做。&lt;/p&gt;
+
+&lt;p&gt;另一个原因,特别是如果你在另一个公司还有工作,你开始这样想,比如说：运行这个公司里面的人都是傻子,他们事无巨细都要去讨论决定，而且把时间都花在了这些愚蠢的讨论和决定上,我要开一个公司一定能做得更好。我会设立所有的规章制度去优化。&lt;/p&gt;
+
+&lt;p&gt;听起来不错,很有道理。如果你读过我在媒体发表的文章,你就会知道会发生什么,现在给你们一秒钟读这句话:&lt;/p&gt;
+
+&lt;p&gt;那些有愿望想自己创建公司当CEO，站在金字塔尖的人，有些人是被地位驱使的，但并非所有人都是。 事实是：除了你的所有人都是老板，你的所有员工，顾客，伙伴，客户，媒体都是你的老板，以前从来没有像现在一样这么多人需要我去考虑。 大多数CEO的生活都对外曝光了，至少我和我熟知的CEO是这样的。如果你想对别人使用权利，那还是去参军或参政，别当老板。 -Phil Libin&lt;/p&gt;
+
+&lt;p&gt;这使我产生了共鸣，我想指出的是这些决定的事情很微妙。可能你认为是白痴的人并不白痴,只是在他们面前面临了非常困难的决定,人们的想法各不相同。所以作为CEO最寻常的事就是我不得不花费时间精力去解决其他人带给我的问题，而通常这些问题都是冲突的。人们想做不同选择，顾客想要不同的东西。也许在这方面我有自己的看法，但我的工作就是让那些最让我失望的人和难题都解决掉。&lt;/p&gt;
+
+&lt;p&gt;甚至在每天最基本的事情上，我都可以把如何完善公司的宏伟计划拿到周一去解决。但是如果是我的重要的员工辞职了，那就是我最重要的事了，我需要花时间处理它。&lt;/p&gt;
+
+&lt;p&gt;作为老板的一点好处就是你有绝对的自由，你可以自己制定自己的日程，这确实是个吸引人的想法。但事实是下面这样的。&lt;/p&gt;
+
+&lt;p&gt;Phil Libin
+如果你要成为老板，老实说你确实时间会比较灵活，一天24小时，你想什么时候工作都可以。 -- Phil Libin&lt;/p&gt;
+
+&lt;p&gt;这点上也让我很赞同。但我再强调一下，之所以这样的原因是，你要随叫随到，也许你并不想每天的全部时间都工作，但这并不是你能控制的了的。&lt;/p&gt;
+
+&lt;p&gt;你是公司的典范，这点非常重要。你可能身体有时好有时坏，有时你会身体特别差想休息几周，但很不幸，你是老板。你的团队只能感受到你在办公桌上带给他们的信号，如果你前腿走了，他们也会这么做。&lt;/p&gt;
+
+&lt;p&gt;无论如何，你都得工作。如果你的工作是由兴趣驱使的，兴趣就会拉动你工作，如果你是和牛逼的投资人、和一些牛逼的团队工作，他们会非常努力的干活，他们同样希望你努力工作。&lt;/p&gt;
+
+&lt;p&gt;许多公司喜欢讲这样的故事，你可以有好处并享受它，也许你可以一周只工作四天，如果你 是Tim Ferris，你还可以一周只工作12小时，多么吸引人的想法呀！但这只是特例，特例是说你研究完市场后只想运营一家小公司，当小公司的老板。但根本没意义，因为只要捏员工数达到两三人，你还是要建立全职的体系。&lt;/p&gt;
+
+&lt;p&gt;你会很有钱并且更有影响力&lt;/p&gt;
+
+&lt;p&gt;这是我听到的特别是像申请公司的候选人说到的最可能的一个。他们说：他们确实很想在小公司工作或自己创建小公司，但当我有更大份额或公司更有影响力时，我就会有更多的股份，那样就会赚更多的钱，所以如果真是这样，咱们就一起去研究下。&lt;/p&gt;
+
+&lt;p&gt;现在我解释一下这个表格，看起来有点复杂但咱们现在左侧的表。这些都是解释 Dropbox 和Facebook的，这些都是他们当前的估值,然后第二栏代表第100个加入的员工你能赚多少钱，特别如果你是有经验的或者说是相对有经验的工程师，譬如说是有五年工作经验，应该会拿到大约10基点左右的工作。如果是几年前来的Dropbox，你的薪资大概锁定在1000万美元，并且还会有很多上升空间。如果是几年前来的Facebook，你的年薪估计已经达到2亿美元了，这是个大数，就算你是第1000位员工，差不多2009年进入，你也还是拿到了2000万美元，那是个大数，当你思考你可能会作为一个企业家时你就会考虑这些方面。&lt;/p&gt;
+
+&lt;p&gt;再看右边的表,这是你可能遇到的两种理论。“宠物坐的Uber”,很不错的主意,如果你真的能做成这个，你可能会有一个很好的机会建立一个1亿美元的公司，你的公司的股份额可能会在10%左右,这方面幅度会很大，有的创始人多些有的创始人少些，但多次股权稀释,多次建立期权池后你很可能最终就拿到那些股份。如果你拥有比这些超出太多，我推荐你研究山姆的创始人和员工之间的关于股权分配的邮件，你应该给员工更多的激励。&lt;/p&gt;
+
+&lt;p&gt;所以，基本上来讲，如果你对赚1个亿十分有信心了，这其实是个很大胆的问题。毫无疑问，2009年的Facebook和2014年的Dropbox能让你也更有信心，即便你的创业公司还不存在，这也值得一试，如果你有赚1个亿的想法，你还有信心能做到，我会考虑投资。&lt;/p&gt;
+
+&lt;p&gt;如果你认为自己非常适合做“宇宙航行行业的Uber”，这是个伟大的想法，是一个值20亿美元的想法，而你也确实会得到相当丰厚的回报，你显然应该去做这件事。但这是四年后才会看到的价值，这种想法就像有腿一样，也会随之变化。如果你想做这件事，可能你都不应该现在在这上课，直接去创建公司吧。&lt;/p&gt;
+
+&lt;p&gt;为什么这件事情在经济上有回报，同时富有影响力呢？我真的觉得经济上的回报和我们对世界的影响力紧密相连，如果你不认同，我会给你举一些专门的例子，暂时先不考虑股权。&lt;/p&gt;
+
+&lt;p&gt;为什么会后期加入一个公司有更多的影响力呢 ？这得力于一个增益的机制:他们有的大量的用户基础,如果是Facebook就有十亿用户,如果是谷歌就有十亿用户,他们还有你要创建的基础设施,尽管初创公司AWS和一些小的牛逼的独立服务器可以满足你的需求,加入大公司你会经常得到一些已经打包好的辅助性技术,这是一个很好的起点。而当你开始和团队合作了,它将把想法变成更伟大的事情。&lt;/p&gt;
+
+&lt;p&gt;举几个具体例子，Bret Taylor在谷歌1500人时加入的，他开发了谷歌地图，这是你们几乎每天都用的产品，我用地图来到这，而其他人在全世界的各个角落用地图。他无需创建公司做这件事，他只需一笔巨额资金支持，但这个想法至今极具影响力。&lt;/p&gt;
+
+&lt;p&gt;不久我的协同创始人贾斯汀Rosenstein在Brett之后也加入了谷歌，他是那的产品经理，就因为一个次级的项目，他关停了一个聊天功能，这是个独立的APP，现在他把它整合在GMAIL里，就像你在右上角看到的那样，在他弄之前，你可能不能想象你能在Ajax或者在浏览器里聊天。而他做了demo，给团队展示并实现了。这个产品也是你们几乎每天都用的产品。&lt;/p&gt;
+
+&lt;p&gt;也许更令人印象深刻的是,贾斯汀离开后不久,他成为 Facebook大概第250位员工，他和安德鲁·博斯沃思这些人创建hackaton项目创造了“Like”这个按钮,如今这是网络上最流行的元素之一,完全提升了人们的使用体验,然后这又是不需要创立单独公司去做的项目，如果做了也肯定会失败，因为它的成功是依托于Facebook 的基础。&lt;/p&gt;
+
+&lt;p&gt;所以重要的是要记住，你想要创立公司的目的是什么，你用什么方式能把它实现。&lt;/p&gt;
+
+&lt;p&gt;那么最好的理由到底是什么？&lt;/p&gt;
+
+&lt;p&gt;Sam已经对这个话题讨论了一些，但是基本来讲你有几件事是不得不做的，你对这个好点子极度有热情，你是做这事适合的人，你会让它运转，那么到底是哪出现了问题？&lt;/p&gt;
+
+&lt;p&gt;这是个文字游戏，有两件事作为创始人你是必须坚持的，一件是你必须富有激情，无论如何你都会去完成这件事，这很重要，因为热情会使你在创业早期度过很多难关，你还需要办事有效率的员工，他们能够在你干不动的时候感觉到，周围还有很多充满激情的创业团队，员工们也可以离开你去为他们工作。这个是企业家的基础之一，如果你潜意识的状态能时刻被大家察觉，告诉大家你没有激情，那么问题就大了。&lt;/p&gt;
+
+&lt;p&gt;另一种理解方式是，世界需要你这么做。想法很重要，这点无可厚非。它能让世界变得更好，所以世界需要好的想法。&lt;/p&gt;
+
+&lt;p&gt;如果这些不是世界需要的东西，我们就该去做一些世界需要的东西，你的时间真的很宝贵，每天都会产生巨多好的想法，也许不是你的，也许是公司现有的，你只要把精力花在好的事情上面。&lt;/p&gt;
+
+&lt;p&gt;第二种理解方式是，世界必须要你去做这个，实际上，在某方面你是非常适合做这事的，但如果不是这样的，就可能代表你的时间做好去做其它事情。最好的场景是，如果你并不是最适合做这件事的，但你击败了最适合做这件事的团队，这仍然是对于我们的世界来说次优的结果，尽管可能不是那么好而已。&lt;/p&gt;
+
+&lt;p&gt;所以回想一下我在Asana的经验。我和贾斯丁在创建Asana前都不愿做老板，我们在Facebook工作，我们在做超棒的项目，我们基本上整白天都在做日常的项目，晚上我们会继续和项目负责人一起工作尝试新的想法，只因我们对这个想法有热情，这点子太有价值以至于我们都不愿意做其它事儿。&lt;/p&gt;
+
+&lt;p&gt;在某种意义上，如果不去开公司这意味着什么是需要我们去好好讨论的，我们能看到Facebook的影响，我们确信这对世界是有意义的，我们也确定没人会做这件事，因为这个问题存在很长时间了，我们一直能看到对这个问题的微创新改进方案，所以我们相信，如果我们没有做出我们认为最好的解决方案，会有很多价值没有被发掘。 我们不能停止，这个想法像有生命一样一定要让自己出生、展现在世界眼前，我想，当你想创立一家公司的时候，这应该是你需要去寻找的一种感觉，通过这种感觉你才知道，你的想法是不是对的。&lt;/p&gt;
+
+&lt;p&gt;之后我会接着讲在那有个中止，我会把推荐书目写在这下面。 谢谢&lt;/p&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>云计算平台下的计算机架构漫想</title>
+     <link href="http://hyphen.tk/computing-structure"/>
+     <updated>2014-11-01T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/computing-structure</id>
+     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;起源&lt;/h4&gt;
+
+&lt;p&gt;这几天在想公司云平台的计算与存储架构,现在计算与存储基本都是放在不同的地方,那这些资源之间通信都是走的基本网络通信协议,这些在多台普通计算机之间通信来说并不奇怪,但在一个云计算平台的数据中心来说,我就开始怀疑这种架构的效率.&lt;/p&gt;
+
+&lt;h4&gt;思路&lt;/h4&gt;
+
+&lt;p&gt;在一个数据中心里面,如果大量的机器之间有大量数据流,然后形成一个整体来对外服务,其实就是我们现在说的云计算平台.站在平台之外来看,其实我们可以把一个云平台看成是一台很大很大的计算机.然后在这个数据中心里面,我的存储节点和计算节点之间的数据通道走的还是跟普通机器的一个完整的网络协议,这样让我觉得有点浪费资源.为什么我们这样一个对外面来说相对封闭的一个集群里面的机器也要跟外面其他机器一样走完这套网络协议流程呢?为什么不可以按我们一台普通个人电脑的架构一样,里面各组件数据流走总线这种模式呢?其实想到这里我又想起了我司之间另外一个团队分享的技术,就是我们数据中心,其中的数据通信,走的是经过优化的网络协议,他们声称可以将速度提升百分之十十左右(好像是这个数,记不太清楚了).&lt;/p&gt;
+
+&lt;h4&gt;分析&lt;/h4&gt;
+
+&lt;p&gt;之前跟他们说时没太在意,以为他们有点吹的成分,现在想想还是有一定的道理的.很多时候,我们走的流程都是一种通用的流程,因为要关注所有使用者,所以可能有浪费的情况.举一个很简单的例子,手机长号11位,手机短号6位,在这里就不关注价格了,就关注结构.如果我们只在一个比较小的圈子通信,用6位的足够了,但假如在这种情况下,你用11位的一样可以,这样你可以跟更多的人通信.我觉得同事做的网络协议的优化就跟这个6位短号一样,我不需要跟全国人通信,我为什么一定要用11位号码,我用6位效率更高.&lt;/p&gt;
+
+&lt;h4&gt;类比&lt;/h4&gt;
+
+&lt;p&gt;通过上面的分析,那这个例子也可以用到我们的云计算数据中心中来.如果我的不同节点之间数据流是不需要与全球互联网通信,它的终极目的就是只在内部通信(这里指集群内部的数据流,当然集群与外部通信有相应的出口,这种就不在现在讨论范围之内),为什么也要按互联网的普通机器的协议来使用呢,何不精简些呢,比较理想的是我们现在的PC机内部组件的这种总线通信.即使是做不到这种级别,但至少可以做得比现在按标准网络协议这套要高效吧.&lt;/p&gt;
+
+&lt;h4&gt;发散&lt;/h4&gt;
+
+&lt;p&gt;有时我们都会局限在当前的状况里面,很多思考都被当前的情形所限制,我们现在很多人,包括我,在写文章前,都会在一味想怎样设计架构,怎么组织我的不同功能的节点,让它们运转得更好,但却很少有时间,也很少有这种童真去思考,可不可以不按照现在的框架来做呢,真正革它的命呢
+以上想法纯粹是漫想,胡思乱想还是要有的,万一实现了呢?&lt;/p&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>制作openstack用的centos6.5镜像</title>
+     <link href="http://hyphen.tk/centos65-image-create"/>
+     <updated>2014-10-18T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/centos65-image-create</id>
+     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;目的：&lt;/h3&gt;
+
+&lt;p&gt;在centos6.5操作系统环境下制作一个centos6.5的kvm镜像,安装cloud-init,能自动扩展根分区&lt;/p&gt;
+
+&lt;h3&gt;一、制作环境：&lt;/h3&gt;
+
+&lt;p&gt;操作环境是在openstack平台开一个实例，装的是centos6.5，镜像来自：http://cloud.centos.org/centos/6.5/images/CentOS-6-x86_64-GenericCloud-20140929_01.qcow2&lt;/p&gt;
+
+&lt;p&gt;centos社区制作的镜像，不支持自动扩展根分区，导致创建实例时不论你指定硬盘大小是多大，它都是7G多点。&lt;/p&gt;
+
+&lt;h3&gt;二、安装软件：&lt;/h3&gt;
+
+&lt;p&gt;yum groupinstall Virtualization &quot;Virtualization Client&quot;
+yum install libvirt libguestfs-tools&lt;/p&gt;
+
+&lt;h3&gt;三、制作过程：&lt;/h3&gt;
+
+&lt;h4&gt;1、下载一个最小的centos6.5的iso文件：&lt;/h4&gt;
+
+&lt;p&gt;wgethttp://mirrors.163.com/centos/6.5/isos/x86_64/CentOS-6.5-x86_64-minimal.iso&lt;/p&gt;
+
+&lt;h4&gt;2、创建一个空的镜像文件：&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;qemu-img create -f qcow2 centos-6.5.qcow2 5G
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;3、创建命令：&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;virt-install  --name centos-6.5 --ram 1024 --cdrom=CentOS-6.5-x86_64-minimal.iso --disk centos-6.5.qcow2,format=qcow2 --grap    hics vnc,listen=0.0.0.0 —noautoconsole --os-type=linux --os-variant=rhel6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;4、系统安装过程：&lt;/h4&gt;
+
+&lt;p&gt;分区只分一个,挂载到“/”，格式为ext4；
+不要swap,boot等分区&lt;/p&gt;
+
+&lt;h4&gt;5、初始化镜像：&lt;/h4&gt;
+
+&lt;h5&gt;(1)安装完系统后，点击重启，其实在virsh 命令下看这个虚拟机，已经是关机状态了，要用命令启动它&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;virsh start centos-6.5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意：启动过程非常慢，只能等待，不要在启动时重启它，不然出问题。&lt;/p&gt;
+
+&lt;h5&gt;(2)通过vnc-viewer连接过去，如果你有跑多个虚拟机，可以用下面的命令来查看这个虚拟机的vnc端口&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;virsh vncdisplay centos-6.5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5&gt;(3)要使nova console-log 能将实例启动过程输出到实例启动日志中，要在文件/boot/grub/menu.lst 中kernel参数中增加下面的内容:&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;kernel ...（省略n个参数）... console=tty0 console=ttyS0,115200n8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5&gt;(4)修改网络信息 /etc/sysconfig/network-scripts/ifcfg-eth0 （删掉mac信息)如下:&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;TYPE=Ethernet
+DEVICE=eth0
+ONBOOT=yes
+BOOTPROTO=dhcp
+NM_CONTROLLED=no
+增加一行到/etc/sysconfig/network ：
+NOZERCONF=yes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;为了使实例支持两张网卡,复制多一个ifcif-eth1文件:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth1
+sed -i &quot;s/eth0/eth1/&quot; /etc/sysconfig/network-scripts/ifcfg-eth1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5&gt;（5）增加epel源、更新系统，安装git：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install -y http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+yum -y distro-sync
+yum -y install git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5&gt;（6）安装ACPI服务，能让宿主机对虚拟机进行开关机等电源管理操作&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install acpid
+chkconfig acpid on
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5&gt;（7）安装linux rootfs resize，使得实例启动时可以自动扩展根分区&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;cd /tmp
+git clone https://github.com/flegmatik/linux-rootfs-resize.git
+cd linux-rootfs-resize
+./install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5&gt;（8）安装cloud-init&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install -y cloud-utils cloud-init parted
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;   修改配置文件/etc/cloud/cloud.cfg ，在cloud_init_modules 下面增加:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- resolv-conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5&gt;（9）卸载epel源,关机：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;poweroff
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5&gt;6、善后操作&lt;/h5&gt;
+
+&lt;h6&gt;（1）清除网络相关硬件生成信息&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code&gt;virt-sysprep -d centos-6.5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h6&gt;（2）压缩镜像&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code&gt;virt-sparsify --compress /tmp/centos-6.5.qcow2 centos-6.5-cloud.qcow2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;镜像制作到此结束&lt;/p&gt;
+
+&lt;h5&gt;参考文档：&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://docs.openstack.org/image-guide/content/centos-image.html#d6e899&quot;&gt;http://docs.openstack.org/image-guide/content/centos-image.html#d6e899&lt;/a&gt;
+&lt;a href=&quot;http://docs.openstack.org/image-guide/content/centos-image.html#d6e899&quot;&gt;https://openstack.redhat.com/Creating_CentOS_and_Fedora_images_ready_for_Openstack&lt;/a&gt;&lt;/p&gt;
+</content>
+   </entry>
+   
+   <entry>
+     <title>docker study</title>
+     <link href="http://hyphen.tk/docker-study"/>
+     <updated>2014-09-20T00:00:00+08:00</updated>
+     <id>http://hyphen.tk/docker-study</id>
+     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;参考章宇兄的开源项目学习ABC的方法来对docker进行简单的学习与分析,下面是分析过程中画的图片.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/githubpages/docker_learn.jpg&quot; alt=&quot;ceph&quot; /&gt;&lt;/p&gt;
+</content>
+   </entry>
+   
+   <entry>
      <title>ceph study</title>
      <link href="http://hyphen.tk/ceph-study"/>
      <updated>2014-09-20T00:00:00+08:00</updated>
      <id>http://hyphen.tk/ceph-study</id>
      <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;参考章宇兄的开源项目学习ABC的方法来对ceph进行简单的学习与分析,下面是分析过程中画的mindstorm图片.&lt;/p&gt;
+&lt;p&gt;参考章宇兄的开源项目学习ABC的方法来对ceph进行简单的学习与分析,下面是分析过程中画的图片.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/githubpages/ceph_learn.jpg&quot; alt=&quot;ceph&quot; /&gt;&lt;/p&gt;
 </content>
@@ -198,237 +602,6 @@ This was the closest I&#39;ve been to facing death, and I hope it&#39;s the clos
 &lt;p&gt;下面的资料介绍得不错：&lt;br/&gt;
 1、&lt;a href=&quot;http://docs.jboss.org/jbossaop/docs/2.0.0.GA/docs/aspect-framework/userguide/en/html/what.html&quot;&gt;JBoss官方文档关于AOP介绍&lt;/a&gt;    &lt;br/&gt;
 2、&lt;a href=&quot;http://www.cnblogs.com/wayfarer/articles/241024.html&quot;&gt;张逸：AOP技术基础&lt;/a&gt;&lt;/p&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>hello mac</title>
-     <link href="http://hyphen.tk/hello-mac"/>
-     <updated>2014-08-04T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/hello-mac</id>
-     <content type="html">&lt;h1&gt;Hello Mac&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4&gt;coding with Mac is really effeciency&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;print &quot;hello mac&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4&gt;better coding style&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;for i in range(1,?)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4&gt;better life style&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;while True:
-    coding
-    if home:
-        sleep early
-    else:
-        coding
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4&gt;coding anywhere since mac is so portable&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;site=[&quot;home&quot;,&quot;part&quot;,&quot;cafe&quot;,&quot;others&quot;]
-for i in site:
-    coding
-&lt;/code&gt;&lt;/pre&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>cloud computing</title>
-     <link href="http://hyphen.tk/hello-cloud"/>
-     <updated>2014-08-04T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/hello-cloud</id>
-     <content type="html">&lt;h1&gt;&lt;a href=&quot;/hello-cloud&quot; title=&quot;cloud computing&quot;&gt;cloud computing&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;2014-08-04   By &lt;a href=&quot;http://hyphen.tk/&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;今天是个好日子。&lt;/p&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>about me</title>
-     <link href="http://hyphen.tk/about-me"/>
-     <updated>2014-08-04T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/about-me</id>
-     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4&gt;I am a openstacker, pythoner, linuxer, macer and the most important, learner.&lt;/h4&gt;
-
-&lt;h4&gt;I firmly believe the more I learn, the more I code, the more I can do to better our world &amp;amp; our life&lt;/h4&gt;
-
-&lt;h4&gt;I firmly believe that cloud computing will greatly facilitate the progress of Technology.&lt;/h4&gt;
-
-&lt;h4&gt;I am on the road to becoming a cloud architect.&lt;/h4&gt;
-
-&lt;h3&gt;CV&lt;/h3&gt;
-
-&lt;p&gt;yanheven@gmail.com&lt;/p&gt;
-
-&lt;h5&gt;Expertise&lt;/h5&gt;
-
-&lt;p&gt;熟练 : Openstack python c java linux network&lt;br/&gt;
-了解 : kvm Jquery css html Ajax Hadoop&lt;/p&gt;
-
-&lt;h5&gt;Work Experience&lt;/h5&gt;
-
-&lt;p&gt;12/2013-06/2014: 在唯品会云计算部门从事：协助Openstack的布署、运营；参与WEB控制台前端与后端的开发(python,git)   &lt;br/&gt;
-01/2013-12/2013: 在学校实验室（温氏集团-华农联合实验室）邝颖杰老师指导下，从事Openstack的布署与研究
-2013-now: Openstack 中文翻译组成员&lt;/p&gt;
-
-&lt;h5&gt;Educational Background&lt;/h5&gt;
-
-&lt;p&gt;09/2010-06/2014 University:华南农业大学 &lt;br/&gt;
-                 Major: 网络工程, 学士学位&lt;br/&gt;
-                Dissertation:基于云平台流媒体服务器集群的搭建&lt;/p&gt;
-
-&lt;h5&gt;Honours and Certificate&lt;/h5&gt;
-
-&lt;p&gt;11/2008: 广东省茂名市信息学竞赛一等奖   &lt;br/&gt;
-03/2011: 华南农业大学程序设计大赛新生杯第八名   &lt;br/&gt;
-04/2011: 第四届2011ACM程序设计大赛珠海赛区团队三等奖&lt;/p&gt;
-
-&lt;h5&gt;Social Experience&lt;/h5&gt;
-
-&lt;p&gt;07/2011-02/2012: 电脑城电脑销售    &lt;br/&gt;
-03/2012-05/2012: 广州10个城中村探索，6人小队队长&lt;/p&gt;
-
-&lt;h5&gt;Language&lt;/h5&gt;
-
-&lt;p&gt;普通话，粤语，广东电白黎话   &lt;br/&gt;
-英语良好，雅思6.5（听说读写分别：7.5，6，6.5，6.5）
-大学英语六级，四级&lt;/p&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>openstack horizon 开发入门</title>
-     <link href="http://hyphen.tk/openstack-horizon-develop"/>
-     <updated>2014-03-16T00:00:00+08:00</updated>
-     <id>http://hyphen.tk/openstack-horizon-develop</id>
-     <content type="html">&lt;p&gt;Author:&lt;a href=&quot;http://weibo.com/344736086&quot;&gt;Hyphen&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4&gt;这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。&lt;/h4&gt;
-
-&lt;h2&gt;1、前端&lt;/h2&gt;
-
-&lt;p&gt;首先是前端的技术，之前只知道简单的html语法，对CSS，JS，JQUERY等一窍不通。年后，小组开发人手不是很够，果断转行去开发，记得刚开始，搞个练手的界面，搞了两天才实现。而且前提是别人写好的结构，拿过来修改使用。熟读唐诗三百首，不会做诗也会吟的境界。但是一旦碰到没有样例的界面，那就头疼了，因为很多标签都是不认识的。但只能问人，搜索用法，记得有几天，写几个界面，搞得有点喘不过气来。但事实证明一句老话，当你感觉到难受的时候，是你学东西最多的时候。因为不懂，所以觉得很难，因为一直坚持，所以特别难受，中途多次想不做前端了，让其他人做，只写后端好了，但还是一直坚持。截止本稿时间，终于学到了一些基本前端，现在做OPensack的控制台界面开发勉强够用。&lt;/p&gt;
-
-&lt;h2&gt;2、后端&lt;/h2&gt;
-
-&lt;p&gt;开发后端直接使用各个服务的client，因为Horizon就是这么干的。&lt;/p&gt;
-
-&lt;p&gt;通过实例化一个通过授权认证的客户端对象，然后可以进行后续的操作&lt;/p&gt;
-
-&lt;h3&gt;2.1、nova&lt;/h3&gt;
-
-&lt;p&gt;nova操作&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import novaclient.v1_1.client as nvclient
-nova = nvclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],\
-                        username=auth_dict[&quot;--os-username&quot;],\
-                        api_key=auth_dict[&quot;--os-password&quot;],\
-                        project_id=auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;2.2 keystone&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient                     
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
-                                    username = auth_dict[&quot;--os-username&quot;], \
-                                    password = auth_dict[&quot;--os-password&quot;], \
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;2.3 neutron&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
-                                    username = auth_dict[&quot;--os-username&quot;], \
-                                    password = auth_dict[&quot;--os-password&quot;], \
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;或者这样：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient  
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \  
-                                    username = auth_dict[&quot;--os-username&quot;], \  
-                                    password = auth_dict[&quot;--os-password&quot;], \  
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])  
-
-endpoint_url = keystone.service_catalog.url_for(service_type=&#39;network&#39;)  
-token = keystone.auth_token  
-neutron2 = neutronclient.Client(endpoint_url=endpoint_url, token=token) 
-neutron = neutronclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],
-username=auth_dict[&quot;--os-username&quot;],
-password=auth_dict[&quot;--os-password&quot;],
-tenant_name=auth_dict[&quot;--os-tenant-name&quot;])                                   
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4&gt;这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。&lt;/h4&gt;
-
-&lt;h2&gt;1、前端&lt;/h2&gt;
-
-&lt;p&gt;首先是前端的技术，之前只知道简单的html语法，对CSS，JS，JQUERY等一窍不通。年后，小组开发人手不是很够，果断转行去开发，记得刚开始，搞个练手的界面，搞了两天才实现。而且前提是别人写好的结构，拿过来修改使用。熟读唐诗三百首，不会做诗也会吟的境界。但是一旦碰到没有样例的界面，那就头疼了，因为很多标签都是不认识的。但只能问人，搜索用法，记得有几天，写几个界面，搞得有点喘不过气来。但事实证明一句老话，当你感觉到难受的时候，是你学东西最多的时候。因为不懂，所以觉得很难，因为一直坚持，所以特别难受，中途多次想不做前端了，让其他人做，只写后端好了，但还是一直坚持。截止本稿时间，终于学到了一些基本前端，现在做OPensack的控制台界面开发勉强够用。&lt;/p&gt;
-
-&lt;h2&gt;2、后端&lt;/h2&gt;
-
-&lt;p&gt;开发后端直接使用各个服务的client，因为Horizon就是这么干的。&lt;/p&gt;
-
-&lt;p&gt;通过实例化一个通过授权认证的客户端对象，然后可以进行后续的操作&lt;/p&gt;
-
-&lt;h3&gt;2.1、nova&lt;/h3&gt;
-
-&lt;p&gt;nova操作&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import novaclient.v1_1.client as nvclient
-nova = nvclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],\
-                        username=auth_dict[&quot;--os-username&quot;],\
-                        api_key=auth_dict[&quot;--os-password&quot;],\
-                        project_id=auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;2.2 keystone&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient                     
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
-                                    username = auth_dict[&quot;--os-username&quot;], \
-                                    password = auth_dict[&quot;--os-password&quot;], \
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;2.3 neutron&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \
-                                    username = auth_dict[&quot;--os-username&quot;], \
-                                    password = auth_dict[&quot;--os-password&quot;], \
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;或者这样：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import keystoneclient.v2_0.client as ksclient  
-keystone = ksclient.Client(auth_url = auth_dict[&quot;--os-auth-url&quot;], \  
-                                    username = auth_dict[&quot;--os-username&quot;], \  
-                                    password = auth_dict[&quot;--os-password&quot;], \  
-                                    tenant_name = auth_dict[&quot;--os-tenant-name&quot;])  
-
-endpoint_url = keystone.service_catalog.url_for(service_type=&#39;network&#39;)  
-token = keystone.auth_token  
-neutron2 = neutronclient.Client(endpoint_url=endpoint_url, token=token) 
-neutron = neutronclient.Client(auth_url=auth_dict[&quot;--os-auth-url&quot;],
-username=auth_dict[&quot;--os-username&quot;],
-password=auth_dict[&quot;--os-password&quot;],
-tenant_name=auth_dict[&quot;--os-tenant-name&quot;])                                   
-&lt;/code&gt;&lt;/pre&gt;
 </content>
    </entry>
    
