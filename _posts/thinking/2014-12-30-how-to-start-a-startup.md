@@ -6,7 +6,7 @@ description: how to start a startup
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 [原文出处](http://startupclass.club/topics/39)
 

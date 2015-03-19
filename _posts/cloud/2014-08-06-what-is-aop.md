@@ -2,11 +2,11 @@
 layout: post
 title: what is "AOP"
 category: cloud
-description: brief introduction of "AOP"
+description: 2014-08-06
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 #### what is "AOP"
 

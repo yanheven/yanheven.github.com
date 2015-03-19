@@ -2,11 +2,11 @@
 layout: post
 title: openstack nova 命令行指令大全  
 category: cloud
-description: openstack nova 命令行指令大全  
+description: 2013-01-05
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 
 ###### 来自官方文档

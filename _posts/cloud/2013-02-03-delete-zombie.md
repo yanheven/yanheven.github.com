@@ -2,11 +2,11 @@
 layout: post
 title: openstack folsom删除僵尸实例
 category: cloud
-description: openstack folsom删除僵尸实例
+description: 2013-02-03
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 
 	#!/bin/bash

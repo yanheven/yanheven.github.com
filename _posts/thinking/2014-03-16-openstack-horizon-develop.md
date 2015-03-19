@@ -2,11 +2,11 @@
 layout: post
 title: openstack horizon 开发入门
 category: thinking
-description: SDK开发入门简介
+description: 2014-03-16
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 
 #### 这段时间进行openstack控制台界面的开发有2个多月，感觉学到了不少东西。

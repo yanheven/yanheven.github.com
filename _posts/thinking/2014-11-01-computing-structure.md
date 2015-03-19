@@ -2,11 +2,11 @@
 layout: post	
 title: 	云计算平台下的计算机架构漫想  
 category: thinking  
-description: 云计算平台下的计算机架构漫想	
+description: 2014-11-01
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 #### 起源
 这几天在想公司云平台的计算与存储架构,现在计算与存储基本都是放在不同的地方,那这些资源之间通信都是走的基本网络通信协议,这些在多台普通计算机之间通信来说并不奇怪,但在一个云计算平台的数据中心来说,我就开始怀疑这种架构的效率.

@@ -2,11 +2,11 @@
 layout: post
 title: openstack 常用命令
 category: cloud
-description: openstack常用命令
+description: 2013-12-11
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 
 #### . Nova

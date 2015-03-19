@@ -2,11 +2,11 @@
 layout: post
 title: 制作openstack用的centos6.5镜像
 category: cloud
-description: 制作openstack用的centos6.5镜像
+description: 2014-10-18
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 
 

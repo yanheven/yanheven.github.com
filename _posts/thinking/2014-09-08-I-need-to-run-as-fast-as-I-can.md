@@ -2,11 +2,11 @@
 layout: post		
 title: 我必须加快学习的脚步	
 category: thinking		
-description: I need to run as fast as I can
+description: 2014-09-08
 
 ---
 
-Author:[Hyphen](http://weibo.com/344736086)
+Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 ### 参观东莞机房建设
 今天中秋佳节,跟老爸一起吃饭,茶余饭后,跟老爸聊聊工作.没想到,现在老爸也是做IT的人了.他们在东莞石碣建机房,花几个亿打造几千个机柜的超豪华数据中心.作为IT人的我,感觉自愧不如呀.饭后跟老爸到现场看了下.戴上安全帽后,在老爸的带领下进了机房现场.老爸用他多年的介绍水准,详细为我介绍了机房建设情况,那情形就跟当时胡锦涛主席到百度视察,李长厂为主席介绍狼长的技术.
