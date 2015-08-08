@@ -315,3 +315,5 @@ $neutron router-interface-add CookbookRouter CookbookSubnet2
 ```
 
 可以从日志 /opt/stack/log/q-svc.log 看到打印出来的网络信息. 可以看到port type 是 network:router_interface.
+
+[code from](https://github.com/reachsrirams/packt-openstack-networking-cookbook)
