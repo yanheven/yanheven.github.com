@@ -16,7 +16,7 @@ Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 	ML2 mechanism driver: linux bridge, openvSwitch, etc.
 	
 ###2. 环境准备:
-	devstack 开发环境搭建, local.conf 参考:
+devstack 开发环境搭建, local.conf 参考:
 	
 ```
 [[local|localrc]]
@@ -68,6 +68,7 @@ Q_ML2_TENANT_NETWORK_TYPE=vlan
 ####3.1. 在devstack安装目录下的neutron目录下:
 /opt/stack/neutron/neutron/plugins/ml2/drivers
 创建文件 ml2_mech_driver.py 如下:
+
 ```
 # Import Neutron Database API
 from neutron.db import api as db
@@ -88,6 +89,7 @@ class CookbookMechanismDriver(api.MechanismDriver):
 
 ####3.2.  配置neutron server 使用上面这个ML2 mechanism driver,
 编辑文件: 	/etc/neutron/plugins/ml2/ml2_conf.ini
+
 ```
 [ml2]
 tenant_network_types = vlan
@@ -105,6 +107,7 @@ neutron.plugins.ml2.drivers.ml2_mech_driver.CookbookMechanismDriver
 
 ###4.  完善cookbook mechanism driver, 增加网络处理模块:
 增加文件 /opt/stack/neutron/neutron/plugins/ml2/drivers/ml2_mech_driver_network.py 如下:
+
 ```
 try:
     from neutron.openstack.common import log as logger
@@ -163,13 +166,16 @@ class CookbookMechanismDriver(api.MechanismDriver, ml2_mech_driver_network.Cookb
 ```
 	
 重启neutron 服务, 创建网络: 
+
 ```
 $neutron net-create CookbookNetwork1
 ```
+
 可以从日志 /opt/stack/log/q-svc.log 看到打印出来的网络信息.
 
 ###5.  完善cookbook mechanism driver, 增加子网处理模块:
 增加文件 /opt/stack/neutron/neutron/plugins/ml2/drivers/ml2_mech_driver_subnet.py 如下:
+
 ```
 # Import Neutron Database API
 from neutron.db import api as db
@@ -209,6 +215,7 @@ class CookbookSubnetMechanismDriver(api.MechanismDriver):
 ```
 
 编辑/opt/stack/neutron/neutron/plugins/ml2/drivers/ml2_mech_driver.py 如下:
+
 ```
 # Import Neutron Database API
 from neutron.db import api as db
@@ -229,10 +236,13 @@ class CookbookMechanismDriver(api.MechanismDriver, ml2_mech_driver_network.Cookb
     def initialize(self):
         driver_logger.info("Inside Mech Driver Initialize")
 ```
+
 重启neutron 服务, 创建子网: 
+
 ```
 $eutron subnet-create --name CookbookSubnet2 CookbookNetwork2 10.0.0.0/24
 ```
+
 可以从日志 /opt/stack/log/q-svc.log 看到打印出来的网络信息.
 
 ###6.  完善cookbook mechanism driver, 增加网络接口port处理模块:
@@ -268,6 +278,7 @@ class CookbookPortMechanismDriver(api.MechanismDriver):
 ```
 
 编辑/opt/stack/neutron/neutron/plugins/ml2/drivers/ml2_mech_driver.py 如下:
+
 ```
 # Import Neutron Database API
 from neutron.db import api as db
@@ -289,9 +300,12 @@ class CookbookMechanismDriver(api.MechanismDriver, ml2_mech_driver_network.Cookb
     def initialize(self):
         driver_logger.info("Inside Mech Driver Initialize")
 ```
+
 重启neutron 服务, 创建一个路由, 然后连接一个子网到路由, 就会触发创建port的方法: 
+
 ```
 $neutron router-create CookbookRouter
 $neutron router-interface-add CookbookRouter CookbookSubnet2
 ```
+
 可以从日志 /opt/stack/log/q-svc.log 看到打印出来的网络信息. 可以看到port type 是 network:router_interface.
