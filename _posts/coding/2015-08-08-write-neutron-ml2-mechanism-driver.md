@@ -9,15 +9,18 @@ description: 2015-08-08
 Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 ###1. 基本概念:
-	core feature: network, subnet, port
-	plugins feature: loadbalance, firewall, vpn, etc.
-	ML2 core plugin: type driver,  mechanism driver.
-	ML2 type driver: vlan, vxlan, gre,  etc.
-	ML2 mechanism driver: linux bridge, openvSwitch, etc.
+
+```
+core feature: network, subnet, port
+plugins feature: loadbalance, firewall, vpn, etc.
+ML2 core plugin: type driver,  mechanism driver.
+ML2 type driver: vlan, vxlan, gre,  etc.
+ML2 mechanism driver: linux bridge, openvSwitch, etc.
+```
 	
 ###2. 环境准备:
 devstack 开发环境搭建, local.conf 参考:
-	
+
 ```
 [[local|localrc]]
 FORCE=yes
@@ -96,13 +99,16 @@ tenant_network_types = vlan
 type_drivers = local,flat,vlan,gre,vxlan
 mechanism_drivers = openvswitch,cookbook
 ```
+
 编辑入口配置文件: /opt/stack/neutron/neutron.egg-info/entry_points.txt
 在 [neutron.ml2.mechanism_drivers] 配置部分, 增加一行指定cookbook 入口:
+
 ```
 [neutron.ml2.mechanism_drivers]
 ...
 neutron.plugins.ml2.drivers.ml2_mech_driver.CookbookMechanismDriver
 ```
+
 重启neutron server, 从日志 /opt/stack/logs/q-svc.log 中可以看到我们的改动.
 
 ###4.  完善cookbook mechanism driver, 增加网络处理模块:
@@ -247,8 +253,8 @@ $eutron subnet-create --name CookbookSubnet2 CookbookNetwork2 10.0.0.0/24
 
 ###6.  完善cookbook mechanism driver, 增加网络接口port处理模块:
 增加文件 /opt/stack/neutron/neutron/plugins/ml2/drivers/ml2_mech_driver_port.py 如下:
-```
 
+```
 try:
     from neutron.openstack.common import log as logger
 except ImportError:
