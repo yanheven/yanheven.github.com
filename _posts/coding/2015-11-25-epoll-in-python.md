@@ -1,6 +1,6 @@
 ---
 layout: post
-title: epoll in python
+title: Using Linux Epoll with Python
 category: coding
 description: 2015-11-25
 
