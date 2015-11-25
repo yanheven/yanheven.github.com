@@ -15,19 +15,10 @@ Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 ```
 import socket, select
 
-EOL1 = b'
-
-
-EOL2 = b'
-
-
-response  = b'HTTP/1.0 200 OK
-: Mon, 1 Jan 1996 01:01:01 GMT
-
-response += b'Content-Type: text/plain
-ent-Length: 13
-
-
+EOL1 = b'\n\n'
+EOL2 = b'\n\r\n'
+response  = b'HTTP/1.0 200 OK\r\nDate: Mon, 1 Jan 1996 01:01:01 GMT\r\n'
+response += b'Content-Type: text/plain\r\nContent-Length: 13\r\n\r\n'
 response += b'Hello, world!'
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
