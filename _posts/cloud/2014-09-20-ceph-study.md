@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ceph study
+title: Learning Ceph
 category: cloud
 description: 2014-09-20
 ---

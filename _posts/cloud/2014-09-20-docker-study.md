@@ -1,6 +1,6 @@
 ---
 layout: post
-title: docker study
+title: Learning Docker
 category: cloud
 description: 2014-09-20
 ---
