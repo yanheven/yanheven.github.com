@@ -10,7 +10,7 @@ Author:[海峰 http://weibo.com/344736086](http://weibo.com/344736086)
 
 screen result:
 
-![screenrc](/images/githubpages/screenrc.jpg)
+![screenrc](/images/githubpages/screenrc.jpeg)
 
 screenrc:  
 
