@@ -5,8 +5,7 @@ layout: home
 <div class="index-content blog">
     <div class="section">
         <ul class="artical-cate">
-            <li class="on"><a href="/ai"><span>AI</span></a></li>
-            <li class="text-align:center"><a href="/cloud"><span>Cloud</span></a></li>
+            <li class="on"><a href="/"><span>Cloud</span></a></li>
             <li style="text-align:center"><a href="/coding"><span>Coding</span></a></li>
             <li style="text-align:right"><a href="/thinking"><span>Thinking</span></a></li>
         </ul>
