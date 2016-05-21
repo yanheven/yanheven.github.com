@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 
+title: useful screenrc
 category: coding
-description: template.m
+description: 2016-05-21
 
 ---
 
