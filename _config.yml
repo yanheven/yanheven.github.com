@@ -1,7 +1,7 @@
 auto: true
 
 markdown: kramdown
-highlighter:rouge
+highlighter: rouge
 paginate: 8
 permalink: /:title
 
